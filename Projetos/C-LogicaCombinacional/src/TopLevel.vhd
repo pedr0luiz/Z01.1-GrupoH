@@ -40,7 +40,11 @@ architecture rtl of TopLevel is
 
 begin
  
+<<<<<<< HEAD
   HEX0(0) <= (((not SW(3) and (not SW(1))) and (SW(2) xnor SW(0))) or ((SW(3) and Sw(0)) and (SW(2) xnor SW(1))));  
 
+=======
+  HEX0(0) <= SW(0);
+>>>>>>> or8way_mux16
 
 end rtl;
