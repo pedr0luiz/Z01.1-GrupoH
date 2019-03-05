@@ -17,5 +17,4 @@ end entity;
 architecture arch of Nor8Way is
 begin
 
-
 end architecture;
