@@ -10,9 +10,7 @@ end entity;
 
 architecture arch of Or16 is
 begin
-<<<<<<< HEAD
+
 q <= a or b;
-=======
->>>>>>> upstream/master
 
 end architecture;
