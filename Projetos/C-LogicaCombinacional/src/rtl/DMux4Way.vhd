@@ -17,9 +17,5 @@ begin
 	q1 <= a when sel = "01" else '0';
 	q2 <= a when sel = "10" else '0';
 	q3 <= a when sel = "11" else '0';
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 end architecture;
 
