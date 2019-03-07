@@ -12,7 +12,11 @@
 <<<<<<< HEAD
 #Nor8Way.vhd
 =======
+<<<<<<< HEAD
+#Nor8Way.vhd
+=======
 Nor8Way.vhd
+>>>>>>> master
 >>>>>>> master
 #And16.vhd
 #Not16.vhd
