@@ -43,6 +43,7 @@ architecture rtl of TopLevel is
 
 
 begin
+<<<<<<< HEAD
 
 --HEX0(0) <= '1' when SW = "0001" else '1' when SW = "0100" else '1' when SW = "1101" else '1' when SW = "1011" else '0'; 
 
@@ -100,5 +101,17 @@ HEX2(4) <= SW(8);
 HEX2(5) <= SW(8) or SW(9);
 
 HEX2(6) <= not SW(9);
+=======
+ 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  HEX0(0) <= (((not SW(3) and (not SW(1))) and (SW(2) xnor SW(0))) or ((SW(3) and Sw(0)) and (SW(2) xnor SW(1))));  
+
+=======
+  HEX0(0) <= SW(0);
+>>>>>>> or8way_mux16
+=======
+>>>>>>> upstream/master
+>>>>>>> master
 
 end rtl;
