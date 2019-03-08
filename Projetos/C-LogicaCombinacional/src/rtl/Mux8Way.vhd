@@ -18,6 +18,9 @@ end entity;
 architecture arch of Mux8Way is
 begin
 
-q <= (a and not(sel(0)) and not(sel(1))) or (b and sel(0) and not(sel(1))) or (c and not(sel(0)) and sel(1)) or (d and sel(0) and sel(1));
+q <= a when sel="000" else b when sel="001"
+	else c when sel="010" else d when sel="011"
+	else e when sel="100" else f when sel="101"
+	else g when sel="110" else h when sel="111";
 
 end architecture;
