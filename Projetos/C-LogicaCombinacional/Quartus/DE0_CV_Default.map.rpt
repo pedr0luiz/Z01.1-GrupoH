@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_CV_Default
-Fri Mar  1 15:02:02 2019
+Thu Mar  7 22:30:00 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,20 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Div2
+ 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Div4
+ 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Div3
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +46,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Fri Mar  1 15:02:02 2019           ;
-; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
-; Revision Name               ; DE0_CV_Default                              ;
-; Top-level Entity Name       ; TopLevel                                    ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Mar  7 22:30:00 2019       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE0_CV_Default                              ;
+; Top-level Entity Name           ; TopLevel                                    ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 38                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 4                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -143,15 +161,313 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; ../src/TopLevel.vhd              ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd               ;         ;
+; ../src/rtl/Or16.vhd              ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd               ;         ;
+; ../src/rtl/Or8Way.vhd            ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd             ;         ;
+; ../src/rtl/Not16.vhd             ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd              ;         ;
+; ../src/rtl/Nor8Way.vhd           ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd            ;         ;
+; ../src/rtl/Nand.vhd              ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd               ;         ;
+; ../src/rtl/Mux16.vhd             ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd              ;         ;
+; ../src/rtl/Mux8Way16.vhd         ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd          ;         ;
+; ../src/rtl/Mux8Way.vhd           ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd            ;         ;
+; ../src/rtl/Mux4Way16.vhd         ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd          ;         ;
+; ../src/rtl/Mux4Way.vhd           ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd            ;         ;
+; ../src/rtl/Mux2Way.vhd           ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd            ;         ;
+; ../src/rtl/DMux8Way.vhd          ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd           ;         ;
+; ../src/rtl/DMux4Way.vhd          ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd           ;         ;
+; ../src/rtl/DMux2Way.vhd          ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd           ;         ;
+; ../src/rtl/And16.vhd             ; yes             ; User VHDL File               ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd              ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /home/pedro/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_divide.tdf                                    ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; /home/pedro/intelFPGA_lite/17.1/quartus/libraries/megafunctions/abs_divider.inc                                   ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /home/pedro/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sign_div_unsign.inc                               ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                 ; /home/pedro/intelFPGA_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                    ;         ;
+; db/lpm_divide_bpo.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_divide_bpo.tdf  ;         ;
+; db/abs_divider_kbg.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/abs_divider_kbg.tdf ;         ;
+; db/alt_u_div_ove.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/alt_u_div_ove.tdf   ;         ;
+; db/lpm_abs_kn9.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_abs_kn9.tdf     ;         ;
+; db/lpm_abs_4p9.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_abs_4p9.tdf     ;         ;
+; db/lpm_divide_epo.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_divide_epo.tdf  ;         ;
+; db/abs_divider_nbg.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/abs_divider_nbg.tdf ;         ;
+; db/alt_u_div_uve.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/alt_u_div_uve.tdf   ;         ;
+; db/lpm_abs_nn9.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_abs_nn9.tdf     ;         ;
+; db/lpm_divide_oqo.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_divide_oqo.tdf  ;         ;
+; db/abs_divider_1dg.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/abs_divider_1dg.tdf ;         ;
+; db/alt_u_div_i2f.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/alt_u_div_i2f.tdf   ;         ;
+; db/lpm_abs_1p9.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_abs_1p9.tdf     ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimate of Logic utilization (ALMs needed) ; 889    ;
+;                                             ;        ;
+; Combinational ALUT usage for logic          ; 1731   ;
+;     -- 7 input functions                    ; 3      ;
+;     -- 6 input functions                    ; 43     ;
+;     -- 5 input functions                    ; 33     ;
+;     -- 4 input functions                    ; 362    ;
+;     -- <=3 input functions                  ; 1290   ;
+;                                             ;        ;
+; Dedicated logic registers                   ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 38     ;
+;                                             ;        ;
+; Total DSP Blocks                            ; 4      ;
+;                                             ;        ;
+; Maximum fan-out node                        ; Add2~1 ;
+; Maximum fan-out                             ; 50     ;
+; Total fan-out                               ; 5195   ;
+; Average fan-out                             ; 2.87   ;
++---------------------------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Entity Name     ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+-----------------+--------------+
+; |TopLevel                             ; 1731 (220)          ; 0 (0)                     ; 0                 ; 4          ; 38   ; 0            ; |TopLevel                                                                                              ; TopLevel        ; work         ;
+;    |lpm_divide:Div0|                  ; 110 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div0                                                                              ; lpm_divide      ; work         ;
+;       |lpm_divide_bpo:auto_generated| ; 110 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div0|lpm_divide_bpo:auto_generated                                                ; lpm_divide_bpo  ; work         ;
+;          |abs_divider_kbg:divider|    ; 110 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div0|lpm_divide_bpo:auto_generated|abs_divider_kbg:divider                        ; abs_divider_kbg ; work         ;
+;             |alt_u_div_ove:divider|   ; 110 (110)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div0|lpm_divide_bpo:auto_generated|abs_divider_kbg:divider|alt_u_div_ove:divider  ; alt_u_div_ove   ; work         ;
+;    |lpm_divide:Div1|                  ; 142 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div1                                                                              ; lpm_divide      ; work         ;
+;       |lpm_divide_epo:auto_generated| ; 142 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div1|lpm_divide_epo:auto_generated                                                ; lpm_divide_epo  ; work         ;
+;          |abs_divider_nbg:divider|    ; 142 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div1|lpm_divide_epo:auto_generated|abs_divider_nbg:divider                        ; abs_divider_nbg ; work         ;
+;             |alt_u_div_uve:divider|   ; 142 (142)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div1|lpm_divide_epo:auto_generated|abs_divider_nbg:divider|alt_u_div_uve:divider  ; alt_u_div_uve   ; work         ;
+;    |lpm_divide:Div2|                  ; 482 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div2                                                                              ; lpm_divide      ; work         ;
+;       |lpm_divide_bpo:auto_generated| ; 482 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div2|lpm_divide_bpo:auto_generated                                                ; lpm_divide_bpo  ; work         ;
+;          |abs_divider_kbg:divider|    ; 482 (31)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div2|lpm_divide_bpo:auto_generated|abs_divider_kbg:divider                        ; abs_divider_kbg ; work         ;
+;             |alt_u_div_ove:divider|   ; 419 (419)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div2|lpm_divide_bpo:auto_generated|abs_divider_kbg:divider|alt_u_div_ove:divider  ; alt_u_div_ove   ; work         ;
+;             |lpm_abs_4p9:my_abs_num|  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div2|lpm_divide_bpo:auto_generated|abs_divider_kbg:divider|lpm_abs_4p9:my_abs_num ; lpm_abs_4p9     ; work         ;
+;    |lpm_divide:Div3|                  ; 165 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div3                                                                              ; lpm_divide      ; work         ;
+;       |lpm_divide_oqo:auto_generated| ; 165 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div3|lpm_divide_oqo:auto_generated                                                ; lpm_divide_oqo  ; work         ;
+;          |abs_divider_1dg:divider|    ; 165 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div3|lpm_divide_oqo:auto_generated|abs_divider_1dg:divider                        ; abs_divider_1dg ; work         ;
+;             |alt_u_div_i2f:divider|   ; 165 (165)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div3|lpm_divide_oqo:auto_generated|abs_divider_1dg:divider|alt_u_div_i2f:divider  ; alt_u_div_i2f   ; work         ;
+;    |lpm_divide:Div4|                  ; 612 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div4                                                                              ; lpm_divide      ; work         ;
+;       |lpm_divide_epo:auto_generated| ; 612 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div4|lpm_divide_epo:auto_generated                                                ; lpm_divide_epo  ; work         ;
+;          |abs_divider_nbg:divider|    ; 612 (28)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div4|lpm_divide_epo:auto_generated|abs_divider_nbg:divider                        ; abs_divider_nbg ; work         ;
+;             |alt_u_div_uve:divider|   ; 552 (552)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div4|lpm_divide_epo:auto_generated|abs_divider_nbg:divider|alt_u_div_uve:divider  ; alt_u_div_uve   ; work         ;
+;             |lpm_abs_4p9:my_abs_num|  ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|lpm_divide:Div4|lpm_divide_epo:auto_generated|abs_divider_nbg:divider|lpm_abs_4p9:my_abs_num ; lpm_abs_4p9     ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary    ;
++-----------------------------------+-------------+
+; Statistic                         ; Number Used ;
++-----------------------------------+-------------+
+; Two Independent 18x18             ; 2           ;
+; Independent 18x18 plus 36         ; 2           ;
+; Total number of DSP blocks        ; 4           ;
+;                                   ;             ;
+; Fixed Point Unsigned Multiplier   ; 2           ;
+; Fixed Point Mixed Sign Multiplier ; 2           ;
++-----------------------------------+-------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|vector[2][13]    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|vector[0][17]    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |TopLevel|vector[1][16]    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div2 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                ;
+; LPM_WIDTHD             ; 5              ; Untyped                ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_bpo ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                ;
+; LPM_WIDTHD             ; 5              ; Untyped                ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_bpo ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div4 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                ;
+; LPM_WIDTHD             ; 8              ; Untyped                ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_epo ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                ;
+; LPM_WIDTHD             ; 8              ; Untyped                ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_epo ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div3 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                ;
+; LPM_WIDTHD             ; 11             ; Untyped                ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_oqo ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 1732                        ;
+;     arith             ; 876                         ;
+;         0 data inputs ; 154                         ;
+;         1 data inputs ; 151                         ;
+;         2 data inputs ; 95                          ;
+;         3 data inputs ; 238                         ;
+;         4 data inputs ; 238                         ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 718                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 432                         ;
+;         3 data inputs ; 85                          ;
+;         4 data inputs ; 124                         ;
+;         5 data inputs ; 33                          ;
+;         6 data inputs ; 43                          ;
+;     shared            ; 135                         ;
+;         0 data inputs ; 40                          ;
+;         1 data inputs ; 68                          ;
+;         2 data inputs ; 27                          ;
+; arriav_mac            ; 4                           ;
+; boundary_port         ; 38                          ;
+;                       ;                             ;
+; Max LUT depth         ; 61.20                       ;
+; Average LUT depth     ; 44.93                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -160,65 +476,140 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Mar  1 15:01:54 2019
+    Info: Processing started: Thu Mar  7 22:29:40 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Error (10500): VHDL syntax error at TopLevel.vhd(43) near text "<";  expecting "end", or "(", or an identifier, or a concurrent statement File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 43
-Error (10500): VHDL syntax error at TopLevel.vhd(46) near text "=";  expecting "end", or "(", or an identifier, or a concurrent statement File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 46
-Error (10500): VHDL syntax error at TopLevel.vhd(48) near text ">";  expecting "end", or "(", or an identifier, or a concurrent statement File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 48
-Info (12021): Found 0 design units, including 0 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/TopLevel.vhd
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
-    Info (12022): Found design unit 1: Or16-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 11
-    Info (12023): Found entity 1: Or16 File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
-    Info (12022): Found design unit 1: Or8Way-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 17
-    Info (12023): Found entity 1: Or8Way File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
-    Info (12022): Found design unit 1: Not16-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 10
-    Info (12023): Found entity 1: Not16 File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
-    Info (12022): Found design unit 1: Nor8Way-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 17
-    Info (12023): Found entity 1: Nor8Way File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
-    Info (12022): Found design unit 1: nand_z01-rtl File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 12
-    Info (12023): Found entity 1: nand_z01 File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
-    Info (12022): Found design unit 1: Mux16-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 12
-    Info (12023): Found entity 1: Mux16 File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
-    Info (12022): Found design unit 1: Mux8Way16-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 18
-    Info (12023): Found entity 1: Mux8Way16 File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
-    Info (12022): Found design unit 1: Mux8Way-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 18
-    Info (12023): Found entity 1: Mux8Way File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
-    Info (12022): Found design unit 1: Mux4Way16-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 14
-    Info (12023): Found entity 1: Mux4Way16 File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
-    Info (12022): Found design unit 1: Mux4Way-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 14
-    Info (12023): Found entity 1: Mux4Way File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
-    Info (12022): Found design unit 1: Mux2Way-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 12
-    Info (12023): Found entity 1: Mux2Way File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
-    Info (12022): Found design unit 1: DMux8Way-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 18
-    Info (12023): Found entity 1: DMux8Way File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
-    Info (12022): Found design unit 1: DMux4Way-rtl File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 14
-    Info (12023): Found entity 1: DMux4Way File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
-    Info (12022): Found design unit 1: DMux2Way-rtl File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 12
-    Info (12023): Found entity 1: DMux2Way File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd
+    Info (12022): Found design unit 1: TopLevel-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 125
+    Info (12023): Found entity 1: TopLevel File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 110
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
+    Info (12022): Found design unit 1: Or16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 11
+    Info (12023): Found entity 1: Or16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
+    Info (12022): Found design unit 1: Or8Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 17
+    Info (12023): Found entity 1: Or8Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
+    Info (12022): Found design unit 1: Not16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 10
+    Info (12023): Found entity 1: Not16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
+    Info (12022): Found design unit 1: Nor8Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 17
+    Info (12023): Found entity 1: Nor8Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
+    Info (12022): Found design unit 1: nand_z01-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 12
+    Info (12023): Found entity 1: nand_z01 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
+    Info (12022): Found design unit 1: Mux16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 12
+    Info (12023): Found entity 1: Mux16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
+    Info (12022): Found design unit 1: Mux8Way16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 18
+    Info (12023): Found entity 1: Mux8Way16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
+    Info (12022): Found design unit 1: Mux8Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 18
+    Info (12023): Found entity 1: Mux8Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
+    Info (12022): Found design unit 1: Mux4Way16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 14
+    Info (12023): Found entity 1: Mux4Way16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
+    Info (12022): Found design unit 1: Mux4Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 14
+    Info (12023): Found entity 1: Mux4Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
+    Info (12022): Found design unit 1: Mux2Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 12
+    Info (12023): Found entity 1: Mux2Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
+    Info (12022): Found design unit 1: DMux8Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 18
+    Info (12023): Found entity 1: DMux8Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
+    Info (12022): Found design unit 1: DMux4Way-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 14
+    Info (12023): Found entity 1: DMux4Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
+    Info (12022): Found design unit 1: DMux2Way-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 12
+    Info (12023): Found entity 1: DMux2Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 4
 Warning (12019): Can't analyze file -- file ../src/rtl/BarrelShifter16.vhd is missing
 Warning (12019): Can't analyze file -- file ../src/rtl/BarrelShifter8.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
-    Info (12022): Found design unit 1: And16-arch File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 11
-    Info (12023): Found entity 1: And16 File: /home/gabrielzezze/Z01.1-GrupoH/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 4
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 3 warnings
-    Error: Peak virtual memory: 1011 megabytes
-    Error: Processing ended: Fri Mar  1 15:02:02 2019
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:22
+Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
+    Info (12022): Found design unit 1: And16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 11
+    Info (12023): Found entity 1: And16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 4
+Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
+Info (278001): Inferred 5 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 181
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 178
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div4" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 184
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 180
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div3" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 182
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div2" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 181
+Info (12133): Instantiated megafunction "lpm_divide:Div2" with the following parameter: File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 181
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "5"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bpo.tdf
+    Info (12023): Found entity 1: lpm_divide_bpo File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_divide_bpo.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_kbg.tdf
+    Info (12023): Found entity 1: abs_divider_kbg File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/abs_divider_kbg.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ove.tdf
+    Info (12023): Found entity 1: alt_u_div_ove File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/alt_u_div_ove.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_kn9.tdf
+    Info (12023): Found entity 1: lpm_abs_kn9 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_abs_kn9.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_4p9.tdf
+    Info (12023): Found entity 1: lpm_abs_4p9 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_abs_4p9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 178
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 178
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "5"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div4" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 184
+Info (12133): Instantiated megafunction "lpm_divide:Div4" with the following parameter: File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 184
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_epo.tdf
+    Info (12023): Found entity 1: lpm_divide_epo File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_divide_epo.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_nbg.tdf
+    Info (12023): Found entity 1: abs_divider_nbg File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/abs_divider_nbg.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_uve.tdf
+    Info (12023): Found entity 1: alt_u_div_uve File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/alt_u_div_uve.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_nn9.tdf
+    Info (12023): Found entity 1: lpm_abs_nn9 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_abs_nn9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 180
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 180
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div3" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 182
+Info (12133): Instantiated megafunction "lpm_divide:Div3" with the following parameter: File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/TopLevel.vhd Line: 182
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "11"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_oqo.tdf
+    Info (12023): Found entity 1: lpm_divide_oqo File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_divide_oqo.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_1dg.tdf
+    Info (12023): Found entity 1: abs_divider_1dg File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/abs_divider_1dg.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_i2f.tdf
+    Info (12023): Found entity 1: alt_u_div_i2f File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/alt_u_div_i2f.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_1p9.tdf
+    Info (12023): Found entity 1: lpm_abs_1p9 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/Quartus/db/lpm_abs_1p9.tdf Line: 22
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1773 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 1731 logic cells
+    Info (21062): Implemented 4 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 1093 megabytes
+    Info: Processing ended: Thu Mar  7 22:30:00 2019
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:41
 
 

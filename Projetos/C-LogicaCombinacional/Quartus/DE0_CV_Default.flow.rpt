@@ -1,5 +1,5 @@
 Flow report for DE0_CV_Default
-Fri Mar  1 15:02:02 2019
+Thu Mar  7 22:30:56 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -37,24 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Fri Mar  1 15:02:02 2019      ;
-; Quartus Prime Version       ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
-; Revision Name               ; DE0_CV_Default                              ;
-; Top-level Entity Name       ; TopLevel                                    ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CEBA4F23C7                                 ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu Mar  7 22:30:47 2019       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE0_CV_Default                              ;
+; Top-level Entity Name           ; TopLevel                                    ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 890 / 18,480 ( 5 % )                        ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 38 / 224 ( 17 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
+; Total DSP Blocks                ; 4 / 66 ( 6 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/01/2019 15:01:54 ;
+; Start date & time ; 03/07/2019 22:29:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE0_CV_Default      ;
 +-------------------+---------------------+
@@ -73,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value                        ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 251225404697132.155146331403686        ; --                                   ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 36051164318343.155200858104079         ; --                                   ; --          ; --         ;
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit                             ; --          ; --         ;
 ; FLOW_ENABLE_RTL_VIEWER              ; On                                     ; Off                                  ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                                   ; --          ; --         ;
@@ -94,29 +99,38 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 1011 MB             ; 00:00:22                           ;
-; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:22                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 1093 MB             ; 00:00:41                           ;
+; Fitter                    ; 00:00:39     ; 1.1                     ; 1856 MB             ; 00:01:13                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 954 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.3                     ; 1105 MB             ; 00:00:10                           ;
+; Total                     ; 00:01:12     ; --                      ; --                  ; 00:02:10                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                               ;
-+----------------------+-------------------------+----------------+------------+----------------+
-; Module Name          ; Machine Hostname        ; OS Name        ; OS Version ; Processor type ;
-+----------------------+-------------------------+----------------+------------+----------------+
-; Analysis & Synthesis ; gabrielzezze-MacBookPro ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
-+----------------------+-------------------------+----------------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; pedro-MacBookPro ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; Fitter                    ; pedro-MacBookPro ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; Assembler                 ; pedro-MacBookPro ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; TimeQuest Timing Analyzer ; pedro-MacBookPro ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
+quartus_fit --read_settings_files=off --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
+quartus_asm --read_settings_files=off --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
+quartus_sta DE0_CV_Default -c DE0_CV_Default
 
 
 
