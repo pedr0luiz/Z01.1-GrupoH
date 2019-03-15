@@ -17,13 +17,9 @@ architecture rtl of inversor16 is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
-  signal aInvertido: std_logic_vector(15 downto 0); --Variavel local
-
 begin
   -- Implementação vem aqui!
   
-  aInvertido <= not(a);
-  
-  y <= a when (z = '0') else aInvertido;
+  y <= a when (z = '0') else not(a);
   
 end architecture;
