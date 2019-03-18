@@ -50,6 +50,7 @@ architecture rtl of TopLevel is
         ny	    :	 IN STD_LOGIC;
         f		:	 IN STD_LOGIC;
         no	    :	 IN STD_LOGIC;
+		  sf      : IN STD_LOGIC_VECTOR(1 downto 0);
         zr	    :	 OUT STD_LOGIC;
         ng	    :	 OUT STD_LOGIC;
         saida	:	 OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
@@ -71,6 +72,7 @@ begin
     Ny                 => SW(3),
     F                  => SW(4),
     No                 => SW(5),
+	 sf                 => SW(7 downto 6),
     Zr                 => LEDR(8),
     Ng                 => LEDR(9),
     Saida(7 downto 0)  => LEDR(7 downto 0),
