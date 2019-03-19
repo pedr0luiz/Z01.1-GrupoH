@@ -35,6 +35,7 @@ entity ALU is
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
 			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
+			sf:    in std_logic_vector(1 downto 0);
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
 			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
@@ -92,8 +93,17 @@ architecture  rtl OF alu is
 			q:   out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;
+	
+	component Shifter16 is
+		port(
+	     a   : in STD_LOGIC_VECTOR(15 downto 0);
+		  z   : in STD_LOGIC_VECTOR(1 downto 0);
+        y   : out STD_LOGIC_VECTOR(15 downto 0)
 
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+      );
+	end component;
+
+   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp,shifter: std_logic_vector(15 downto 0);
 
 begin
   -- Implementação vem aqui!
@@ -112,6 +122,7 @@ begin
   
   u8: inversor16 port map(no, muxout, precomp);
   u9: comparador16 port map(precomp, zr, ng);
-  saida <= precomp;
+  u10: Shifter16 port map(precomp, sf, shifter);
+  saida <= shifter;
 
 end architecture;
