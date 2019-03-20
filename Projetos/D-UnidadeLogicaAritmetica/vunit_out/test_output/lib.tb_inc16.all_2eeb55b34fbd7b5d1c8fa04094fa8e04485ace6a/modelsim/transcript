@@ -1,0 +1,29 @@
+# Reading pref.tcl
+# source "/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inc16.all_2eeb55b34fbd7b5d1c8fa04094fa8e04485ace6a/modelsim/gui.do"
+# vsim -modelsimini /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini -wlf /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inc16.all_2eeb55b34fbd7b5d1c8fa04094fa8e04485ace6a/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_inc16(tb) -L vunit_lib -L lib -g/tb_inc16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/test_output/lib.tb_inc16.all_2eeb55b34fbd7b5d1c8fa04094fa8e04485ace6a/,tb path : /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/,use_color : false" 
+# Start time: 13:55:33 on Mar 19,2019
+# ** Warning: Design size of 21263 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# List of VUnit commands:
+# vunit_help
+#   - Prints this help
+# vunit_load [vsim_extra_args]
+#   - Load design with correct generics for the test
+#   - Optional first argument are passed as extra flags to vsim
+# vunit_user_init
+#   - Re-runs the user defined init file
+# vunit_run
+#   - Run test, must do vunit_load first
+# vunit_compile
+#   - Recompiles the source files
+# vunit_restart
+#   - Recompiles the source files
+#   - and re-runs the simulation if the compile was successful
+add wave -position end  sim:/tb_inc16/inA
+add wave -position end  sim:/tb_inc16/outQ
+vunit_run
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# Break in Subprogram stop at /home/pedro/.local/lib/python3.6/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 13
+# false
+# End time: 13:57:52 on Mar 19,2019, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 2

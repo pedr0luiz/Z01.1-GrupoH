@@ -1,0 +1,1483 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica
+Eadd16
+Z1 w1552657091
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
+Z5 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
+l0
+L11
+V^@FJVKXm8?U0L69OkeYXZ1
+!s100 SiSIIDRe2L<Y`4Mn=<Q<i1
+Z6 OV;C;10.5b;63
+33
+Z7 !s110 1552657102
+!i10b 1
+Z8 !s108 1552657102.000000
+Z9 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd|
+Z10 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd|
+!i113 1
+Z11 o-quiet -2008 -work lib
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+DEx4 work 5 add16 0 22 ^@FJVKXm8?U0L69OkeYXZ1
+l32
+L19
+V=gZR>GWC9e>EoagY<;8^I1
+!s100 PGX@g2Sh_P@aElLm[0OPk1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu
+Z13 w1553014867
+R2
+R3
+R0
+Z14 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
+Z15 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
+l0
+L29
+V0T:a=X2n[mXVK:fdRkgHc1
+!s100 EOV?nKOaAefR0Q<mI29;M3
+R6
+33
+Z16 !s110 1553014872
+!i10b 1
+Z17 !s108 1553014872.000000
+Z18 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd|
+Z19 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 3 alu 0 22 0T:a=X2n[mXVK:fdRkgHc1
+l108
+L45
+VahSPd<jK`QkSbz6UZWhKC2
+!s100 :JQjXVT@0BYHMMH<5=HGR2
+R6
+33
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Eand16
+Z20 w1552520811
+R2
+R3
+R0
+Z21 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
+Z22 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
+l0
+L4
+Vh]ej`Ck73hG:Zd8Jo=jjc1
+!s100 4g2NdCHBc<J3K7jR5WC:B0
+R6
+33
+Z23 !s110 1552521962
+!i10b 1
+Z24 !s108 1552521962.000000
+Z25 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd|
+Z26 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 5 and16 0 22 h]ej`Ck73hG:Zd8Jo=jjc1
+l12
+L11
+V1mZ^gXES>3dmbge0SHz??1
+!s100 M4aA[F>g<3L>IIJQ93jZ10
+R6
+33
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ecomparador16
+Z27 w1552658739
+R2
+R3
+R0
+Z28 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
+Z29 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
+l0
+L8
+VbbjmeK1BQ4Kb7jBbI77Rg2
+!s100 6Q613_:GLMIK913:C5DoD3
+R6
+33
+Z30 !s110 1552661094
+!i10b 1
+Z31 !s108 1552661094.000000
+Z32 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd|
+Z33 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 12 comparador16 0 22 bbjmeK1BQ4Kb7jBbI77Rg2
+l21
+L16
+Vj<3BRbP0N^L>M_mTR?l5?1
+!s100 <3oWOB_EeN=R]]:Jz7CE_0
+R6
+33
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12
+Edmux2way
+R20
+R2
+R3
+R0
+Z34 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
+Z35 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
+l0
+L4
+V>:IF]Koi99f<cJ0CmCAM51
+!s100 Mk4MPhHXoJhVbDN8OhUzJ0
+R6
+33
+R23
+!i10b 1
+R24
+Z36 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd|
+Z37 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 8 dmux2way 0 22 >:IF]Koi99f<cJ0CmCAM51
+l13
+L12
+V=Hnnh1R?68Q57gQcXYcgB0
+!s100 RH2`@:cPZlFECY2m8J7kb0
+R6
+33
+R23
+!i10b 1
+R24
+R36
+R37
+!i113 1
+R11
+R12
+Edmux4way
+R20
+R2
+R3
+R0
+Z38 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
+Z39 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
+l0
+L4
+VchCWhU[f@SDYOfM[z`KAD3
+!s100 ;Fe6?`C@SB@=WbZbaI^E^0
+R6
+33
+R23
+!i10b 1
+R24
+Z40 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd|
+Z41 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 8 dmux4way 0 22 chCWhU[f@SDYOfM[z`KAD3
+l15
+L14
+VjLE>NW;MNPa^PhYknBSF63
+!s100 W8QZKe<CF3EF;lgl>jiRI3
+R6
+33
+R23
+!i10b 1
+R24
+R40
+R41
+!i113 1
+R11
+R12
+Edmux8way
+R20
+R2
+R3
+R0
+Z42 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
+Z43 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
+l0
+L4
+V4@:^4]]>d5jd<9PRAJQi32
+!s100 zC5^AWzR72_D_1oKAO8`>2
+R6
+33
+R23
+!i10b 1
+R24
+Z44 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd|
+Z45 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 8 dmux8way 0 22 4@:^4]]>d5jd<9PRAJQi32
+l19
+L18
+Vgc20ZMZI0;o;J`iTFKn?53
+!s100 RX[bEO0PhSNLJWYB@nL8c2
+R6
+33
+R23
+!i10b 1
+R24
+R44
+R45
+!i113 1
+R11
+R12
+Efulladder
+Z46 w1552651100
+R2
+R3
+R0
+Z47 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
+Z48 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
+l0
+L10
+V;RB>US:oiVgf@@2;ERnEW2
+!s100 ^oFEXWUb;T^9LUJXBGnJH2
+R6
+33
+Z49 !s110 1552652804
+!i10b 1
+Z50 !s108 1552652804.000000
+Z51 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd|
+Z52 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 9 fulladder 0 22 ;RB>US:oiVgf@@2;ERnEW2
+l22
+L17
+V1C=U^<iK;;m<SOdV:56NT2
+!s100 UZLXKknR7QfBFGakJ@WSI1
+R6
+33
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 1
+R11
+R12
+Ehalfadder
+Z53 w1552648101
+R2
+R3
+R0
+Z54 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
+Z55 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
+l0
+L10
+V]kQLT^jkdJ]IAWnV>nl_50
+!s100 KnYCX3PDJ>nk7b8BG55?d2
+R6
+33
+Z56 !s110 1552648347
+!i10b 1
+Z57 !s108 1552648347.000000
+Z58 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd|
+Z59 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 9 halfadder 0 22 ]kQLT^jkdJ]IAWnV>nl_50
+l24
+L19
+VV5z[_m>Ng:JZ>BV@e9fa^3
+!s100 cQhC]i:;ZcQbfbMTJk:oQ1
+R6
+33
+R56
+!i10b 1
+R57
+R58
+R59
+!i113 1
+R11
+R12
+Einc16
+Z60 w1552657259
+R2
+R3
+R0
+Z61 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
+Z62 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
+l0
+L11
+V;OmAHIS@A^0AT]ojlejag2
+!s100 zf5`@f[Vj[mSi<_bFTEQi3
+R6
+33
+Z63 !s110 1552657340
+!i10b 1
+Z64 !s108 1552657340.000000
+Z65 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd|
+Z66 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 5 inc16 0 22 ;OmAHIS@A^0AT]ojlejag2
+l33
+L18
+V[;bbmI]3]`A5ULfZgPjIh1
+!s100 P@ejIkbzl2PZ]J@B1MN1U1
+R6
+33
+R63
+!i10b 1
+R64
+R65
+R66
+!i113 1
+R11
+R12
+Einversor16
+R53
+R2
+R3
+R0
+Z67 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
+Z68 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
+l0
+L8
+VVkHiPDk`Ml2f_7V714<nn2
+!s100 :1_@R;4H?WBDlVmIlH2LX3
+R6
+33
+R56
+!i10b 1
+R57
+Z69 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd|
+Z70 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 10 inversor16 0 22 VkHiPDk`Ml2f_7V714<nn2
+l20
+L16
+VGMQJjb1MR^gm0]?l5V2Zn3
+!s100 UzIbCGiCf1_?dVH]QJOk;0
+R6
+33
+R56
+!i10b 1
+R57
+R69
+R70
+!i113 1
+R11
+R12
+Emux16
+R20
+R2
+R3
+R0
+Z71 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
+Z72 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
+l0
+L4
+V^KK7>>=?KzfHlc;dK>^H53
+!s100 IzGKQCSkQ7RCdJh>^j0Q61
+R6
+33
+R23
+!i10b 1
+R24
+Z73 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd|
+Z74 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 5 mux16 0 22 ^KK7>>=?KzfHlc;dK>^H53
+l13
+L12
+V=JDci7mhQB`YMjB`QJb[J0
+!s100 9h;iTjYjLY@J=WQF9K?Vb2
+R6
+33
+R23
+!i10b 1
+R24
+R73
+R74
+!i113 1
+R11
+R12
+Emux2way
+R20
+R2
+R3
+R0
+Z75 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
+Z76 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
+l0
+L4
+V5Md04iB]KYYIl:m:EPnQ[3
+!s100 L]VTV_?L9fN8g2_`K9nZQ2
+R6
+33
+R23
+!i10b 1
+R24
+Z77 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd|
+Z78 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 7 mux2way 0 22 5Md04iB]KYYIl:m:EPnQ[3
+l13
+L12
+V;njS5ch5^ICA67Oe8RVMe1
+!s100 ]4be]QmD0k=IkC2dan4nP1
+R6
+33
+R23
+!i10b 1
+R24
+R77
+R78
+!i113 1
+R11
+R12
+Emux4way
+R20
+R2
+R3
+R0
+Z79 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
+Z80 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
+l0
+L4
+VS6DJa:23Uele:d0oQjjO[0
+!s100 X`n8^nYIhlnNgIfP_EkID1
+R6
+33
+R23
+!i10b 1
+R24
+Z81 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd|
+Z82 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 7 mux4way 0 22 S6DJa:23Uele:d0oQjjO[0
+l15
+L14
+Vk>?5FIg1dJ;cnh6^=6[Q12
+!s100 QgY`DD_VlaE16zbo]8^DC1
+R6
+33
+R23
+!i10b 1
+R24
+R81
+R82
+!i113 1
+R11
+R12
+Emux4way16
+R20
+R2
+R3
+R0
+Z83 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
+Z84 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
+l0
+L4
+VgIliodZR>K=jaJZeHi]]@1
+!s100 8]mCOPe5cHg3o24Lz?cGK0
+R6
+33
+R23
+!i10b 1
+R24
+Z85 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd|
+Z86 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 9 mux4way16 0 22 gIliodZR>K=jaJZeHi]]@1
+l15
+L14
+V]hnnhl@8KDa0zeWjaJ_M21
+!s100 bEhNPJf^QYeIhk2c?cc@60
+R6
+33
+R23
+!i10b 1
+R24
+R85
+R86
+!i113 1
+R11
+R12
+Emux8way
+R20
+R2
+R3
+R0
+Z87 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
+Z88 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
+l0
+L4
+VcMIZim^j_>0TGlG7NC03C3
+!s100 ^ag5`^MlkFaAfCaX]@3>L0
+R6
+33
+R23
+!i10b 1
+R24
+Z89 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd|
+Z90 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 7 mux8way 0 22 cMIZim^j_>0TGlG7NC03C3
+l19
+L18
+Vdg:U0bB1:fWC4G8h_7`?83
+!s100 d]K9Af7e;C_lVmC2m283k3
+R6
+33
+R23
+!i10b 1
+R24
+R89
+R90
+!i113 1
+R11
+R12
+Emux8way16
+R20
+R2
+R3
+R0
+Z91 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
+Z92 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
+l0
+L4
+V7MWl=:zn]>Q>M5K]`_b<60
+!s100 @m115@68;o9gzO2VgfBG]0
+R6
+33
+R23
+!i10b 1
+R24
+Z93 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd|
+Z94 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 9 mux8way16 0 22 7MWl=:zn]>Q>M5K]`_b<60
+l19
+L18
+V4>JT@G7IC85oocmA_=30l2
+!s100 jHZ:C[FZLNkkhN_;9YX[@2
+R6
+33
+R23
+!i10b 1
+R24
+R93
+R94
+!i113 1
+R11
+R12
+Enand_z01
+R20
+R2
+R3
+R0
+Z95 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
+Z96 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
+l0
+L4
+VMV:88zTBEe:UQ96>jlUfI0
+!s100 0d61a09AXn6n_X_jb>Bo?2
+R6
+33
+R23
+!i10b 1
+R24
+Z97 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd|
+Z98 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 8 nand_z01 0 22 MV:88zTBEe:UQ96>jlUfI0
+l13
+L12
+VgmedaE[cIG6HG?Zc`NOz20
+!s100 =^5mGJ3^jCjomNfP9B_k40
+R6
+33
+R23
+!i10b 1
+R24
+R97
+R98
+!i113 1
+R11
+R12
+Enor8way
+R20
+R2
+R3
+R0
+Z99 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
+Z100 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
+l0
+L4
+VI6@ZGJd>JSC7UGzNAn6GU2
+!s100 bzc2JH[>FOP2l:COLj<IY2
+R6
+33
+R23
+!i10b 1
+R24
+Z101 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd|
+Z102 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 7 nor8way 0 22 I6@ZGJd>JSC7UGzNAn6GU2
+l18
+L17
+VDTjHhLG0cD`cgEbojJhkQ1
+!s100 I9jJVglL234]>kKjkT@^<3
+R6
+33
+R23
+!i10b 1
+R24
+R101
+R102
+!i113 1
+R11
+R12
+Enot16
+R20
+R2
+R3
+R0
+Z103 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
+Z104 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
+l0
+L4
+VC]SG@M]l`d<egUIK]zP2?0
+!s100 fYJ1`YCnUZe9F?2KLeD4V3
+R6
+33
+R23
+!i10b 1
+R24
+Z105 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd|
+Z106 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 5 not16 0 22 C]SG@M]l`d<egUIK]zP2?0
+l11
+L10
+VP?Ef>GhlhD=QmEJ`<dL?O1
+!s100 P@eS`NjMhZN;TX_i2ZHR:0
+R6
+33
+R23
+!i10b 1
+R24
+R105
+R106
+!i113 1
+R11
+R12
+Eor16
+R20
+R2
+R3
+R0
+Z107 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
+Z108 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
+l0
+L4
+VFm015BPNjKE2P[ZaFANAP1
+!s100 >QKR87GJWMdVLQz<g8^hf0
+R6
+33
+R23
+!i10b 1
+R24
+Z109 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd|
+Z110 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 4 or16 0 22 Fm015BPNjKE2P[ZaFANAP1
+l12
+L11
+V_QY6bPoN>cgGNUJMg=KVP2
+!s100 4Z0<30]HA<D^f0kbNBKED3
+R6
+33
+R23
+!i10b 1
+R24
+R109
+R110
+!i113 1
+R11
+R12
+Eor8way
+R20
+R2
+R3
+R0
+Z111 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
+Z112 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
+l0
+L4
+V6_>9FK_U9`n7]^73i4MMa1
+!s100 Ag3dFfPkCD2FhoYEajciW3
+R6
+33
+R23
+!i10b 1
+R24
+Z113 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd|
+Z114 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 6 or8way 0 22 6_>9FK_U9`n7]^73i4MMa1
+l18
+L17
+V>M^WWLMlzEPc:M<S@^heE1
+!s100 Yb]n:[;E<1hdJkl9J?S683
+R6
+33
+R23
+!i10b 1
+R24
+R113
+R114
+!i113 1
+R11
+R12
+Eshifter16
+Z115 w1552948460
+Z116 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z117 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd
+Z118 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd
+l0
+L8
+VMjIak[G:<Xi^26mI=b[AU0
+!s100 JPd>D3kRiANQXkbhBD=<l0
+R6
+33
+Z119 !s110 1553014530
+!i10b 1
+Z120 !s108 1553014530.000000
+Z121 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd|
+Z122 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd|
+!i113 1
+R11
+R12
+Artl
+R116
+R2
+R3
+DEx4 work 9 shifter16 0 22 MjIak[G:<Xi^26mI=b[AU0
+l34
+L24
+V42Tfc5O3Y1l9;Fgz3h8YV1
+!s100 Y5C@2N?A7F:K_ZJV^GM8[1
+R6
+33
+R119
+!i10b 1
+R120
+R121
+R122
+!i113 1
+R11
+R12
+Etb_add16
+R20
+Z123 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
+Z124 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
+Z125 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+Z126 DPx9 vunit_lib 7 run_pkg 0 22 ?ilEX`>N>LaongBVTRfDn1
+Z127 DPx9 vunit_lib 13 run_types_pkg 0 22 ]8KoceJmoGz<@LgQaN5R62
+Z128 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
+Z129 DPx9 vunit_lib 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
+Z130 DPx9 vunit_lib 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
+Z131 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
+Z132 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
+Z133 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
+Z134 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+Z135 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+Z136 DPx9 vunit_lib 15 log_handler_pkg 0 22 nl_I;6SFb6@cB[0oB[Gm?1
+Z137 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
+Z138 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
+Z139 DPx9 vunit_lib 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
+Z140 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
+Z141 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+Z142 D^#x9 vunit_lib 18 data_types_context 0 22 1?>9FT=3YA15`7IYa:H9b2
+Z143 DPx9 vunit_lib 8 dict_pkg 0 22 ehbf8zR4VgoO:66`0b==c3
+Z144 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 I^`873Q>JaL`RoU3I`C2H1
+Z145 DPx9 vunit_lib 14 queue_pool_pkg 0 22 Z[=D0HJacYBCm0dE3aodk1
+Z146 DPx9 vunit_lib 17 integer_array_pkg 0 22 CJcNR>m;3A:?0bl`^YYN^0
+Z147 DPx9 vunit_lib 14 string_ptr_pkg 0 22 BcAU_Z][LeU1aR2CQKdF;1
+Z148 DPx9 vunit_lib 9 queue_pkg 0 22 ;89lc5:Q?7a@<EYe0_F1m0
+Z149 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 >4MC1]6h[egYG8GmK_OaU3
+Z150 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+R116
+Z151 DPx4 ieee 11 numeric_bit 0 22 d<O?S;AIQfOzoHU3FDK]23
+Z152 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z153 DPx4 ieee 12 math_complex 0 22 5i:;_e<WQ2;?b7>BdkGQL0
+Z154 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z155 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 KNo?M3?g8Rc_m:IGUMQ<m0
+R2
+R3
+R0
+Z156 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_Add16.vhd
+Z157 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_Add16.vhd
+l0
+L12
+VhgNGb2oQ5c1006Y1zQTmz1
+!s100 77RA^4iTgKfKX]UO[D^BS0
+R6
+33
+R7
+!i10b 1
+R8
+Z158 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_Add16.vhd|
+Z159 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_Add16.vhd|
+!i113 1
+R11
+R12
+Atb
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+DEx4 work 8 tb_add16 0 22 hgNGb2oQ5c1006Y1zQTmz1
+l28
+L16
+VFYl>djzSJj06iZNgkmO?F3
+!s100 @fSmgf?fTP^V=^_e?;XFJ1
+R6
+33
+R7
+!i10b 1
+R8
+R158
+R159
+!i113 1
+R11
+R12
+Etb_alu
+R20
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+R0
+Z160 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_ALU.vhd
+Z161 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_ALU.vhd
+l0
+L12
+V<BYgR99dMme>VMNA?@iWh2
+!s100 =iE_?APIHc?H1k29OSzE61
+R6
+33
+R30
+!i10b 1
+R31
+Z162 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_ALU.vhd|
+Z163 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_ALU.vhd|
+!i113 1
+R11
+R12
+Atb
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+DEx4 work 6 tb_alu 0 22 <BYgR99dMme>VMNA?@iWh2
+l37
+L16
+VnD`SIk:XzZhoiQ]E4d4:n0
+!s100 92A@DhTmYCJ1iz8UzT;[E0
+R6
+33
+R30
+!i10b 1
+R31
+R162
+R163
+!i113 1
+R11
+R12
+Etb_halfadder
+R20
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+R0
+Z164 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_HalfAdder.vhd
+Z165 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_HalfAdder.vhd
+l0
+L12
+VEL1]mXj4HPzTD>UiaJ?dR1
+!s100 6QP``nA[z>g7<bmUG3jcQ2
+R6
+33
+Z166 !s110 1552521965
+!i10b 1
+Z167 !s108 1552521965.000000
+Z168 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_HalfAdder.vhd|
+Z169 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_HalfAdder.vhd|
+!i113 1
+R11
+R12
+Atb
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+DEx4 work 12 tb_halfadder 0 22 EL1]mXj4HPzTD>UiaJ?dR1
+l27
+L16
+VW:6UinRLa<W19UlU]HNWU2
+!s100 k@j?2_2=XZ=Ai]=[ARz^03
+R6
+33
+R166
+!i10b 1
+R167
+R168
+R169
+!i113 1
+R11
+R12
+Etb_inc16
+R20
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+R0
+Z170 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_Inc16.vhd
+Z171 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_Inc16.vhd
+l0
+L12
+VM8Bj`IbE5a<bQ1Q4?o;AQ3
+!s100 ?AK^a0iYVQ[RS9`Mcj7E]0
+R6
+33
+R49
+!i10b 1
+R50
+Z172 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_Inc16.vhd|
+Z173 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_Inc16.vhd|
+!i113 1
+R11
+R12
+Atb
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+DEx4 work 8 tb_inc16 0 22 M8Bj`IbE5a<bQ1Q4?o;AQ3
+l27
+L16
+VWB>:3=9WB[=SbAZBf;>:31
+!s100 Obn9H8cJenTZ?5RZ8Sha?1
+R6
+33
+R49
+!i10b 1
+R50
+R172
+R173
+!i113 1
+R11
+R12
+Etb_inversor16
+R20
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+R0
+Z174 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_inversor16.vhd
+Z175 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_inversor16.vhd
+l0
+L12
+V3V2MO1R]UfbC[QV8MY3>P0
+!s100 PW[am_O=GGFJ3T9NKU>0`3
+R6
+33
+R56
+!i10b 1
+R57
+Z176 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_inversor16.vhd|
+Z177 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/tests/tst/tb_inversor16.vhd|
+!i113 1
+R11
+R12
+Atb
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R116
+R151
+R152
+R153
+R154
+R155
+R2
+R3
+DEx4 work 13 tb_inversor16 0 22 3V2MO1R]UfbC[QV8MY3>P0
+l28
+L16
+VAbJFbnY:ZoHJSXZdoBbkg3
+!s100 KF4ndaa6P<l`^XgJcSa?o3
+R6
+33
+R56
+!i10b 1
+R57
+R176
+R177
+!i113 1
+R11
+R12
+Ezerador16
+R46
+R2
+R3
+R0
+Z178 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+Z179 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+l0
+L15
+VY1ba?G4957dj8E_I2=7Nd1
+!s100 J1bm5aj8D`WmUF9Na7e7E2
+R6
+33
+R49
+!i10b 1
+R50
+Z180 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
+Z181 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 9 zerador16 0 22 Y1ba?G4957dj8E_I2=7Nd1
+l41
+L31
+V]6CjMQc_zna4XkY7Ui=MC3
+!s100 gF46Z4?55OGN>DZ]fkRLh0
+R6
+33
+R49
+!i10b 1
+R50
+R180
+R181
+!i113 1
+R11
+R12
