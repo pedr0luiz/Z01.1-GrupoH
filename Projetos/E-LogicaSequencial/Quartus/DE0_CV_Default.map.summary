@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed Mar 20 14:27:34 2019
+Analysis & Synthesis Status : Successful - Fri Mar 22 09:35:35 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : DE0_CV_Default
-Top-level Entity Name : TopLevel
+Top-level Entity Name : BinaryDigit
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1
-Total pins : 24
+Total registers : 0
+Total pins : 4
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
