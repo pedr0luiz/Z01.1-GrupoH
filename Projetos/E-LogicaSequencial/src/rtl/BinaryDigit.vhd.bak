@@ -38,6 +38,7 @@ architecture rtl of BinaryDigit is
 		end component;
 signal outmux,outflip: std_logic;
 begin
+	
 	u1: Mux2Way port map(outflip,input,load,outmux);
 	u2: FlipFlopD port map(clock, outmux, '0', '0', outflip);
 	output <= outflip;
