@@ -6,10 +6,9 @@ output <= FlipFlopD:u2.q
 
 
 |BinaryDigit|Mux2Way:u1
-a => q.IN0
-b => q.IN0
-sel => q.IN1
-sel => q.IN1
+a => q.DATAB
+b => q.DATAA
+sel => q.OUTPUTSELECT
 q <= q.DB_MAX_OUTPUT_PORT_TYPE
 
 
