@@ -1,2 +1,0 @@
-[33;1mskip[0m[m (P=0 S=1 F=0 T=2) lib.tb_register8.all (167.7 seconds)
-[0m
