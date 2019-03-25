@@ -1,3 +1,4 @@
+# do /home/pedro/.local/lib/python3.6/site-packages/vunit/tcl_read_eval_loop.tcl
 # vsim -modelsimini /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_binarydigit(tb) -L vunit_lib -L lib -g/tb_binarydigit/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/,tb path : /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/,use_color : true" 
 # Start time: 15:06:30 on Mar 22,2019
 # ** Warning: Design size of 20923 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
@@ -5,3 +6,5 @@
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
 # Break in Subprogram stop at /home/pedro/.local/lib/python3.6/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 13
 # Stopped at /home/pedro/.local/lib/python3.6/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 13
+# End time: 15:06:30 on Mar 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
