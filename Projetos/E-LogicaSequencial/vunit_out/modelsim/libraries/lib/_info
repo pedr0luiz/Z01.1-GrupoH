@@ -1025,7 +1025,7 @@ R117
 R12
 R13
 Eram4k
-Z118 w1553550090
+Z118 w1553552344
 R2
 R3
 R4
@@ -1037,11 +1037,11 @@ Vz8dhdjLKA6AlXRDQnUY4b0
 !s100 ESk?XNEfJCWi[LAlUVY:i3
 R7
 33
-R28
+Z121 !s110 1553552357
 !i10b 1
-R29
-Z121 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd|
-Z122 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd|
+Z122 !s108 1553552357.000000
+Z123 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd|
+Z124 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd|
 !i113 1
 R12
 R13
@@ -1049,17 +1049,17 @@ Aarch
 R2
 R3
 DEx4 work 5 ram4k 0 22 z8dhdjLKA6AlXRDQnUY4b0
-l33
+l24
 L18
-VcAkTY7=bTkSXlKaXTh:262
-!s100 B?Pf8VjFi_UBV]A>762a`3
+V`3[SaEk?@JV000a^?4lGo1
+!s100 QjR50:U4D[VQonB4BMLa@0
 R7
 33
-R28
-!i10b 1
-R29
 R121
+!i10b 1
 R122
+R123
+R124
 !i113 1
 R12
 R13
@@ -1068,8 +1068,8 @@ R1
 R2
 R3
 R4
-Z123 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
-Z124 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
+Z125 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
+Z126 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
 l0
 L8
 V8[<08i[R4ikhzV`Li1VTh1
@@ -1079,8 +1079,8 @@ R7
 R28
 !i10b 1
 R29
-Z125 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd|
-Z126 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd|
+Z127 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd|
+Z128 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd|
 !i113 1
 R12
 R13
@@ -1097,8 +1097,8 @@ R7
 R28
 !i10b 1
 R29
-R125
-R126
+R127
+R128
 !i113 1
 R12
 R13
@@ -1107,8 +1107,8 @@ R1
 R2
 R3
 R4
-Z127 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
-Z128 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
+Z129 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
+Z130 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
 l0
 L8
 VHRL`C4[eJ50a:k2gb[ecM2
@@ -1118,8 +1118,8 @@ R7
 R28
 !i10b 1
 R29
-Z129 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
-Z130 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
+Z131 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
+Z132 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
 !i113 1
 R12
 R13
@@ -1136,8 +1136,8 @@ R7
 R28
 !i10b 1
 R29
-R129
-R130
+R131
+R132
 !i113 1
 R12
 R13
@@ -1146,8 +1146,8 @@ R1
 R2
 R3
 R4
-Z131 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
-Z132 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
+Z133 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
+Z134 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
 l0
 L8
 VVj4LCZ8Lb8=jZ@YcZTX@g2
@@ -1157,8 +1157,8 @@ R7
 R28
 !i10b 1
 R29
-Z133 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
-Z134 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
+Z135 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
+Z136 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
 !i113 1
 R12
 R13
@@ -1175,86 +1175,86 @@ R7
 R28
 !i10b 1
 R29
-R133
-R134
+R135
+R136
 !i113 1
 R12
 R13
 Eregister16
-Z135 w1553550460
+Z137 w1553550460
 R2
 R3
 R4
-Z136 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
-Z137 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
+Z138 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
+Z139 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
 l0
 L8
 VLBR;A=e>>e_QSBKCXWa5d3
 !s100 n^CUeJ^:id2hXcoBoB>TS3
 R7
 33
-Z138 !s110 1553550570
+Z140 !s110 1553550570
 !i10b 1
-Z139 !s108 1553550569.000000
-Z140 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
-Z141 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
+Z141 !s108 1553550569.000000
+Z142 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
+Z143 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
 !i113 1
 R12
 R13
 Aarch
 R2
 R3
-Z142 DEx4 work 10 register16 0 22 LBR;A=e>>e_QSBKCXWa5d3
+DEx4 work 10 register16 0 22 LBR;A=e>>e_QSBKCXWa5d3
 l32
 L17
 VPmZ>W1TJ15?MAIk81mjgG1
 !s100 GJ8hT?TK5ZOc;@inL1HcP0
 R7
 33
-R138
-!i10b 1
-R139
 R140
+!i10b 1
 R141
+R142
+R143
 !i113 1
 R12
 R13
 Eregister32
-R1
+Z144 w1553552152
 R2
 R3
 R4
-Z143 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
-Z144 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
+Z145 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
+Z146 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
 l0
-L8
-VP]c@k:W8fWg]Xko[>MWb^1
-!s100 []:^=AY8a3]ML1PkdZ@Ea3
+L48
+Va2a_3RbNATgR_oeN^Y<cU2
+!s100 T[4oMDoB^`IUV=69]VT5F1
 R7
 33
-R28
+Z147 !s110 1553552213
 !i10b 1
-R29
-Z145 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
-Z146 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
+Z148 !s108 1553552213.000000
+Z149 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
+Z150 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
 !i113 1
 R12
 R13
 Aarch
 R2
 R3
-DEx4 work 10 register32 0 22 P]c@k:W8fWg]Xko[>MWb^1
-l22
-L17
-VMUUg_d5J_MI45C`>MF1;G2
-!s100 56695]S4:3?H_kY7IaF>90
+DEx4 work 10 register32 0 22 a2a_3RbNATgR_oeN^Y<cU2
+l72
+L57
+VknE4H>6GjD>hWNUgUINH62
+!s100 c6hc_U2<D?b:BO<XJ7cb]1
 R7
 33
-R28
+R147
 !i10b 1
-R29
-R145
-R146
+R148
+R149
+R150
 !i113 1
 R12
 R13
@@ -1263,8 +1263,8 @@ R1
 R2
 R3
 R4
-Z147 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
-Z148 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
+Z151 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
+Z152 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
 l0
 L8
 V;LzQ2fOcY6f?Oc68WJCXG2
@@ -1274,8 +1274,8 @@ R7
 R28
 !i10b 1
 R29
-Z149 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
-Z150 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
+Z153 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
+Z154 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
 !i113 1
 R12
 R13
@@ -1292,29 +1292,29 @@ R7
 R28
 !i10b 1
 R29
-R149
-R150
+R153
+R154
 !i113 1
 R12
 R13
 Eregister8
-R72
+R144
 R2
 R3
 R4
-Z151 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
-Z152 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
+R145
+R146
 l0
 L8
 V9P<nc9YOOPP_Z`H4KFKkR3
 !s100 RH;m?0bQIi^ohZMhS9XdS0
 R7
 33
-R28
+R147
 !i10b 1
-R29
-Z153 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
-Z154 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
+R148
+R149
+R150
 !i113 1
 R12
 R13
@@ -1328,11 +1328,11 @@ VDI[AWnj3PIQaQIEUH]Uie0
 !s100 FP?Q41K48jKakXNNLD=cS3
 R7
 33
-R28
+R147
 !i10b 1
-R29
-R153
-R154
+R148
+R149
+R150
 !i113 1
 R12
 R13
@@ -1657,6 +1657,113 @@ R204
 !i113 1
 R12
 R13
+Etb_register32
+R1
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R176
+R177
+R178
+R179
+R180
+R181
+R182
+R183
+R113
+R184
+R185
+R186
+R187
+R188
+R2
+R3
+R4
+Z205 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd
+Z206 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd
+l0
+L12
+VSJ0`l8SZa2l=_YO77RYHV0
+!s100 W3LMbeI<dMFOf]X`Ylj^02
+R7
+33
+R121
+!i10b 1
+R122
+Z207 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd|
+Z208 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd|
+!i113 1
+R12
+R13
+Atb
+R156
+R157
+R158
+R159
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R176
+R177
+R178
+R179
+R180
+R181
+R182
+R183
+R113
+R184
+R185
+R186
+R187
+R188
+R2
+R3
+DEx4 work 13 tb_register32 0 22 SJ0`l8SZa2l=_YO77RYHV0
+l32
+L16
+VBB2zbhlVLSg>K5RU7:VkS2
+!s100 I>Fbf_[e0E>SXZWe5HRKD1
+R7
+33
+R121
+!i10b 1
+R122
+R207
+R208
+!i113 1
+R12
+R13
 Etb_register8
 R1
 R156
@@ -1696,8 +1803,8 @@ R188
 R2
 R3
 R4
-Z205 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd
-Z206 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd
+Z209 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd
+Z210 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd
 l0
 L12
 Vge:MDKDbHAAL_cJ9i[6Q^1
@@ -1707,8 +1814,8 @@ R7
 R201
 !i10b 1
 R202
-Z207 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd|
-Z208 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd|
+Z211 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd|
+Z212 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd|
 !i113 1
 R12
 R13
@@ -1759,8 +1866,8 @@ R7
 R201
 !i10b 1
 R202
-R207
-R208
+R211
+R212
 !i113 1
 R12
 R13
@@ -1769,8 +1876,8 @@ R1
 R2
 R3
 R4
-Z209 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
-Z210 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+Z213 8/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+Z214 F/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
 l0
 L15
 VY1ba?G4957dj8E_I2=7Nd1
@@ -1780,8 +1887,8 @@ R7
 R28
 !i10b 1
 R29
-Z211 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
-Z212 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
+Z215 !s90 -quiet|-modelsimini|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
+Z216 !s107 /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
 !i113 1
 R12
 R13
@@ -1798,8 +1905,8 @@ R7
 R28
 !i10b 1
 R29
-R211
-R212
+R215
+R216
 !i113 1
 R12
 R13

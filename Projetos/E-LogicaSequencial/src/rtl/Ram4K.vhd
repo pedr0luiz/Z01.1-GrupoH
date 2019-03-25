@@ -20,15 +20,6 @@ architecture arch of Ram4k is
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
   
-component Ram512 is
-port(
-		clock:   in  STD_LOGIC;
-		input:   in  STD_LOGIC_VECTOR(15 downto 0);
-		load:    in  STD_LOGIC;
-		address: in  STD_LOGIC_VECTOR( 8 downto 0);
-		output:  out STD_LOGIC_VECTOR(15 downto 0)
-	);
-end component;
 
 begin
 
