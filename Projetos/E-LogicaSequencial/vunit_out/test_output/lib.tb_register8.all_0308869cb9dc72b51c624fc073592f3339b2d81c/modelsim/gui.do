@@ -1,4 +1,4 @@
-source "/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_register8.all_0308869cb9dc72b51c624fc073592f3339b2d81c/modelsim/common.do"
+source "/home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_register8.all_0308869cb9dc72b51c624fc073592f3339b2d81c/modelsim/common.do"
 proc vunit_user_init {} {
     return 0
 }

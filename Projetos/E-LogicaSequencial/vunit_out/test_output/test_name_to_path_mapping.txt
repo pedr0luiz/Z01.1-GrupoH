@@ -1,3 +1,4 @@
 lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4 lib.tb_binarydigit.all
 lib.tb_flipflopd.all_7cd4f0a30ec078deb9c790d31313e1e49355c443 lib.tb_flipflopd.all
+lib.tb_register16.all_c5c66660a959522836aa1c4c7aae83ec20d9bfef lib.tb_register16.all
 lib.tb_register8.all_0308869cb9dc72b51c624fc073592f3339b2d81c lib.tb_register8.all
