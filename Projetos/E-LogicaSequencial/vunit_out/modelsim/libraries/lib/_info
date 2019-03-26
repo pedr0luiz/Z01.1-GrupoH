@@ -1103,80 +1103,80 @@ R124
 R12
 R13
 Eram64
-R1
+Z125 w1553626070
 R2
 R3
 R4
-Z125 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
-Z126 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
+Z126 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
+Z127 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
 l0
 L8
-VHRL`C4[eJ50a:k2gb[ecM2
-!s100 gg_:9eMG?gXI@fHk9bKn=3
+V6U<oiPMM:>3WJ4d79MbBR2
+!s100 BEh57KIOb9eE?WnXTi60d3
 R7
 33
-R8
+Z128 !s110 1553626074
 !i10b 1
-R9
-Z127 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
-Z128 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
+Z129 !s108 1553626074.000000
+Z130 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
+Z131 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
 !i113 1
 R12
 R13
 Aarch
 R2
 R3
-DEx4 work 5 ram64 0 22 HRL`C4[eJ50a:k2gb[ecM2
-l23
+Z132 DEx4 work 5 ram64 0 22 6U<oiPMM:>3WJ4d79MbBR2
+l65
 L18
-V4n5mOYIz8=9j^^Sn5B5Wa0
-!s100 oSDeiEl=<cE]Fn`1mU0F93
+V]acaPJLjZRPk@5h5ogcO30
+!s100 BboG[2hkV_Uo`hVLL@GSM2
 R7
 33
-R8
-!i10b 1
-R9
-R127
 R128
+!i10b 1
+R129
+R130
+R131
 !i113 1
 R12
 R13
 Eram8
-Z129 w1553561555
+Z133 w1553625768
 R2
 R3
 R4
-Z130 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
-Z131 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
+Z134 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
+Z135 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
 l0
 L8
 VVj4LCZ8Lb8=jZ@YcZTX@g2
 !s100 R5mZ`al9n>P1>n^5Jl6z_1
 R7
 33
-Z132 !s110 1553561610
+Z136 !s110 1553625784
 !i10b 1
-Z133 !s108 1553561610.000000
-Z134 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
-Z135 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
+Z137 !s108 1553625784.000000
+Z138 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
+Z139 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
 !i113 1
 R12
 R13
 Aarch
 R2
 R3
-Z136 DEx4 work 4 ram8 0 22 Vj4LCZ8Lb8=jZ@YcZTX@g2
+DEx4 work 4 ram8 0 22 Vj4LCZ8Lb8=jZ@YcZTX@g2
 l63
 L18
-VN7EXcG8YI9JglO4Bme@Hi2
-!s100 A0OW5XaefAbP@T]SWkbdc1
+VF>YI2IN_IfB85gfOFF9[c3
+!s100 m4bjVU;7]=YW]TElOnchJ2
 R7
 33
-R132
+R136
 !i10b 1
-R133
-R134
-R135
+R137
+R138
+R139
 !i113 1
 R12
 R13
@@ -1185,8 +1185,8 @@ R1
 R2
 R3
 R4
-Z137 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
-Z138 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
+Z140 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
+Z141 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
 l0
 L8
 VLBR;A=e>>e_QSBKCXWa5d3
@@ -1196,8 +1196,8 @@ R7
 R8
 !i10b 1
 R9
-Z139 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
-Z140 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
+Z142 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
+Z143 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
 !i113 1
 R12
 R13
@@ -1214,8 +1214,8 @@ R7
 R8
 !i10b 1
 R9
-R139
-R140
+R142
+R143
 !i113 1
 R12
 R13
@@ -1224,8 +1224,8 @@ R1
 R2
 R3
 R4
-Z141 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
-Z142 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
+Z144 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
+Z145 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
 l0
 L8
 VP]c@k:W8fWg]Xko[>MWb^1
@@ -1235,8 +1235,8 @@ R7
 R8
 !i10b 1
 R9
-Z143 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
-Z144 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
+Z146 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
+Z147 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
 !i113 1
 R12
 R13
@@ -1253,29 +1253,29 @@ R7
 R8
 !i10b 1
 R9
-R143
-R144
+R146
+R147
 !i113 1
 R12
 R13
 Eregister64
-Z145 w1553554302
+Z148 w1553554302
 R2
 R3
 R4
-Z146 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
-Z147 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
+Z149 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
+Z150 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
 l0
 L8
 V;LzQ2fOcY6f?Oc68WJCXG2
 !s100 LCbS]1neA;d2ePolK?XW]3
 R7
 33
-Z148 !s110 1553554355
+Z151 !s110 1553554355
 !i10b 1
-Z149 !s108 1553554355.000000
-Z150 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
-Z151 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
+Z152 !s108 1553554355.000000
+Z153 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
+Z154 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
 !i113 1
 R12
 R13
@@ -1289,11 +1289,11 @@ VWGANCM5PZ[<cQ_G=;?FMB1
 !s100 ?_A>K]b1NEiXh0n1KOU6C1
 R7
 33
-R148
-!i10b 1
-R149
-R150
 R151
+!i10b 1
+R152
+R153
+R154
 !i113 1
 R12
 R13
@@ -1302,8 +1302,8 @@ R1
 R2
 R3
 R4
-Z152 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
-Z153 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
+Z155 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
+Z156 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
 l0
 L8
 V9P<nc9YOOPP_Z`H4KFKkR3
@@ -1313,8 +1313,8 @@ R7
 R8
 !i10b 1
 R9
-Z154 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
-Z155 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
+Z157 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
+Z158 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
 !i113 1
 R12
 R13
@@ -1331,70 +1331,67 @@ R7
 R8
 !i10b 1
 R9
-R154
-R155
+R157
+R158
 !i113 1
 R12
 R13
 Etb_binarydigit
-Z156 w1553099722
-Z157 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
-Z158 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
-Z159 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
-Z160 DPx9 vunit_lib 7 run_pkg 0 22 ?ilEX`>N>LaongBVTRfDn1
-Z161 DPx9 vunit_lib 13 run_types_pkg 0 22 ]8KoceJmoGz<@LgQaN5R62
-Z162 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
-Z163 DPx9 vunit_lib 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
-Z164 DPx9 vunit_lib 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
-Z165 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
-Z166 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
-Z167 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
-Z168 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
-Z169 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
-Z170 DPx9 vunit_lib 15 log_handler_pkg 0 22 nl_I;6SFb6@cB[0oB[Gm?1
-Z171 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
-Z172 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
-Z173 DPx9 vunit_lib 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
-Z174 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
-Z175 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
-Z176 D^#x9 vunit_lib 18 data_types_context 0 22 1?>9FT=3YA15`7IYa:H9b2
-Z177 DPx9 vunit_lib 8 dict_pkg 0 22 ehbf8zR4VgoO:66`0b==c3
-Z178 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 I^`873Q>JaL`RoU3I`C2H1
-Z179 DPx9 vunit_lib 14 queue_pool_pkg 0 22 Z[=D0HJacYBCm0dE3aodk1
-Z180 DPx9 vunit_lib 17 integer_array_pkg 0 22 CJcNR>m;3A:?0bl`^YYN^0
-Z181 DPx9 vunit_lib 14 string_ptr_pkg 0 22 BcAU_Z][LeU1aR2CQKdF;1
-Z182 DPx9 vunit_lib 9 queue_pkg 0 22 ;89lc5:Q?7a@<EYe0_F1m0
-Z183 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 >4MC1]6h[egYG8GmK_OaU3
-Z184 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+Z159 w1553099722
+Z160 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
+Z161 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
+Z162 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+Z163 DPx9 vunit_lib 7 run_pkg 0 22 ?ilEX`>N>LaongBVTRfDn1
+Z164 DPx9 vunit_lib 13 run_types_pkg 0 22 ]8KoceJmoGz<@LgQaN5R62
+Z165 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
+Z166 DPx9 vunit_lib 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
+Z167 DPx9 vunit_lib 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
+Z168 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
+Z169 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
+Z170 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
+Z171 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+Z172 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+Z173 DPx9 vunit_lib 15 log_handler_pkg 0 22 nl_I;6SFb6@cB[0oB[Gm?1
+Z174 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
+Z175 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
+Z176 DPx9 vunit_lib 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
+Z177 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
+Z178 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+Z179 D^#x9 vunit_lib 18 data_types_context 0 22 1?>9FT=3YA15`7IYa:H9b2
+Z180 DPx9 vunit_lib 8 dict_pkg 0 22 ehbf8zR4VgoO:66`0b==c3
+Z181 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 I^`873Q>JaL`RoU3I`C2H1
+Z182 DPx9 vunit_lib 14 queue_pool_pkg 0 22 Z[=D0HJacYBCm0dE3aodk1
+Z183 DPx9 vunit_lib 17 integer_array_pkg 0 22 CJcNR>m;3A:?0bl`^YYN^0
+Z184 DPx9 vunit_lib 14 string_ptr_pkg 0 22 BcAU_Z][LeU1aR2CQKdF;1
+Z185 DPx9 vunit_lib 9 queue_pkg 0 22 ;89lc5:Q?7a@<EYe0_F1m0
+Z186 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 >4MC1]6h[egYG8GmK_OaU3
+Z187 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
 R112
-Z185 DPx4 ieee 11 numeric_bit 0 22 d<O?S;AIQfOzoHU3FDK]23
-Z186 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
-Z187 DPx4 ieee 12 math_complex 0 22 5i:;_e<WQ2;?b7>BdkGQL0
-Z188 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
-Z189 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 KNo?M3?g8Rc_m:IGUMQ<m0
+Z188 DPx4 ieee 11 numeric_bit 0 22 d<O?S;AIQfOzoHU3FDK]23
+Z189 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z190 DPx4 ieee 12 math_complex 0 22 5i:;_e<WQ2;?b7>BdkGQL0
+Z191 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z192 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 KNo?M3?g8Rc_m:IGUMQ<m0
 R2
 R3
 R0
-Z190 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_BinaryDigit.vhd
-Z191 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_BinaryDigit.vhd
+Z193 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_BinaryDigit.vhd
+Z194 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_BinaryDigit.vhd
 l0
 L12
 VeZdN;[`k75J1zD5APC6fg3
 !s100 REZ_kKK2zd=H>`S1=_`0j1
 R7
 33
-Z192 !s110 1553277786
+Z195 !s110 1553277786
 !i10b 1
-Z193 !s108 1553277786.000000
-Z194 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_BinaryDigit.vhd|
-Z195 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_BinaryDigit.vhd|
+Z196 !s108 1553277786.000000
+Z197 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_BinaryDigit.vhd|
+Z198 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_BinaryDigit.vhd|
 !i113 1
 R12
 R13
 Atb
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1420,12 +1417,15 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 DEx4 work 14 tb_binarydigit 0 22 eZdN;[`k75J1zD5APC6fg3
@@ -1435,18 +1435,15 @@ VKd=2>Jmm=9>NQb3Z;X8<62
 !s100 _Df=?QK0n=JAafNOPGKlB1
 R7
 33
-R192
-!i10b 1
-R193
-R194
 R195
+!i10b 1
+R196
+R197
+R198
 !i113 1
 R12
 R13
 Etb_flipflopd
-R156
-R157
-R158
 R159
 R160
 R161
@@ -1473,35 +1470,35 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 R0
-Z196 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_FlipFlopD.vhd
-Z197 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_FlipFlopD.vhd
+Z199 8/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_FlipFlopD.vhd
+Z200 F/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_FlipFlopD.vhd
 l0
 L12
 VfHc44cLl@IDQ114>GSdm^1
 !s100 Mz2D0a_Fee>:O9S6F=zIz1
 R7
 33
-R192
+R195
 !i10b 1
-R193
-Z198 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_FlipFlopD.vhd|
-Z199 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_FlipFlopD.vhd|
+R196
+Z201 !s90 -quiet|-modelsimini|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_FlipFlopD.vhd|
+Z202 !s107 /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_FlipFlopD.vhd|
 !i113 1
 R12
 R13
 Atb
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1527,12 +1524,15 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 DEx4 work 12 tb_flipflopd 0 22 fHc44cLl@IDQ114>GSdm^1
@@ -1542,19 +1542,16 @@ VIHiV[c8L:CBS]OB;O:EVN0
 !s100 a6MHG1EBa9Nb]mc;S:Oo40
 R7
 33
-R192
+R195
 !i10b 1
-R193
-R198
-R199
+R196
+R201
+R202
 !i113 1
 R12
 R13
-Etb_ram8
+Etb_ram64
 R1
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1580,35 +1577,142 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 R4
-Z200 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram8.vhd
-Z201 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram8.vhd
+Z203 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram64.vhd
+Z204 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram64.vhd
+l0
+L12
+V[7Hg?PIf1`A6bH;:KPAF<3
+!s100 [fgR]GASWg6=mal6K<jlZ2
+R7
+33
+Z205 !s110 1553625964
+!i10b 1
+Z206 !s108 1553625963.000000
+Z207 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram64.vhd|
+Z208 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram64.vhd|
+!i113 1
+R12
+R13
+Atb
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R176
+R177
+R178
+R179
+R180
+R181
+R182
+R183
+R184
+R185
+R186
+R187
+R112
+R188
+R189
+R190
+R191
+R192
+R2
+R3
+DEx4 work 8 tb_ram64 0 22 [7Hg?PIf1`A6bH;:KPAF<3
+l34
+L16
+VBBLCTe1j9bdzIfWY0OB`e0
+!s100 OoUcloWF7[f`7LMoS3ln=1
+R7
+33
+R205
+!i10b 1
+R206
+R207
+R208
+!i113 1
+R12
+R13
+Etb_ram8
+R1
+R160
+R161
+R162
+R163
+R164
+R165
+R166
+R167
+R168
+R169
+R170
+R171
+R172
+R173
+R174
+R175
+R176
+R177
+R178
+R179
+R180
+R181
+R182
+R183
+R184
+R185
+R186
+R187
+R112
+R188
+R189
+R190
+R191
+R192
+R2
+R3
+R4
+Z209 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram8.vhd
+Z210 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram8.vhd
 l0
 L12
 VUBHLN;M<bN6Hj2X]Ib7d:3
 !s100 Y@[3l6FJmbm8KH45_S7L80
 R7
 33
-Z202 !s110 1553558225
+Z211 !s110 1553558225
 !i10b 1
-Z203 !s108 1553558225.000000
-Z204 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram8.vhd|
-Z205 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram8.vhd|
+Z212 !s108 1553558225.000000
+Z213 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram8.vhd|
+Z214 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Ram8.vhd|
 !i113 1
 R12
 R13
 Atb
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1634,12 +1738,15 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 DEx4 work 7 tb_ram8 0 22 UBHLN;M<bN6Hj2X]Ib7d:3
@@ -1649,19 +1756,16 @@ VaaP3jO[kE2E>cTfQUUSkm1
 !s100 MQ=<K@hcHE]gIeD7:^@0Z2
 R7
 33
-R202
+R211
 !i10b 1
-R203
-R204
-R205
+R212
+R213
+R214
 !i113 1
 R12
 R13
 Etb_register16
 R1
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1687,35 +1791,35 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 R4
-Z206 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register16.vhd
-Z207 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register16.vhd
+Z215 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register16.vhd
+Z216 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register16.vhd
 l0
 L12
 VneGCFDX;acZZ2Gi0=VNBK1
 !s100 B0ho:<MTRHJJGgA2N_GAD0
 R7
 33
-Z208 !s110 1553554149
+Z217 !s110 1553554149
 !i10b 1
-Z209 !s108 1553554149.000000
-Z210 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register16.vhd|
-Z211 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register16.vhd|
+Z218 !s108 1553554149.000000
+Z219 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register16.vhd|
+Z220 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register16.vhd|
 !i113 1
 R12
 R13
 Atb
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1741,12 +1845,15 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 DEx4 work 13 tb_register16 0 22 neGCFDX;acZZ2Gi0=VNBK1
@@ -1756,19 +1863,16 @@ VFbQE38jBKL0e>@UeWX0SW3
 !s100 I604lb[IJ^nY<ASXgeJ;31
 R7
 33
-R208
+R217
 !i10b 1
-R209
-R210
-R211
+R218
+R219
+R220
 !i113 1
 R12
 R13
 Etb_register32
 R1
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1794,35 +1898,35 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 R4
-Z212 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd
-Z213 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd
+Z221 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd
+Z222 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd
 l0
 L12
 VSJ0`l8SZa2l=_YO77RYHV0
 !s100 W3LMbeI<dMFOf]X`Ylj^02
 R7
 33
-R208
+R217
 !i10b 1
-R209
-Z214 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd|
-Z215 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd|
+R218
+Z223 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd|
+Z224 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register32.vhd|
 !i113 1
 R12
 R13
 Atb
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1848,12 +1952,15 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 DEx4 work 13 tb_register32 0 22 SJ0`l8SZa2l=_YO77RYHV0
@@ -1863,19 +1970,16 @@ VBB2zbhlVLSg>K5RU7:VkS2
 !s100 I>Fbf_[e0E>SXZWe5HRKD1
 R7
 33
-R208
+R217
 !i10b 1
-R209
-R214
-R215
+R218
+R223
+R224
 !i113 1
 R12
 R13
 Etb_register64
 R1
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1901,35 +2005,35 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 R4
-Z216 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register64.vhd
-Z217 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register64.vhd
+Z225 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register64.vhd
+Z226 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register64.vhd
 l0
 L12
 V>E:WiDI``GMka=5UM>kU80
 !s100 _BznoGzmY[T[:okRZGRm52
 R7
 33
-R148
+R151
 !i10b 1
-R149
-Z218 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register64.vhd|
-Z219 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register64.vhd|
+R152
+Z227 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register64.vhd|
+Z228 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register64.vhd|
 !i113 1
 R12
 R13
 Atb
-R157
-R158
-R159
 R160
 R161
 R162
@@ -1955,12 +2059,15 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 DEx4 work 13 tb_register64 0 22 >E:WiDI``GMka=5UM>kU80
@@ -1970,19 +2077,16 @@ V35O2n8Y5Y1DOdc2XSPB:A1
 !s100 _QIf<:8PL@ZjN;;_P?gFU1
 R7
 33
-R148
+R151
 !i10b 1
-R149
-R218
-R219
+R152
+R227
+R228
 !i113 1
 R12
 R13
 Etb_register8
 R1
-R157
-R158
-R159
 R160
 R161
 R162
@@ -2008,35 +2112,35 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 R4
-Z220 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd
-Z221 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd
+Z229 8/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd
+Z230 F/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd
 l0
 L12
 Vge:MDKDbHAAL_cJ9i[6Q^1
 !s100 >fTU?2ZCn[TWhMe34oW7;2
 R7
 33
-R208
+R217
 !i10b 1
-R209
-Z222 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd|
-Z223 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd|
+R218
+Z231 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd|
+Z232 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/tb_Register8.vhd|
 !i113 1
 R12
 R13
 Atb
-R157
-R158
-R159
 R160
 R161
 R162
@@ -2062,12 +2166,15 @@ R181
 R182
 R183
 R184
-R112
 R185
 R186
 R187
+R112
 R188
 R189
+R190
+R191
+R192
 R2
 R3
 DEx4 work 12 tb_register8 0 22 ge:MDKDbHAAL_cJ9i[6Q^1
@@ -2077,11 +2184,11 @@ VEaM<N?99684DFW03eKFfl1
 !s100 63e6UF7nF;eGd3djL28R03
 R7
 33
-R208
+R217
 !i10b 1
-R209
-R222
-R223
+R218
+R231
+R232
 !i113 1
 R12
 R13
@@ -2090,8 +2197,8 @@ R1
 R2
 R3
 R4
-Z224 8/home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
-Z225 F/home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+Z233 8/home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+Z234 F/home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
 l0
 L15
 VY1ba?G4957dj8E_I2=7Nd1
@@ -2101,8 +2208,8 @@ R7
 R8
 !i10b 1
 R9
-Z226 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
-Z227 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
+Z235 !s90 -quiet|-modelsimini|/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
+Z236 !s107 /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
 !i113 1
 R12
 R13
@@ -2119,8 +2226,8 @@ R7
 R8
 !i10b 1
 R9
-R226
-R227
+R235
+R236
 !i113 1
 R12
 R13

@@ -57,23 +57,21 @@ component DMux8Way is
 			q7:  out STD_LOGIC);
 end component;
 	
-signal q : std_logic_vector(7 downto 0);
-signal outlocal0,outlocal1,outlocal2,outlocal3,outlocal4,outlocal5,outlocal6,outlocal7,outl : std_logic_vector(15 downto 0);
+signal q0,q1,q2,q3,q4,q5,q6,q7 : std_logic;
+signal outlocal0,outlocal1,outlocal2,outlocal3,outlocal4,outlocal5,outlocal6,outlocal7 : std_logic_vector(15 downto 0);
 
 begin
 
-demux: DMux8Way port map(load, address, q(0), q(1), q(2), q(3), q(4), q(5), q(6), q(7));
+demux: DMux8Way port map(load, address, q0, q1, q2, q3, q4, q5, q6, q7);
 
-r1: Register16 port map(clock, input, load, outl);
-
-outlocal0 <= outl when q(0) = '1';
-outlocal1 <= outl when q(1) = '1';
-outlocal2 <= outl when q(2) = '1';
-outlocal3 <= outl when q(3) = '1'; 
-outlocal4 <= outl when q(4) = '1'; 
-outlocal5 <= outl when q(5) = '1'; 
-outlocal6 <= outl when q(6) = '1';
-outlocal7 <= outl when q(7) = '1';
+r0: Register16 port map(clock, input, q0, outlocal0);
+r1: Register16 port map(clock, input, q1, outlocal1);
+r2: Register16 port map(clock, input, q2, outlocal2);
+r3: Register16 port map(clock, input, q3, outlocal3);
+r4: Register16 port map(clock, input, q4, outlocal4);
+r5: Register16 port map(clock, input, q5, outlocal5);
+r6: Register16 port map(clock, input, q6, outlocal6);
+r7: Register16 port map(clock, input, q7, outlocal7);
 
 mux: Mux8Way16 port map(outlocal0,outlocal1,outlocal2,outlocal3,outlocal4,outlocal5,outlocal6,outlocal7,address,output);
 
