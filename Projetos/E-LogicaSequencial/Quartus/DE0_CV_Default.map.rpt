@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_CV_Default
-Mon Mar 25 21:52:47 2019
+Tue Mar 26 15:45:18 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -14,11 +14,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Inverted Register Statistics
- 10. Port Connectivity Checks: "FlipFlopD:u2"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -44,14 +42,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 25 21:52:47 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Mar 26 15:45:18 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
-; Top-level Entity Name           ; BinaryDigit                                 ;
+; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 1                                           ;
-; Total pins                      ; 4                                           ;
+; Total pins                      ; 24                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -70,7 +68,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
-; Top-level entity name                                                           ; BinaryDigit        ; DE0_CV_Default     ;
+; Top-level entity name                                                           ; TopLevel           ; DE0_CV_Default     ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
 ; Use smart compilation                                                           ; On                 ; Off                ;
 ; Optimization Technique                                                          ; Speed              ; Balanced           ;
@@ -160,61 +158,92 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+-------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                          ; Library ;
-+-------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
-; ../../C-LogicaCombinacional/src/rtl/Mux2Way.vhd ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd  ;         ;
-; ../src/rtl/FlipFlopD.vhd                        ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd   ;         ;
-; ../src/rtl/BinaryDigit.vhd                      ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd ;         ;
-+-------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
++----------------------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                         ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                  ; Library ;
++----------------------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
+; ../src/rtl/PC.vhd                                        ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/PC.vhd                  ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Or16.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd             ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Or8Way.vhd           ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd           ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Not16.vhd            ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd            ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Nor8Way.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd          ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Nand.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd             ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Mux16.vhd            ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd            ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Mux8Way16.vhd        ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd        ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Mux8Way.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd          ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Mux4Way16.vhd        ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd        ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Mux4Way.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd          ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Mux2Way.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd          ;         ;
+; ../../C-LogicaCombinacional/src/rtl/DMux8Way.vhd         ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd         ;         ;
+; ../../C-LogicaCombinacional/src/rtl/DMux4Way.vhd         ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd         ;         ;
+; ../../C-LogicaCombinacional/src/rtl/DMux2Way.vhd         ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd         ;         ;
+; ../../C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd  ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd  ;         ;
+; ../../C-LogicaCombinacional/src/rtl/And16.vhd            ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd            ;         ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd    ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd    ;         ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd   ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd   ;         ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd        ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd        ;         ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd    ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd    ;         ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd    ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd    ;         ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd ;         ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd          ;         ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd        ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd        ;         ;
+; ../src/rtl/Register64.vhd                                ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd          ;         ;
+; ../src/rtl/Register32.vhd                                ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd          ;         ;
+; ../src/rtl/Register16.vhd                                ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd          ;         ;
+; ../src/rtl/Register8.vhd                                 ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd           ;         ;
+; ../src/rtl/Ram512.vhd                                    ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd              ;         ;
+; ../src/rtl/Ram64.vhd                                     ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd               ;         ;
+; ../src/rtl/Ram8.vhd                                      ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd                ;         ;
+; ../src/rtl/Ram4K.vhd                                     ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd               ;         ;
+; ../src/rtl/FlipFlopD.vhd                                 ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd           ;         ;
+; ../src/rtl/BinaryDigit.vhd                               ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd         ;         ;
+; ../src/TopLevel.vhd                                      ; yes             ; User VHDL File  ; /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd                ;         ;
++----------------------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 1              ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1              ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 0              ;
-;     -- 5 input functions                    ; 0              ;
-;     -- 4 input functions                    ; 0              ;
-;     -- <=3 input functions                  ; 1              ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 1              ;
-;                                             ;                ;
-; I/O pins                                    ; 4              ;
-;                                             ;                ;
-; Total DSP Blocks                            ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; FlipFlopD:u2|q ;
-; Maximum fan-out                             ; 2              ;
-; Total fan-out                               ; 10             ;
-; Average fan-out                             ; 1.00           ;
-+---------------------------------------------+----------------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimate of Logic utilization (ALMs needed) ; 2                ;
+;                                             ;                  ;
+; Combinational ALUT usage for logic          ; 4                ;
+;     -- 7 input functions                    ; 0                ;
+;     -- 6 input functions                    ; 0                ;
+;     -- 5 input functions                    ; 0                ;
+;     -- 4 input functions                    ; 1                ;
+;     -- <=3 input functions                  ; 3                ;
+;                                             ;                  ;
+; Dedicated logic registers                   ; 1                ;
+;                                             ;                  ;
+; I/O pins                                    ; 24               ;
+;                                             ;                  ;
+; Total DSP Blocks                            ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; FlipFlopD:u0|q~1 ;
+; Maximum fan-out                             ; 3                ;
+; Total fan-out                               ; 39               ;
+; Average fan-out                             ; 0.74             ;
++---------------------------------------------+------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                          ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------+-------------+--------------+
-; |BinaryDigit               ; 1 (0)               ; 1 (0)                     ; 0                 ; 0          ; 4    ; 0            ; |BinaryDigit              ; BinaryDigit ; work         ;
-;    |FlipFlopD:u2|          ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |BinaryDigit|FlipFlopD:u2 ; FlipFlopD   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------+-------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
+; |TopLevel                  ; 4 (0)               ; 1 (0)                     ; 0                 ; 0          ; 24   ; 0            ; |TopLevel              ; TopLevel    ; work         ;
+;    |FlipFlopD:u0|          ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|FlipFlopD:u0 ; FlipFlopD   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -226,31 +255,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 1     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; FlipFlopD:u2|q                         ; 2       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
-
-
-+------------------------------------------+
-; Port Connectivity Checks: "FlipFlopD:u2" ;
-+--------+-------+----------+--------------+
-; Port   ; Type  ; Severity ; Details      ;
-+--------+-------+----------+--------------+
-; clear  ; Input ; Info     ; Stuck at GND ;
-; preset ; Input ; Info     ; Stuck at GND ;
-+--------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -259,15 +268,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 1                           ;
-;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 2                           ;
-;     normal            ; 2                           ;
-;         1 data inputs ; 1                           ;
+;     CLR               ; 1                           ;
+; arriav_lcell_comb     ; 5                           ;
+;     normal            ; 5                           ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 1                           ;
-; boundary_port         ; 4                           ;
+;         4 data inputs ; 1                           ;
+; boundary_port         ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.83                        ;
+; Average LUT depth     ; 0.82                        ;
 +-----------------------+-----------------------------+
 
 
@@ -286,7 +297,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Mar 25 21:52:38 2019
+    Info: Processing started: Tue Mar 26 15:45:09 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -400,21 +411,43 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/g
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd
     Info (12022): Found design unit 1: TopLevel-rtl File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 31
     Info (12023): Found entity 1: TopLevel File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 20
-Info (12127): Elaborating entity "BinaryDigit" for the top level hierarchy
-Info (12128): Elaborating entity "Mux2Way" for hierarchy "Mux2Way:u1" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd Line: 41
-Info (10041): Inferred latch for "q" at Mux2Way.vhd(14) File: /home/gabrielzezze/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 14
-Info (12128): Elaborating entity "FlipFlopD" for hierarchy "FlipFlopD:u2" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd Line: 42
+Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..1]" at TopLevel.vhd(24) File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+Info (12128): Elaborating entity "FlipFlopD" for hierarchy "FlipFlopD:u0" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 60
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "FlipFlopD:u0|q" is converted into an equivalent circuit using register "FlipFlopD:u0|q~_emulated" and latch "FlipFlopD:u0|q~1" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd Line: 14
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 1069 megabytes
-    Info: Processing ended: Mon Mar 25 21:52:47 2019
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 22
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/TopLevel.vhd Line: 23
+Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 4 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 1047 megabytes
+    Info: Processing ended: Tue Mar 26 15:45:18 2019
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:22
 
 
