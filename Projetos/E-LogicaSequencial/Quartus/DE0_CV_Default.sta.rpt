@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE0_CV_Default
-Tue Mar 26 15:45:39 2019
+Tue Mar 26 16:11:53 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -114,7 +114,7 @@ refer to the applicable agreement for further details.
 +--------------------+--------+--------------------------+
 ; SDC File Path      ; Status ; Read at                  ;
 +--------------------+--------+--------------------------+
-; DE0_CV_Default.sdc ; OK     ; Tue Mar 26 15:45:37 2019 ;
+; DE0_CV_Default.sdc ; OK     ; Tue Mar 26 16:11:51 2019 ;
 +--------------------+--------+--------------------------+
 
 
@@ -512,7 +512,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Mar 26 15:45:36 2019
+    Info: Processing started: Tue Mar 26 16:11:50 2019
 Info: Command: quartus_sta DE0_CV_Default -c DE0_CV_Default
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -599,8 +599,8 @@ Warning (18330): Ignoring Synchronizer Identification setting Off, and using Aut
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 1090 megabytes
-    Info: Processing ended: Tue Mar 26 15:45:39 2019
+    Info: Peak virtual memory: 1096 megabytes
+    Info: Processing ended: Tue Mar 26 16:11:53 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
