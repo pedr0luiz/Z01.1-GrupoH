@@ -2,7 +2,7 @@
 clock => FlipFlopD:u2.clock
 input => Mux2Way:u1.b
 load => Mux2Way:u1.sel
-output <= FlipFlopD:u2.q
+output << FlipFlopD:u2.q
 
 
 |BinaryDigit|Mux2Way:u1

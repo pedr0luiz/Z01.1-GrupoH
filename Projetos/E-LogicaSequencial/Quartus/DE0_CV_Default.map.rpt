@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_CV_Default
-Mon Mar 25 19:52:03 2019
+Mon Mar 25 21:52:47 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 25 19:52:03 2019       ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 25 21:52:47 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; BinaryDigit                                 ;
@@ -286,7 +286,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Mar 25 19:51:55 2019
+    Info: Processing started: Mon Mar 25 21:52:38 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -412,9 +412,9 @@ Info (21057): Implemented 5 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 1070 megabytes
-    Info: Processing ended: Mon Mar 25 19:52:03 2019
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 1069 megabytes
+    Info: Processing ended: Mon Mar 25 21:52:47 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:23
 
 
