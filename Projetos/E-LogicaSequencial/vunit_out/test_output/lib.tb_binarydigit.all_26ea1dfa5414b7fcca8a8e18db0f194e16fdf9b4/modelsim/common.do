@@ -40,11 +40,11 @@ proc _vunit_source_init_files_after_load {} {
 
 proc vunit_load {{vsim_extra_args ""}} {
     set vsim_failed [catch {
-        eval vsim ${vsim_extra_args} {-modelsimini /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf {/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_binarydigit/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/,tb path : /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/,use_color : true"} lib.tb_binarydigit(tb)   -L vunit_lib -L lib}
+        eval vsim ${vsim_extra_args} {-modelsimini /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf {/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_binarydigit/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/,tb path : /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/,use_color : true"} lib.tb_binarydigit(tb)   -L vunit_lib -L lib}
     }]
 
     if {${vsim_failed}} {
-       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf {/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_binarydigit/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/,tb path : /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/,use_color : true"} lib.tb_binarydigit(tb)   -L vunit_lib -L lib' failed
+       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf {/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_binarydigit/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/,tb path : /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/,use_color : true"} lib.tb_binarydigit(tb)   -L vunit_lib -L lib' failed
        echo Bad flag from vsim_extra_args?
        return true
     }
@@ -67,7 +67,7 @@ proc vunit_load {{vsim_extra_args ""}} {
 }
 
 proc is_test_suite_done {} {
-    set fd [open "/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/vunit_results" "r"]
+    set fd [open "/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_binarydigit.all_26ea1dfa5414b7fcca8a8e18db0f194e16fdf9b4/vunit_results" "r"]
     set contents [read $fd]
     close $fd
     set lines [split $contents "
@@ -110,7 +110,7 @@ proc vunit_compile {} {
     set cmd_show {/usr/bin/python3 -u testeLogicaSequencial.py --compile}
     puts "Re-compiling using command ${cmd_show}"
 
-    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', 'testeLogicaSequencial.py', '--compile'], cwd='/home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/E-LogicaSequencial', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', 'testeLogicaSequencial.py', '--compile'], cwd='/home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
 
     while {[gets $chan line] >= 0} {
         puts $line
