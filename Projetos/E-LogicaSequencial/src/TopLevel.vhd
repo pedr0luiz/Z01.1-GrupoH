@@ -31,13 +31,13 @@ end entity;
 architecture rtl of TopLevel is
 
 
-component FlipFlopD is
+component Ram8 is
 	port(
 		clock:  in std_logic;
-		d:      in std_logic;
-		clear:  in std_logic;
-		preset: in std_logic;
-		q:     out std_logic
+		input:      in std_logic_vector(15 downto 0);
+		load:  in std_logic;
+		address: in std_logic_vector(2 downto 0);
+		output:     out std_logic_vector(15 downto 0)
 	);
 end component;
 
@@ -45,7 +45,8 @@ end component;
 -- signals
 --------------
 
-signal clock, clear, set : std_logic;
+signal clock : std_logic;
+signal x : std_logic_vector(15 downto 0);
 
 ---------------
 -- implementacao
@@ -54,16 +55,18 @@ begin
 
 Clock <= not KEY(0); -- os botoes quando nao apertado vale 1
                      -- e apertado 0, essa logica inverte isso
-clear <= not KEY(1);
-set	<= not KEY(2);
+							
+x <= x"0073" when SW(4)='1' else x"0343";
 
-u0 : FlipFlopD port map (
-		clock    => Clock,
-		d        => SW(0),
-		clear    => clear,
-		preset   => set,
-		q        => LEDR(0)
-	);		
- 
+u0 : Ram8 port map (
+
+		clock    				=> Clock,
+		input    				=> x,
+		load 						=> SW(3),
+		address    				=> SW(2 downto 0),
+		Output(7 downto 0)  	=> LEDR(7 downto 0),
+		Output(15 downto 8) 	=> Open
+		
+	);	
 
 end rtl;

@@ -1,5 +1,5 @@
 # vsim -modelsimini /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_register8.all_0308869cb9dc72b51c624fc073592f3339b2d81c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_register8(tb) -L vunit_lib -L lib -g/tb_register8/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_register8.all_0308869cb9dc72b51c624fc073592f3339b2d81c/,tb path : /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/,use_color : true" 
-# Start time: 16:28:38 on Mar 26,2019
+# Start time: 17:49:42 on Mar 26,2019
 # ** Warning: Design size of 21398 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
