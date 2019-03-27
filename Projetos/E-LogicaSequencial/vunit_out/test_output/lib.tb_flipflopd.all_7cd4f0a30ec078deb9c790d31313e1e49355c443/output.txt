@@ -1,5 +1,5 @@
 # vsim -modelsimini /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopd.all_7cd4f0a30ec078deb9c790d31313e1e49355c443/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_flipflopd(tb) -L vunit_lib -L lib -g/tb_flipflopd/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopd.all_7cd4f0a30ec078deb9c790d31313e1e49355c443/,tb path : /home/gabrielzezze/Z01.1-Hardware/Projetos/E-LogicaSequencial/tests/tst/,use_color : true" 
-# Start time: 16:17:02 on Mar 26,2019
+# Start time: 19:20:52 on Mar 26,2019
 # ** Warning: Design size of 20872 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
