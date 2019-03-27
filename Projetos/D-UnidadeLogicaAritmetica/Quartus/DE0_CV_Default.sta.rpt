@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE0_CV_Default
-Mon Mar 18 19:38:03 2019
+Wed Mar 27 01:22:21 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -95,15 +95,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.03        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.0%      ;
+;     Processor 2            ;   1.9%      ;
+;     Processors 3-4         ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -112,7 +113,7 @@ refer to the applicable agreement for further details.
 +--------------------+--------+--------------------------+
 ; SDC File Path      ; Status ; Read at                  ;
 +--------------------+--------+--------------------------+
-; DE0_CV_Default.sdc ; OK     ; Mon Mar 18 19:37:59 2019 ;
+; DE0_CV_Default.sdc ; OK     ; Wed Mar 27 01:22:17 2019 ;
 +--------------------+--------+--------------------------+
 
 
@@ -317,10 +318,10 @@ No synchronizer chains to report.
 +-------+--------------+-----------------+-----------------+
 ; Pin   ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------+--------------+-----------------+-----------------+
-; SW[8] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[9] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[6] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[7] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[8] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[9] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[4] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[5] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[0] ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
@@ -427,10 +428,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 76    ; 76   ;
+; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 60    ; 60   ;
 ; Unconstrained Output Ports      ; 10    ; 10   ;
-; Unconstrained Output Port Paths ; 76    ; 76   ;
+; Unconstrained Output Port Paths ; 60    ; 60   ;
 +---------------------------------+-------+------+
 
 
@@ -445,8 +446,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SW[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -479,8 +478,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SW[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; SW[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -508,26 +505,26 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Mar 18 19:37:57 2019
+    Info: Processing started: Wed Mar 27 01:22:16 2019
 Info: Command: quartus_sta DE0_CV_Default -c DE0_CV_Default
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'DE0_CV_Default.sdc'
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
-    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
-    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
-    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
-    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
+    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
+    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
+    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
+    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -580,9 +577,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 1058 megabytes
-    Info: Processing ended: Mon Mar 18 19:38:03 2019
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 1109 megabytes
+    Info: Processing ended: Wed Mar 27 01:22:21 2019
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
 

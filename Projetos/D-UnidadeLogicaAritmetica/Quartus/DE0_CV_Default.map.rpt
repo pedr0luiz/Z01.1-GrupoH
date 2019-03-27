@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_CV_Default
-Mon Mar 18 19:37:23 2019
+Wed Mar 27 01:21:38 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -15,12 +15,13 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "ALU:ula0|Add16:u5|FullAdder:ADD15"
- 11. Port Connectivity Checks: "ALU:ula0|Add16:u5|FullAdder:ADD0"
- 12. Port Connectivity Checks: "ALU:ula0"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "ALU:ula0|Shifter16:u10|Add16:u1"
+ 11. Port Connectivity Checks: "ALU:ula0|Add16:u5|FullAdder:ADD15"
+ 12. Port Connectivity Checks: "ALU:ula0|Add16:u5|FullAdder:ADD0"
+ 13. Port Connectivity Checks: "ALU:ula0"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -46,7 +47,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 18 19:37:23 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Mar 27 01:21:38 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; TopLevel                                    ;
@@ -158,8 +159,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -169,22 +170,22 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
-+-----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path              ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                    ; Library ;
-+-----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; ../src/TopLevel.vhd                           ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd         ;         ;
-; ../src/rtl/inversor16.vhd                     ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd   ;         ;
-; ../src/rtl/zerador16.vhd                      ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd    ;         ;
-; ../src/rtl/FullAdder.vhd                      ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd    ;         ;
-; ../src/rtl/comparador16.vhd                   ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd ;         ;
-; ../src/rtl/ALU.vhd                            ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd          ;         ;
-; ../src/rtl/Add16.vhd                          ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd        ;         ;
-; ../../C-LogicaCombinacional/src/rtl/Mux16.vhd ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd            ;         ;
-; ../../C-LogicaCombinacional/src/rtl/And16.vhd ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd            ;         ;
-; ../src/rtl/Shifter16.vhd                      ; yes             ; User VHDL File  ; /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd    ;         ;
-+-----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++-----------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path              ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                          ; Library ;
++-----------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
+; ../src/TopLevel.vhd                           ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd         ;         ;
+; ../src/rtl/inversor16.vhd                     ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd   ;         ;
+; ../src/rtl/zerador16.vhd                      ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd    ;         ;
+; ../src/rtl/FullAdder.vhd                      ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd    ;         ;
+; ../src/rtl/comparador16.vhd                   ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd ;         ;
+; ../src/rtl/ALU.vhd                            ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd          ;         ;
+; ../src/rtl/Add16.vhd                          ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd        ;         ;
+; ../../C-LogicaCombinacional/src/rtl/Mux16.vhd ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd            ;         ;
+; ../../C-LogicaCombinacional/src/rtl/And16.vhd ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd            ;         ;
+; ../src/rtl/Shifter16.vhd                      ; yes             ; User VHDL File  ; /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd    ;         ;
++-----------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -192,13 +193,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 14          ;
+; Estimate of Logic utilization (ALMs needed) ; 10          ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 18          ;
+; Combinational ALUT usage for logic          ; 10          ;
 ;     -- 7 input functions                    ; 0           ;
 ;     -- 6 input functions                    ; 10          ;
-;     -- 5 input functions                    ; 7           ;
-;     -- 4 input functions                    ; 1           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 0           ;
 ;     -- <=3 input functions                  ; 0           ;
 ;                                             ;             ;
 ; Dedicated logic registers                   ; 0           ;
@@ -209,8 +210,8 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; SW[4]~input ;
 ; Maximum fan-out                             ; 10          ;
-; Total fan-out                               ; 129         ;
-; Average fan-out                             ; 2.22        ;
+; Total fan-out                               ; 90          ;
+; Average fan-out                             ; 1.80        ;
 +---------------------------------------------+-------------+
 
 
@@ -219,9 +220,8 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+--------------+--------------+
-; |TopLevel                  ; 18 (0)              ; 0 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |TopLevel                          ; TopLevel     ; work         ;
-;    |ALU:ula0|              ; 18 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0                 ; ALU          ; work         ;
-;       |Shifter16:u10|      ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0|Shifter16:u10   ; Shifter16    ; work         ;
+; |TopLevel                  ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 20   ; 0            ; |TopLevel                          ; TopLevel     ; work         ;
+;    |ALU:ula0|              ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0                 ; ALU          ; work         ;
 ;       |comparador16:u9|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0|comparador16:u9 ; comparador16 ; work         ;
 ;       |inversor16:u8|      ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0|inversor16:u8   ; inversor16   ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+--------------+--------------+
@@ -248,9 +248,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TopLevel|ALU:ula0|inversor16:u8|y[1] ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |TopLevel|ALU:ula0|Shifter16:u10|y[7] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |TopLevel|ALU:ula0|inversor16:u8|y[9] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:ula0|Shifter16:u10|Add16:u1"                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------+
@@ -293,15 +301,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 18                          ;
-;     normal            ; 18                          ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 7                           ;
+; arriav_lcell_comb     ; 10                          ;
+;     normal            ; 10                          ;
 ;         6 data inputs ; 10                          ;
 ; boundary_port         ; 20                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.88                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -310,7 +316,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -320,139 +326,120 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Mar 18 19:37:03 2019
+    Info: Processing started: Wed Mar 27 01:21:12 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd
-    Info (12022): Found design unit 1: TopLevel-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 29
-    Info (12023): Found entity 1: TopLevel File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 19
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
-    Info (12022): Found design unit 1: inversor16-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd Line: 16
-    Info (12023): Found entity 1: inversor16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
-    Info (12022): Found design unit 1: zerador16-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd Line: 31
-    Info (12023): Found entity 1: zerador16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd Line: 15
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
-    Info (12022): Found design unit 1: Inc16-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd Line: 18
-    Info (12023): Found entity 1: Inc16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd Line: 11
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
-    Info (12022): Found design unit 1: HalfAdder-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd Line: 19
-    Info (12023): Found entity 1: HalfAdder File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd Line: 10
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
-    Info (12022): Found design unit 1: FullAdder-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd Line: 17
-    Info (12023): Found entity 1: FullAdder File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd Line: 10
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
-    Info (12022): Found design unit 1: comparador16-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd Line: 16
-    Info (12023): Found entity 1: comparador16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
-    Info (12022): Found design unit 1: alu-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 45
-    Info (12023): Found entity 1: ALU File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 29
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
-    Info (12022): Found design unit 1: Add16-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 19
-    Info (12023): Found entity 1: Add16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 11
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
-    Info (12022): Found design unit 1: Or16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 11
-    Info (12023): Found entity 1: Or16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
-    Info (12022): Found design unit 1: Or8Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 17
-    Info (12023): Found entity 1: Or8Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
-    Info (12022): Found design unit 1: Not16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 10
-    Info (12023): Found entity 1: Not16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
-    Info (12022): Found design unit 1: Nor8Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 17
-    Info (12023): Found entity 1: Nor8Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
-    Info (12022): Found design unit 1: nand_z01-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 12
-    Info (12023): Found entity 1: nand_z01 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
-    Info (12022): Found design unit 1: Mux16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 12
-    Info (12023): Found entity 1: Mux16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
-    Info (12022): Found design unit 1: Mux8Way16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 18
-    Info (12023): Found entity 1: Mux8Way16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
-    Info (12022): Found design unit 1: Mux8Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 18
-    Info (12023): Found entity 1: Mux8Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
-    Info (12022): Found design unit 1: Mux4Way16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 14
-    Info (12023): Found entity 1: Mux4Way16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
-    Info (12022): Found design unit 1: Mux4Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 14
-    Info (12023): Found entity 1: Mux4Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
-    Info (12022): Found design unit 1: Mux2Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 12
-    Info (12023): Found entity 1: Mux2Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd
+    Info (12022): Found design unit 1: TopLevel-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 29
+    Info (12023): Found entity 1: TopLevel File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
+    Info (12022): Found design unit 1: inversor16-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd Line: 16
+    Info (12023): Found entity 1: inversor16 File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+    Info (12022): Found design unit 1: zerador16-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd Line: 31
+    Info (12023): Found entity 1: zerador16 File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
+    Info (12022): Found design unit 1: Inc16-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd Line: 18
+    Info (12023): Found entity 1: Inc16 File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
+    Info (12022): Found design unit 1: HalfAdder-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd Line: 19
+    Info (12023): Found entity 1: HalfAdder File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
+    Info (12022): Found design unit 1: FullAdder-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd Line: 17
+    Info (12023): Found entity 1: FullAdder File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
+    Info (12022): Found design unit 1: comparador16-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd Line: 16
+    Info (12023): Found entity 1: comparador16 File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
+    Info (12022): Found design unit 1: alu-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 45
+    Info (12023): Found entity 1: ALU File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 29
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
+    Info (12022): Found design unit 1: Add16-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 19
+    Info (12023): Found entity 1: Add16 File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
+    Info (12022): Found design unit 1: Or16-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 11
+    Info (12023): Found entity 1: Or16 File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
+    Info (12022): Found design unit 1: Or8Way-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 17
+    Info (12023): Found entity 1: Or8Way File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
+    Info (12022): Found design unit 1: Not16-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 10
+    Info (12023): Found entity 1: Not16 File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
+    Info (12022): Found design unit 1: Nor8Way-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 17
+    Info (12023): Found entity 1: Nor8Way File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
+    Info (12022): Found design unit 1: nand_z01-rtl File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 12
+    Info (12023): Found entity 1: nand_z01 File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
+    Info (12022): Found design unit 1: Mux16-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 12
+    Info (12023): Found entity 1: Mux16 File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
+    Info (12022): Found design unit 1: Mux8Way16-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 18
+    Info (12023): Found entity 1: Mux8Way16 File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
+    Info (12022): Found design unit 1: Mux8Way-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 18
+    Info (12023): Found entity 1: Mux8Way File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
+    Info (12022): Found design unit 1: Mux4Way16-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 14
+    Info (12023): Found entity 1: Mux4Way16 File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
+    Info (12022): Found design unit 1: Mux4Way-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 14
+    Info (12023): Found entity 1: Mux4Way File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
+    Info (12022): Found design unit 1: Mux2Way-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 12
+    Info (12023): Found entity 1: Mux2Way File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 4
 Warning (12019): Can't analyze file -- file ../../C-LogicaCombinacional/src/rtl/DMux8Way16.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
-    Info (12022): Found design unit 1: DMux8Way-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 18
-    Info (12023): Found entity 1: DMux8Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
-    Info (12022): Found design unit 1: DMux4Way-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 14
-    Info (12023): Found entity 1: DMux4Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
-    Info (12022): Found design unit 1: DMux2Way-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 12
-    Info (12023): Found entity 1: DMux2Way File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 4
-Warning (12019): Can't analyze file -- file ../../C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
+    Info (12022): Found design unit 1: DMux8Way-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 18
+    Info (12023): Found entity 1: DMux8Way File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
+    Info (12022): Found design unit 1: DMux4Way-rtl File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 14
+    Info (12023): Found entity 1: DMux4Way File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
+    Info (12022): Found design unit 1: DMux2Way-rtl File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 12
+    Info (12023): Found entity 1: DMux2Way File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd
+    Info (12022): Found design unit 1: BarrelShifter16-rtl File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd Line: 12
+    Info (12023): Found entity 1: BarrelShifter16 File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd Line: 4
 Warning (12019): Can't analyze file -- file ../../C-LogicaCombinacional/src/rtl/BarrelShifter8.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
-    Info (12022): Found design unit 1: And16-arch File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 11
-    Info (12023): Found entity 1: And16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd
-    Info (12022): Found design unit 1: Shifter16-rtl File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 24
-    Info (12023): Found entity 1: Shifter16 File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
+    Info (12022): Found design unit 1: And16-arch File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 11
+    Info (12023): Found entity 1: And16 File: /home/borg/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd
+    Info (12022): Found design unit 1: Shifter16-rtl File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 29
+    Info (12023): Found entity 1: Shifter16 File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 15
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(35): used explicit default value for signal "x" because signal was never assigned a value File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 35
-Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(36): used explicit default value for signal "y" because signal was never assigned a value File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 36
-Critical Warning (10920): VHDL Incomplete Partial Association warning at TopLevel.vhd(66): port or argument "saida" has 8/16 unassociated elements File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 66
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ula0" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 66
-Info (12128): Elaborating entity "zerador16" for hierarchy "ALU:ula0|zerador16:u1" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 110
-Info (12128): Elaborating entity "inversor16" for hierarchy "ALU:ula0|inversor16:u2" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 111
-Info (12128): Elaborating entity "Add16" for hierarchy "ALU:ula0|Add16:u5" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 114
-Info (12128): Elaborating entity "FullAdder" for hierarchy "ALU:ula0|Add16:u5|FullAdder:ADD0" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 34
-Info (12128): Elaborating entity "And16" for hierarchy "ALU:ula0|And16:u6" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 115
-Info (12128): Elaborating entity "Mux16" for hierarchy "ALU:ula0|Mux16:u7" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 117
-Info (12128): Elaborating entity "comparador16" for hierarchy "ALU:ula0|comparador16:u9" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 124
-Info (12128): Elaborating entity "Shifter16" for hierarchy "ALU:ula0|Shifter16:u10" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 125
-Info (10041): Inferred latch for "y[0]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[1]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[2]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[3]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[4]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[5]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[6]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[7]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[8]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[9]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[10]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[11]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[12]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[13]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[14]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Info (10041): Inferred latch for "y[15]" at Shifter16.vhd(35) File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Warning (14026): LATCH primitive "ALU:ula0|Shifter16:u10|y[0]" is permanently enabled File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Warning (14026): LATCH primitive "ALU:ula0|Shifter16:u10|y[1]" is permanently enabled File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Warning (14026): LATCH primitive "ALU:ula0|Shifter16:u10|y[2]" is permanently enabled File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Warning (14026): LATCH primitive "ALU:ula0|Shifter16:u10|y[3]" is permanently enabled File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Warning (14026): LATCH primitive "ALU:ula0|Shifter16:u10|y[4]" is permanently enabled File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Warning (14026): LATCH primitive "ALU:ula0|Shifter16:u10|y[5]" is permanently enabled File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Warning (14026): LATCH primitive "ALU:ula0|Shifter16:u10|y[6]" is permanently enabled File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
-Warning (14026): LATCH primitive "ALU:ula0|Shifter16:u10|y[7]" is permanently enabled File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 35
+Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(35): used explicit default value for signal "x" because signal was never assigned a value File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 35
+Warning (10540): VHDL Signal Declaration warning at TopLevel.vhd(36): used explicit default value for signal "y" because signal was never assigned a value File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 36
+Critical Warning (10920): VHDL Incomplete Partial Association warning at TopLevel.vhd(66): port or argument "saida" has 8/16 unassociated elements File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 66
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ula0" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 66
+Info (12128): Elaborating entity "zerador16" for hierarchy "ALU:ula0|zerador16:u1" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 110
+Info (12128): Elaborating entity "inversor16" for hierarchy "ALU:ula0|inversor16:u2" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 111
+Info (12128): Elaborating entity "Add16" for hierarchy "ALU:ula0|Add16:u5" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 114
+Info (12128): Elaborating entity "FullAdder" for hierarchy "ALU:ula0|Add16:u5|FullAdder:ADD0" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 34
+Info (12128): Elaborating entity "And16" for hierarchy "ALU:ula0|And16:u6" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 115
+Info (12128): Elaborating entity "Mux16" for hierarchy "ALU:ula0|Mux16:u7" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 117
+Info (12128): Elaborating entity "comparador16" for hierarchy "ALU:ula0|comparador16:u9" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 124
+Info (12128): Elaborating entity "Shifter16" for hierarchy "ALU:ula0|Shifter16:u10" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 125
+Warning (10620): VHDL warning at Shifter16.vhd(46): comparison between unequal length operands always returns FALSE File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Shifter16.vhd Line: 46
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/TopLevel.vhd Line: 21
+Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 18 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 1023 megabytes
-    Info: Processing ended: Mon Mar 18 19:37:23 2019
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:42
+    Info (21061): Implemented 10 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 1047 megabytes
+    Info: Processing ended: Wed Mar 27 01:21:38 2019
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:06
 
 

@@ -1,5 +1,5 @@
 Flow report for DE0_CV_Default
-Mon Mar 18 19:38:03 2019
+Wed Mar 27 01:22:21 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,14 +40,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Mar 18 19:37:57 2019       ;
+; Flow Status                     ; Successful - Wed Mar 27 01:22:15 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 15 / 18,480 ( < 1 % )                       ;
+; Logic utilization (in ALMs)     ; 11 / 18,480 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 20 / 224 ( 9 % )                            ;
 ; Total virtual pins              ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/18/2019 19:37:03 ;
+; Start date & time ; 03/27/2019 01:21:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE0_CV_Default      ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value                        ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+--------------------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 36051164318343.155294862316219         ; --                                   ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 71052592836679.155366049121769         ; --                                   ; --          ; --         ;
 ; FITTER_EFFORT                       ; Standard Fit                           ; Auto Fit                             ; --          ; --         ;
 ; FLOW_ENABLE_RTL_VIEWER              ; On                                     ; Off                                  ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                                   ; --          ; --         ;
@@ -104,11 +104,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 1018 MB             ; 00:00:42                           ;
-; Fitter                    ; 00:00:26     ; 1.0                     ; 1798 MB             ; 00:00:35                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 949 MB              ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 1058 MB             ; 00:00:05                           ;
-; Total                     ; 00:00:59     ; --                      ; --                  ; 00:01:28                           ;
+; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 1015 MB             ; 00:00:06                           ;
+; Fitter                    ; 00:00:27     ; 1.0                     ; 2069 MB             ; 00:00:39                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 953 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 1109 MB             ; 00:00:05                           ;
+; Total                     ; 00:01:05     ; --                      ; --                  ; 00:00:56                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,10 +117,10 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+----------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; pedro-MacBookPro ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
-; Fitter                    ; pedro-MacBookPro ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
-; Assembler                 ; pedro-MacBookPro ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
-; TimeQuest Timing Analyzer ; pedro-MacBookPro ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; Analysis & Synthesis      ; thomas-al        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; Fitter                    ; thomas-al        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; Assembler                 ; thomas-al        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
+; TimeQuest Timing Analyzer ; thomas-al        ; Ubuntu 18.04.2 ; 18         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
 
 

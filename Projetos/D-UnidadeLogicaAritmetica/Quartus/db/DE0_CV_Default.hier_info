@@ -9,16 +9,16 @@ SW[6] => ALU:ula0.sf[0]
 SW[7] => ALU:ula0.sf[1]
 SW[8] => ~NO_FANOUT~
 SW[9] => ~NO_FANOUT~
-LEDR[0] <= ALU:ula0.saida[0]
-LEDR[1] <= ALU:ula0.saida[1]
-LEDR[2] <= ALU:ula0.saida[2]
-LEDR[3] <= ALU:ula0.saida[3]
-LEDR[4] <= ALU:ula0.saida[4]
-LEDR[5] <= ALU:ula0.saida[5]
-LEDR[6] <= ALU:ula0.saida[6]
-LEDR[7] <= ALU:ula0.saida[7]
-LEDR[8] <= ALU:ula0.zr
-LEDR[9] <= ALU:ula0.ng
+LEDR[0] << ALU:ula0.saida[0]
+LEDR[1] << ALU:ula0.saida[1]
+LEDR[2] << ALU:ula0.saida[2]
+LEDR[3] << ALU:ula0.saida[3]
+LEDR[4] << ALU:ula0.saida[4]
+LEDR[5] << ALU:ula0.saida[5]
+LEDR[6] << ALU:ula0.saida[6]
+LEDR[7] << ALU:ula0.saida[7]
+LEDR[8] << ALU:ula0.zr
+LEDR[9] << ALU:ula0.ng
 
 
 |TopLevel|ALU:ula0
@@ -753,91 +753,297 @@ ng <= a[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |TopLevel|ALU:ula0|Shifter16:u10
-z[0] => Equal0.IN1
-z[0] => Equal1.IN0
-z[0] => Equal2.IN1
-z[0] => Equal3.IN1
-z[1] => Equal0.IN0
-z[1] => Equal1.IN1
-z[1] => Equal2.IN0
-z[1] => Equal3.IN0
-a[0] => y[0].DATAB
-a[0] => y[0].DATAB
-a[0] => y[1].DATAB
-a[1] => y[0].DATAA
-a[1] => y[1].DATAB
-a[1] => y[1].DATAB
-a[1] => y[2].DATAB
-a[2] => y[1].DATAA
-a[2] => y[2].DATAB
-a[2] => y[2].DATAB
-a[2] => y[3].DATAB
-a[3] => y[2].DATAA
-a[3] => y[3].DATAB
-a[3] => y[3].DATAB
-a[3] => y[4].DATAB
-a[4] => y[3].DATAA
-a[4] => y[4].DATAB
-a[4] => y[4].DATAB
-a[4] => y[5].DATAB
-a[5] => y[4].DATAA
-a[5] => y[5].DATAB
-a[5] => y[5].DATAB
-a[5] => y[6].DATAB
-a[6] => y[5].DATAA
-a[6] => y[6].DATAB
-a[6] => y[6].DATAB
-a[6] => y[7].DATAB
-a[7] => y[6].DATAA
-a[7] => y[7].DATAB
-a[7] => y[7].DATAB
-a[7] => y[8].DATAB
-a[8] => y[7].DATAA
-a[8] => y[8].DATAB
-a[8] => y[8].DATAB
-a[8] => y[9].DATAB
-a[9] => y[8].DATAA
-a[9] => y[9].DATAB
-a[9] => y[9].DATAB
-a[9] => y[10].DATAB
-a[10] => y[9].DATAA
-a[10] => y[10].DATAB
-a[10] => y[10].DATAB
-a[10] => y[11].DATAB
-a[11] => y[10].DATAA
-a[11] => y[11].DATAB
-a[11] => y[11].DATAB
-a[11] => y[12].DATAB
-a[12] => y[11].DATAA
-a[12] => y[12].DATAB
-a[12] => y[12].DATAB
-a[12] => y[13].DATAB
-a[13] => y[12].DATAA
-a[13] => y[13].DATAB
-a[13] => y[13].DATAB
-a[13] => y[14].DATAB
-a[14] => y[13].DATAA
-a[14] => y[14].DATAB
-a[14] => y[14].DATAB
-a[14] => y[15].DATAB
-a[15] => y[14].DATAA
-a[15] => y[15].DATAB
-a[15] => y[15].DATAB
-y[0] <= y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= y[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= y[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= y[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[7] <= y[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[8] <= y[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[9] <= y[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[10] <= y[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[11] <= y[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[12] <= y[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[13] <= y[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[14] <= y[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
-y[15] <= y[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => Add16:u1.a[0]
+a[0] => Add16:u1.b[0]
+a[0] => y[0].DATAIN
+a[1] => Add16:u1.a[1]
+a[1] => Add16:u1.b[1]
+a[1] => y[1].DATAIN
+a[2] => Add16:u1.a[2]
+a[2] => Add16:u1.b[2]
+a[2] => y[2].DATAIN
+a[3] => Add16:u1.a[3]
+a[3] => Add16:u1.b[3]
+a[3] => y[3].DATAIN
+a[4] => Add16:u1.a[4]
+a[4] => Add16:u1.b[4]
+a[4] => y[4].DATAIN
+a[5] => Add16:u1.a[5]
+a[5] => Add16:u1.b[5]
+a[5] => y[5].DATAIN
+a[6] => Add16:u1.a[6]
+a[6] => Add16:u1.b[6]
+a[6] => y[6].DATAIN
+a[7] => Add16:u1.a[7]
+a[7] => Add16:u1.b[7]
+a[7] => y[7].DATAIN
+a[8] => Add16:u1.a[8]
+a[8] => Add16:u1.b[8]
+a[8] => y[8].DATAIN
+a[9] => Add16:u1.a[9]
+a[9] => Add16:u1.b[9]
+a[9] => y[9].DATAIN
+a[10] => Add16:u1.a[10]
+a[10] => Add16:u1.b[10]
+a[10] => y[10].DATAIN
+a[11] => Add16:u1.a[11]
+a[11] => Add16:u1.b[11]
+a[11] => y[11].DATAIN
+a[12] => Add16:u1.a[12]
+a[12] => Add16:u1.b[12]
+a[12] => y[12].DATAIN
+a[13] => Add16:u1.a[13]
+a[13] => Add16:u1.b[13]
+a[13] => y[13].DATAIN
+a[14] => Add16:u1.a[14]
+a[14] => Add16:u1.b[14]
+a[14] => y[14].DATAIN
+a[15] => Add16:u1.a[15]
+a[15] => Add16:u1.b[15]
+z[0] => ~NO_FANOUT~
+z[1] => ~NO_FANOUT~
+y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= a[8].DB_MAX_OUTPUT_PORT_TYPE
+y[9] <= a[9].DB_MAX_OUTPUT_PORT_TYPE
+y[10] <= a[10].DB_MAX_OUTPUT_PORT_TYPE
+y[11] <= a[11].DB_MAX_OUTPUT_PORT_TYPE
+y[12] <= a[12].DB_MAX_OUTPUT_PORT_TYPE
+y[13] <= a[13].DB_MAX_OUTPUT_PORT_TYPE
+y[14] <= a[14].DB_MAX_OUTPUT_PORT_TYPE
+y[15] <= <GND>
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1
+a[0] => FullAdder:ADD0.a
+a[1] => FullAdder:ADD1.a
+a[2] => FullAdder:ADD2.a
+a[3] => FullAdder:ADD3.a
+a[4] => FullAdder:ADD4.a
+a[5] => FullAdder:ADD5.a
+a[6] => FullAdder:ADD6.a
+a[7] => FullAdder:ADD7.a
+a[8] => FullAdder:ADD8.a
+a[9] => FullAdder:ADD9.a
+a[10] => FullAdder:ADD10.a
+a[11] => FullAdder:ADD11.a
+a[12] => FullAdder:ADD12.a
+a[13] => FullAdder:ADD13.a
+a[14] => FullAdder:ADD14.a
+a[15] => FullAdder:ADD15.a
+b[0] => FullAdder:ADD0.b
+b[1] => FullAdder:ADD1.b
+b[2] => FullAdder:ADD2.b
+b[3] => FullAdder:ADD3.b
+b[4] => FullAdder:ADD4.b
+b[5] => FullAdder:ADD5.b
+b[6] => FullAdder:ADD6.b
+b[7] => FullAdder:ADD7.b
+b[8] => FullAdder:ADD8.b
+b[9] => FullAdder:ADD9.b
+b[10] => FullAdder:ADD10.b
+b[11] => FullAdder:ADD11.b
+b[12] => FullAdder:ADD12.b
+b[13] => FullAdder:ADD13.b
+b[14] => FullAdder:ADD14.b
+b[15] => FullAdder:ADD15.b
+q[0] <= FullAdder:ADD0.soma
+q[1] <= FullAdder:ADD1.soma
+q[2] <= FullAdder:ADD2.soma
+q[3] <= FullAdder:ADD3.soma
+q[4] <= FullAdder:ADD4.soma
+q[5] <= FullAdder:ADD5.soma
+q[6] <= FullAdder:ADD6.soma
+q[7] <= FullAdder:ADD7.soma
+q[8] <= FullAdder:ADD8.soma
+q[9] <= FullAdder:ADD9.soma
+q[10] <= FullAdder:ADD10.soma
+q[11] <= FullAdder:ADD11.soma
+q[12] <= FullAdder:ADD12.soma
+q[13] <= FullAdder:ADD13.soma
+q[14] <= FullAdder:ADD14.soma
+q[15] <= FullAdder:ADD15.soma
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD0
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD1
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD2
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD3
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD4
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD5
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD6
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD7
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD8
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD9
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD10
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD11
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD12
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD13
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD14
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TopLevel|ALU:ula0|Shifter16:u10|Add16:u1|FullAdder:ADD15
+a => soma.IN0
+a => vaium.IN0
+b => soma.IN1
+b => vaium.IN1
+c => soma.IN1
+c => vaium.IN1
+soma <= soma.DB_MAX_OUTPUT_PORT_TYPE
+vaium <= vaium.DB_MAX_OUTPUT_PORT_TYPE
 
 

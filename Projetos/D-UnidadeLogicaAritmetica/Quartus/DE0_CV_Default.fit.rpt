@@ -1,5 +1,5 @@
 Fitter report for DE0_CV_Default
-Mon Mar 18 19:37:49 2019
+Wed Mar 27 01:22:06 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -58,14 +58,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon Mar 18 19:37:49 2019       ;
+; Fitter Status                   ; Successful - Wed Mar 27 01:22:06 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; TopLevel                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 15 / 18,480 ( < 1 % )                       ;
+; Logic utilization (in ALMs)     ; 11 / 18,480 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 20 / 224 ( 9 % )                            ;
 ; Total virtual pins              ; 0                                           ;
@@ -146,15 +146,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.4%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -544,8 +545,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 59 ) ; 0.00 % ( 0 / 59 )          ; 0.00 % ( 0 / 59 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 59 ) ; 0.00 % ( 0 / 59 )          ; 0.00 % ( 0 / 59 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 51 ) ; 0.00 % ( 0 / 51 )          ; 0.00 % ( 0 / 51 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 51 ) ; 0.00 % ( 0 / 51 )          ; 0.00 % ( 0 / 51 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -568,7 +569,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 59 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 51 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -576,7 +577,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.pin.
+The pin-out file can be found in /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -584,14 +585,14 @@ The pin-out file can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hard
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 15 / 18,480        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 15                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 18 / 18,480        ; < 1 % ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 11 / 18,480        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 11                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 11 / 18,480        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 0                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 18                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 11                 ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 18,480         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18,480         ; 0 %   ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18,480         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -600,15 +601,15 @@ The pin-out file can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hard
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 3 / 1,848          ; < 1 % ;
-;     -- Logic LABs                                           ; 3                  ;       ;
+; Total LABs:  partially or completely used                   ; 2 / 1,848          ; < 1 % ;
+;     -- Logic LABs                                           ; 2                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 19                 ;       ;
+; Combinational ALUT usage for logic                          ; 11                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 10                 ;       ;
-;     -- 5 input functions                                    ; 7                  ;       ;
-;     -- 4 input functions                                    ; 1                  ;       ;
+;     -- 5 input functions                                    ; 0                  ;       ;
+;     -- 4 input functions                                    ; 0                  ;       ;
 ;     -- <=3 input functions                                  ; 1                  ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
@@ -645,11 +646,11 @@ The pin-out file can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hard
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.2% / 0.6% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.1% / 0.4% ;       ;
 ; Maximum fan-out                                             ; 10                 ;       ;
 ; Highest non-global fan-out                                  ; 10                 ;       ;
-; Total fan-out                                               ; 129                ;       ;
-; Average fan-out                                             ; 2.19               ;       ;
+; Total fan-out                                               ; 90                 ;       ;
+; Average fan-out                                             ; 1.76               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -658,14 +659,14 @@ The pin-out file can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hard
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Statistic                                                   ; Top                  ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 15 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 15                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 18 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 11 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 11                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 11 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 0                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 18                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 11                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -674,15 +675,15 @@ The pin-out file can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hard
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 3 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 3                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 2 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 2                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 19                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 11                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
 ;     -- 6 input functions                                    ; 10                   ; 0                              ;
-;     -- 5 input functions                                    ; 7                    ; 0                              ;
-;     -- 4 input functions                                    ; 1                    ; 0                              ;
+;     -- 5 input functions                                    ; 0                    ; 0                              ;
+;     -- 4 input functions                                    ; 0                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 1                    ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
@@ -711,7 +712,7 @@ The pin-out file can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hard
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 129                  ; 0                              ;
+;     -- Total Connections                                    ; 90                   ; 0                              ;
 ;     -- Registered Connections                               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -750,8 +751,8 @@ The pin-out file can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hard
 ; SW[3] ; T12   ; 4A       ; 34           ; 0            ; 17           ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; SW[4] ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; SW[5] ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[6] ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
-; SW[7] ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[6] ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[7] ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; SW[8] ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; SW[9] ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
@@ -1307,9 +1308,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name  ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------+--------------+--------------+
-; |TopLevel                  ; 14.5 (0.5)           ; 18.0 (0.5)                       ; 3.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 19 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 20   ; 0            ; |TopLevel                          ; TopLevel     ; work         ;
-;    |ALU:ula0|              ; 14.0 (0.0)           ; 17.5 (0.0)                       ; 3.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 18 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0                 ; ALU          ; work         ;
-;       |Shifter16:u10|      ; 4.0 (4.0)            ; 7.5 (7.5)                        ; 3.5 (3.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0|Shifter16:u10   ; Shifter16    ; work         ;
+; |TopLevel                  ; 10.5 (0.5)           ; 10.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 20   ; 0            ; |TopLevel                          ; TopLevel     ; work         ;
+;    |ALU:ula0|              ; 10.0 (0.0)           ; 10.0 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0                 ; ALU          ; work         ;
 ;       |comparador16:u9|    ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0|comparador16:u9 ; comparador16 ; work         ;
 ;       |inversor16:u8|      ; 9.0 (9.0)            ; 9.0 (9.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |TopLevel|ALU:ula0|inversor16:u8   ; inversor16   ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------+--------------+--------------+
@@ -1321,6 +1321,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 ; Name    ; Pin Type ; D1 ; D3_0 ; D3_1 ; D4 ; D5   ; D5 OE ; D5 OCT ; T11 (Postamble Gating) ; T11 (Postamble Ungating) ;
 +---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
+; SW[6]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[7]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[8]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[9]   ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; LEDR[0] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
@@ -1333,14 +1335,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[7] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[8] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[9] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; SW[6]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[7]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[4]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[5]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[0]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[1]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[1]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[2]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[3]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[3]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1349,92 +1349,76 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                      ; Pad To Core Index ; Setting ;
 +------------------------------------------+-------------------+---------+
+; SW[6]                                    ;                   ;         ;
+; SW[7]                                    ;                   ;         ;
 ; SW[8]                                    ;                   ;         ;
 ; SW[9]                                    ;                   ;         ;
-; SW[6]                                    ;                   ;         ;
-;      - ALU:ula0|Shifter16:u10|y[0]~0     ; 1                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[1]~1     ; 1                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[2]~2     ; 1                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[3]~3     ; 1                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[4]~4     ; 1                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[5]~5     ; 1                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[6]~6     ; 1                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[7]~7     ; 1                 ; 0       ;
-; SW[7]                                    ;                   ;         ;
-;      - ALU:ula0|Shifter16:u10|y[0]~0     ; 0                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[1]~1     ; 0                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[2]~2     ; 0                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[3]~3     ; 0                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[4]~4     ; 0                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[5]~5     ; 0                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[6]~6     ; 0                 ; 0       ;
-;      - ALU:ula0|Shifter16:u10|y[7]~7     ; 0                 ; 0       ;
 ; SW[4]                                    ;                   ;         ;
-;      - ALU:ula0|inversor16:u8|y[1]~0     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[0]~1     ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[0]~0     ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[1]~1     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[2]~2     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[3]~3     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[4]~4     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[5]~5     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[6]~6     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[7]~7     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[8]~8     ; 0                 ; 0       ;
 ;      - ALU:ula0|comparador16:u9|Equal0~0 ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[15]~8    ; 0                 ; 0       ;
 ; SW[5]                                    ;                   ;         ;
-;      - ALU:ula0|inversor16:u8|y[1]~0     ; 1                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[0]~1     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[0]~0     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[1]~1     ; 1                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[2]~2     ; 1                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[3]~3     ; 1                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[4]~4     ; 1                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[5]~5     ; 1                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[6]~6     ; 1                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[7]~7     ; 1                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[8]~8     ; 1                 ; 0       ;
 ;      - ALU:ula0|comparador16:u9|Equal0~0 ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[15]~8    ; 1                 ; 0       ;
 ; SW[0]                                    ;                   ;         ;
-;      - ALU:ula0|inversor16:u8|y[1]~0     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[0]~1     ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[0]~0     ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[1]~1     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[2]~2     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[3]~3     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[4]~4     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[5]~5     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[6]~6     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[7]~7     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[8]~8     ; 0                 ; 0       ;
 ;      - ALU:ula0|comparador16:u9|Equal0~0 ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[15]~8    ; 0                 ; 0       ;
 ; SW[1]                                    ;                   ;         ;
-;      - ALU:ula0|inversor16:u8|y[1]~0     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[0]~1     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[2]~2     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[3]~3     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[4]~4     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[5]~5     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[6]~6     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[7]~7     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[8]~8     ; 0                 ; 0       ;
-;      - ALU:ula0|comparador16:u9|Equal0~0 ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[0]~0     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[1]~1     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[2]~2     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[3]~3     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[4]~4     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[5]~5     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[6]~6     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[7]~7     ; 1                 ; 0       ;
+;      - ALU:ula0|comparador16:u9|Equal0~0 ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[15]~8    ; 1                 ; 0       ;
 ; SW[2]                                    ;                   ;         ;
-;      - ALU:ula0|inversor16:u8|y[1]~0     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[0]~1     ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[0]~0     ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[1]~1     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[2]~2     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[3]~3     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[4]~4     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[5]~5     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[6]~6     ; 0                 ; 0       ;
 ;      - ALU:ula0|inversor16:u8|y[7]~7     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[8]~8     ; 0                 ; 0       ;
 ;      - ALU:ula0|comparador16:u9|Equal0~0 ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[15]~8    ; 0                 ; 0       ;
 ; SW[3]                                    ;                   ;         ;
-;      - ALU:ula0|inversor16:u8|y[1]~0     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[0]~1     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[2]~2     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[3]~3     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[4]~4     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[5]~5     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[6]~6     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[7]~7     ; 0                 ; 0       ;
-;      - ALU:ula0|inversor16:u8|y[8]~8     ; 0                 ; 0       ;
-;      - ALU:ula0|comparador16:u9|Equal0~0 ; 0                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[0]~0     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[1]~1     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[2]~2     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[3]~3     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[4]~4     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[5]~5     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[6]~6     ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[7]~7     ; 1                 ; 0       ;
+;      - ALU:ula0|comparador16:u9|Equal0~0 ; 1                 ; 0       ;
+;      - ALU:ula0|inversor16:u8|y[15]~8    ; 1                 ; 0       ;
 +------------------------------------------+-------------------+---------+
 
 
@@ -1443,21 +1427,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 27 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 14 / 6,048 ( < 1 % )   ;
-; C2 interconnects             ; 16 / 54,648 ( < 1 % )  ;
-; C4 interconnects             ; 7 / 25,920 ( < 1 % )   ;
+; Block interconnects          ; 16 / 140,056 ( < 1 % ) ;
+; C12 interconnects            ; 12 / 6,048 ( < 1 % )   ;
+; C2 interconnects             ; 6 / 54,648 ( < 1 % )   ;
+; C4 interconnects             ; 2 / 25,920 ( < 1 % )   ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
-; Direct links                 ; 9 / 140,056 ( < 1 % )  ;
+; Direct links                 ; 2 / 140,056 ( < 1 % )  ;
 ; Global clocks                ; 0 / 16 ( 0 % )         ;
 ; Local interconnects          ; 0 / 36,960 ( 0 % )     ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 16 / 5,984 ( < 1 % )   ;
-; R14/C12 interconnect drivers ; 22 / 9,504 ( < 1 % )   ;
-; R3 interconnects             ; 4 / 60,192 ( < 1 % )   ;
-; R6 interconnects             ; 13 / 127,072 ( < 1 % ) ;
+; R14 interconnects            ; 12 / 5,984 ( < 1 % )   ;
+; R14/C12 interconnect drivers ; 18 / 9,504 ( < 1 % )   ;
+; R3 interconnects             ; 3 / 60,192 ( < 1 % )   ;
+; R6 interconnects             ; 10 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 0 / 120 ( 0 % )        ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1521,6 +1505,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Unchecked    ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
 ; Total Inapplicable ; 20           ; 0         ; 0         ; 20           ; 20           ; 0         ; 0         ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 20           ; 0         ; 0         ; 20           ;
 ; Total Fail         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
+; SW[6]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; SW[7]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; SW[8]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; SW[9]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; LEDR[0]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
@@ -1533,8 +1519,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[7]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; LEDR[8]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; LEDR[9]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; SW[6]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; SW[7]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; SW[4]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; SW[5]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; SW[0]              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
@@ -1591,7 +1575,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CEBA4F23C7 for design "DE0_CV_Default"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1791,20 +1775,20 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:08
 Info (332104): Reading SDC File: 'DE0_CV_Default.sdc'
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
-    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
-    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
-    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
-    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
+    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
+    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
+    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
+    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.sdc Line: 8
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1824,24 +1808,24 @@ Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y11 to location X10_Y22
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.fit.smsg
+Info (144001): Generated suppressed messages file /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 202 warnings
-    Info: Peak virtual memory: 1798 megabytes
-    Info: Processing ended: Mon Mar 18 19:37:49 2019
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 2069 megabytes
+    Info: Processing ended: Wed Mar 27 01:22:07 2019
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:40
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/pedro/Desktop/INSPER/Elementos/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.fit.smsg.
+The suppressed messages can be found in /home/borg/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/Quartus/DE0_CV_Default.fit.smsg.
 
 
