@@ -6,3 +6,22 @@
 ; Divide R0 por R1 e armazena o resultado em R2.
 ; (R0, R1, R2 refer to RAM[0], RAM[1], and RAM[2], respectively.)
 ; divisao para numeros inteiros positivos
+
+leaw $0, %A
+movw (%A), %D
+
+movw %A, %S
+
+
+LOOP:
+	leaw $1, %A
+        subw %D, (%A), %D
+	incw %S
+	leaw %LOOP, %A
+        jge %D
+        nop
+
+decw %S
+leaw $2, %A
+movw %S, (%A)
+
