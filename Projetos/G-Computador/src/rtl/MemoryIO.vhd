@@ -76,36 +76,72 @@ ARCHITECTURE logic OF MemoryIO IS
       q   : out STD_LOGIC_VECTOR (15 downto 0));
   end component;
 
-begin
+  component DMux4Way is
+  port ( 
+      a:   in  STD_LOGIC;
+      sel: in  STD_LOGIC_VECTOR(1 downto 0);
+      q0:  out STD_LOGIC;
+      q1:  out STD_LOGIC;
+      q2:  out STD_LOGIC;
+      q3:  out STD_LOGIC);
+  end component;
 
+  component Register16 is
+  port(
+    clock:   in STD_LOGIC;
+    input:   in STD_LOGIC_VECTOR(15 downto 0);
+    load:    in STD_LOGIC;
+    output: out STD_LOGIC_VECTOR(15 downto 0)
+  );
+end component;
+signal selDMux,selMux : std_logic_vector(1 downto 0);
+signal inputRam,inputRegister,inputScreen,inputVazio : std_logic;
+signal outRam: std_logic_vector(15 downto 0);
+signal LED16,SW16,INPUT16 : std_logic_vector(15 downto 0);
+begin
 -----------------------------------
 -- Dicas de uso, screen e RAM16k --
 -----------------------------------
+selDMux <= "00" when ADDRESS(14) = '0' else
+          "01" when ADDRESS = "101001011000000" else 
+          "10";
 
---    DISPLAY: Screen  port map (
---          RST         => RST,
---          CLK_FAST    => CLK_FAST,
---          CLK_SLOW    => CLK_SLOW,
---          INPUT       =>
---          LOAD        =>
---          ADDRESS     =>
---          LCD_INIT_OK => LCD_INIT_OK,
---          LCD_CS_N 	  => LCD_CS_N ,
---          LCD_D       => LCD_D,
---          LCD_RD_N 	  => LCD_RD_N,
---          LCD_RESET_N => LCD_RESET_N,
---          LCD_RS 	    => LCD_RS,
---          LCD_WR_N 	  => LCD_WR_N
---    );
+demux4: DMux4Way port map (load,selDMux,inputRam,inputRegister,inputScreen,inputVazio);   
+
+DISPLAY: Screen  port map (
+    RST         => RST,
+    CLK_FAST    => CLK_FAST,
+    CLK_SLOW    => CLK_SLOW,
+    INPUT       => INPUT,
+    LOAD        => inputScreen,
+    ADDRESS     => ADDRESS(13 downto 0),
+    LCD_INIT_OK => LCD_INIT_OK,
+    LCD_CS_N 	  => LCD_CS_N ,
+    LCD_D       => LCD_D,
+    LCD_RD_N 	  => LCD_RD_N,
+    LCD_RESET_N => LCD_RESET_N,
+    LCD_RS 	    => LCD_RS,
+    LCD_WR_N 	  => LCD_WR_N
+    );
+
+    LED <= LED16(9 DOWNTO 0);
+    SW16 <= "000000" & SW;
+    INPUT16 <= "000000" & INPUT(9 downto 0);
+
+  Reg16: Register16 port map(CLK_SLOW,INPUT16,inputRegister,LED16);
 
 
---    RAM: RAM16K  PORT MAP(
---         clock		=> CLK_FAST,
---         address  =>
---         data		  =>
---         wren		  =>
---         q		    =>
---    );
 
+  RAM: RAM16K  PORT MAP(
+      clock		=> CLK_FAST,
+      address =>ADDRESS(13 downto 0),
+      data		=>INPUT,
+      wren		=>inputRam,
+      q		    => outRam
+    );
+
+  selMux <= "00" when ADDRESS = "101001011000001" else "01";
+
+  Mx4_16: Mux4Way16 port map(selMux,SW16,outRam,"0000000000000000","0000000000000000",OUTPUT);
 
 END logic;
