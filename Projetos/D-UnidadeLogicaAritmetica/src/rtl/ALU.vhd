@@ -122,7 +122,6 @@ begin
   
   u8: inversor16 port map(no, muxout, precomp);
   u9: comparador16 port map(precomp, zr, ng);
-  u10: Shifter16 port map(precomp, sf, shifter);
-  saida <= shifter;
+  saida <= precomp;
 
 end architecture;

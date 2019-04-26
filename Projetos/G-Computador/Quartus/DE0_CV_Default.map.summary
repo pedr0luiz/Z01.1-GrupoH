@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Fri Apr 26 09:51:23 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : DE0_CV_Default
+Top-level Entity Name : Computador
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 145
+Total pins : 44
+Total virtual pins : 0
+Total block memory bits : 294,930
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0
