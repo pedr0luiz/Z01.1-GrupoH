@@ -1,0 +1,1283 @@
+Analysis & Synthesis report for DE0_CV_Default
+Fri Apr 26 09:51:23 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1
+ 14. Parameter Settings for User Entity Instance: Top-level Entity: |Computador
+ 15. Parameter Settings for User Entity Instance: PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst|altera_pll:altera_pll_i
+ 16. Parameter Settings for User Entity Instance: ROM32K:ROM|altsyncram:altsyncram_component
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Port Connectivity Checks: "MemoryIO:MEMORY_MAPED"
+ 19. Port Connectivity Checks: "CPU:MAIN_CPU|PC:PCc|Register16:Reg"
+ 20. Port Connectivity Checks: "CPU:MAIN_CPU|PC:PCc|Mux16:Mux3"
+ 21. Port Connectivity Checks: "CPU:MAIN_CPU|PC:PCc|Inc16:Inc|Add16:u1"
+ 22. Port Connectivity Checks: "CPU:MAIN_CPU|PC:PCc"
+ 23. Port Connectivity Checks: "CPU:MAIN_CPU|ALU:ALUu|Add16:u5|FullAdder:ADD15"
+ 24. Port Connectivity Checks: "CPU:MAIN_CPU|ALU:ALUu|Add16:u5|FullAdder:ADD0"
+ 25. Port Connectivity Checks: "CPU:MAIN_CPU|ALU:ALUu"
+ 26. Port Connectivity Checks: "CPU:MAIN_CPU|Register16:registerA|Register8:bite1|BinaryDigit:u1|FlipFlopD:u2"
+ 27. Port Connectivity Checks: "CPU:MAIN_CPU|ControlUnit:control"
+ 28. In-System Memory Content Editor Settings
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Apr 26 09:51:23 2019       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE0_CV_Default                              ;
+; Top-level Entity Name           ; Computador                                  ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 145                                         ;
+; Total pins                      ; 44                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 294,930                                     ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; Computador         ; DE0_CV_Default     ;
+; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
+; Use smart compilation                                                           ; On                 ; Off                ;
+; State Machine Processing                                                        ; One-Hot            ; Auto               ;
+; Optimization Technique                                                          ; Speed              ; Balanced           ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; On                 ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                        ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                              ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; ../src/rtl/Dispositivos/PLL/PLL.vhd                                ; yes             ; User Wizard-Generated File                   ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL.vhd                                           ; PLL         ;
+; ../src/rtl/Dispositivos/PLL/PLL/PLL_0002.v                         ; yes             ; User Verilog HDL File                        ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL/PLL_0002.v                                    ; PLL         ;
+; ../src/rtl/Dispositivos/ROM/ROM32K.vhd                             ; yes             ; User Wizard-Generated File                   ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/ROM/ROM32K.vhd                                        ;             ;
+; ../src/rtl/MemoryIO.vhd                                            ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd                                                       ;             ;
+; ../src/rtl/CPU.vhd                                                 ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd                                                            ;             ;
+; ../src/rtl/ControlUnit.vhd                                         ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/ControlUnit.vhd                                                    ;             ;
+; ../src/rtl/Computador.vhd                                          ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd                                                     ;             ;
+; ../../E-LogicaSequencial/src/rtl/Register16.vhd                    ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd                                               ;             ;
+; ../../E-LogicaSequencial/src/rtl/Register8.vhd                     ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd                                                ;             ;
+; ../../E-LogicaSequencial/src/rtl/PC.vhd                            ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/PC.vhd                                                       ;             ;
+; ../../E-LogicaSequencial/src/rtl/FlipFlopD.vhd                     ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd                                                ;             ;
+; ../../E-LogicaSequencial/src/rtl/BinaryDigit.vhd                   ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd                                              ;             ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd              ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd                                         ;             ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd             ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd                                        ;             ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd                  ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd                                             ;             ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd              ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd                                         ;             ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd           ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd                                      ;             ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd                    ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd                                               ;             ;
+; ../../D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd                  ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd                                             ;             ;
+; ../../C-LogicaCombinacional/src/rtl/Mux16.vhd                      ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd                                                 ;             ;
+; ../../C-LogicaCombinacional/src/rtl/Mux2Way.vhd                    ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd                                               ;             ;
+; ../../C-LogicaCombinacional/src/rtl/And16.vhd                      ; yes             ; User VHDL File                               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd                                                 ;             ;
+; altera_pll.v                                                       ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altera_pll.v                                                               ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf                                                             ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                      ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc                                                             ;             ;
+; aglobal171.inc                                                     ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                                             ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                              ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altrom.inc                                                                 ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altram.inc                                                                 ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                                                               ;             ;
+; db/altsyncram_3i34.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3i34.tdf                                             ;             ;
+; db/altsyncram_3943.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3943.tdf                                             ;             ;
+; tmpROM.mif                                                         ; yes             ; Auto-Found Memory Initialization File        ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/tmpROM.mif                                                         ;             ;
+; db/decode_7la.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/decode_7la.tdf                                                  ;             ;
+; db/decode_01a.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/decode_01a.tdf                                                  ;             ;
+; db/mux_8hb.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/mux_8hb.tdf                                                     ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                        ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                              ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                          ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                             ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                ; altera_sld  ;
+; db/ip/sld81ef7864/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                           ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 114                      ;
+;                                             ;                          ;
+; Combinational ALUT usage for logic          ; 177                      ;
+;     -- 7 input functions                    ; 2                        ;
+;     -- 6 input functions                    ; 44                       ;
+;     -- 5 input functions                    ; 30                       ;
+;     -- 4 input functions                    ; 29                       ;
+;     -- <=3 input functions                  ; 72                       ;
+;                                             ;                          ;
+; Dedicated logic registers                   ; 145                      ;
+;                                             ;                          ;
+; I/O pins                                    ; 44                       ;
+; Total MLAB memory bits                      ; 0                        ;
+; Total block memory bits                     ; 294930                   ;
+;                                             ;                          ;
+; Total DSP Blocks                            ; 0                        ;
+;                                             ;                          ;
+; Total PLLs                                  ; 1                        ;
+;     -- PLLs                                 ; 1                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
+; Maximum fan-out                             ; 224                      ;
+; Total fan-out                               ; 2042                     ;
+; Average fan-out                             ; 4.17                     ;
++---------------------------------------------+--------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                    ; Entity Name                       ; Library Name ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+; |Computador                                                                                                                             ; 177 (1)             ; 145 (0)                   ; 294930            ; 0          ; 44   ; 0            ; |Computador                                                                                                                                                                                                                                                                                                                                            ; Computador                        ; work         ;
+;    |PLL:\PLL_RTL:PLL_inst|                                                                                                              ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computador|PLL:\PLL_RTL:PLL_inst                                                                                                                                                                                                                                                                                                                      ; PLL                               ; pll          ;
+;       |PLL_0002:pll_inst|                                                                                                               ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computador|PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst                                                                                                                                                                                                                                                                                                    ; PLL_0002                          ; PLL          ;
+;          |altera_pll:altera_pll_i|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computador|PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                            ; altera_pll                        ; work         ;
+;    |ROM32K:ROM|                                                                                                                         ; 78 (0)              ; 58 (0)                    ; 294930            ; 0          ; 0    ; 0            ; |Computador|ROM32K:ROM                                                                                                                                                                                                                                                                                                                                 ; ROM32K                            ; work         ;
+;       |altsyncram:altsyncram_component|                                                                                                 ; 78 (0)              ; 58 (0)                    ; 294930            ; 0          ; 0    ; 0            ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                                 ; altsyncram                        ; work         ;
+;          |altsyncram_3i34:auto_generated|                                                                                               ; 78 (0)              ; 58 (0)                    ; 294930            ; 0          ; 0    ; 0            ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated                                                                                                                                                                                                                                                                  ; altsyncram_3i34                   ; work         ;
+;             |altsyncram_3943:altsyncram1|                                                                                               ; 6 (0)               ; 2 (2)                     ; 294930            ; 0          ; 0    ; 0            ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1                                                                                                                                                                                                                                      ; altsyncram_3943                   ; work         ;
+;                |decode_01a:rden_decode_b|                                                                                               ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1|decode_01a:rden_decode_b                                                                                                                                                                                                             ; decode_01a                        ; work         ;
+;                |decode_7la:decode5|                                                                                                     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1|decode_7la:decode5                                                                                                                                                                                                                   ; decode_7la                        ; work         ;
+;             |sld_mod_ram_rom:mgl_prim2|                                                                                                 ; 72 (52)             ; 56 (47)                   ; 0                 ; 0          ; 0    ; 0            ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                                                                                        ; sld_mod_ram_rom                   ; work         ;
+;                |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                                                     ; 20 (20)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                                                                                                                                                     ; sld_rom_sr                        ; work         ;
+;    |sld_hub:auto_hub|                                                                                                                   ; 98 (1)              ; 87 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Computador|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
+;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 97 (0)              ; 87 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
+;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 97 (0)              ; 87 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
+;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 97 (1)              ; 87 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                    ; alt_sld_fab_alt_sld_fab           ; alt_sld_fab  ;
+;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 96 (0)              ; 82 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab_alt_sld_fab_sldfabric ; alt_sld_fab  ;
+;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 96 (64)             ; 82 (54)                   ; 0                 ; 0          ; 0    ; 0            ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; sld_jtag_hub                      ; work         ;
+;                      |sld_rom_sr:hub_info_reg|                                                                                          ; 14 (14)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; sld_rom_sr                        ; work         ;
+;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 18 (18)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; sld_shadow_jsm                    ; altera_sld   ;
++-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                           ;
++------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+------------+
+; Name                                                                                                             ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF        ;
++------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+------------+
+; ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 16385        ; 18           ; 16385        ; 18           ; 294930 ; tmpROM.mif ;
++------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+--------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                                                                                                                                 ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                                                                                                                                                                                                                 ; IP Include File                     ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+
+; Altera ; altera_pll   ; 17.0    ; N/A          ; N/A          ; |Computador|PLL:\PLL_RTL:PLL_inst                                                                                                                                                                                                                                               ; ../src/rtl/Dispositivos/PLL/PLL.vhd ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                 ;                                     ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                             ;                                     ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_presplit:presplit   ;                                     ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric ;                                     ;
+; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |Computador|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_splitter:splitter   ;                                     ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 145   ;
+; Number of registers using Synchronous Clear  ; 7     ;
+; Number of registers using Synchronous Load   ; 17    ;
+; Number of registers using Asynchronous Clear ; 63    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 109   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                                                                                                                                                                                                                                                              ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                                                                                                                                                                                                                                                               ; Fan out ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[1] ; 3       ;
+; sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg[2] ; 3       ;
+; Total number of inverted registers = 2                                                                                                                                                                                                                                                                                          ;         ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                     ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 0 LEs                ; 30 LEs                 ; Yes        ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[13]                                               ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3] ;
+; 5:1                ; 18 bits   ; 54 LEs        ; 36 LEs               ; 18 LEs                 ; Yes        ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[8]                                                ;
+; 26:1               ; 4 bits    ; 68 LEs        ; 56 LEs               ; 12 LEs                 ; Yes        ; |Computador|ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1 ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                             ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                              ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Computador ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; IS_SIMULATION  ; '0'   ; Enumerated                                        ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst|altera_pll:altera_pll_i ;
++--------------------------------------+------------------------+----------------------------------------------+
+; Parameter Name                       ; Value                  ; Type                                         ;
++--------------------------------------+------------------------+----------------------------------------------+
+; reference_clock_frequency            ; 50.0 MHz               ; String                                       ;
+; fractional_vco_multiplier            ; false                  ; String                                       ;
+; pll_type                             ; General                ; String                                       ;
+; pll_subtype                          ; General                ; String                                       ;
+; number_of_clocks                     ; 2                      ; Signed Integer                               ;
+; operation_mode                       ; direct                 ; String                                       ;
+; deserialization_factor               ; 4                      ; Signed Integer                               ;
+; data_rate                            ; 0                      ; Signed Integer                               ;
+; sim_additional_refclk_cycles_to_lock ; 0                      ; Signed Integer                               ;
+; output_clock_frequency0              ; 100.000000 MHz         ; String                                       ;
+; phase_shift0                         ; 0 ps                   ; String                                       ;
+; duty_cycle0                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency1              ; 1.000000 MHz           ; String                                       ;
+; phase_shift1                         ; 0 ps                   ; String                                       ;
+; duty_cycle1                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency2              ; 0 MHz                  ; String                                       ;
+; phase_shift2                         ; 0 ps                   ; String                                       ;
+; duty_cycle2                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency3              ; 0 MHz                  ; String                                       ;
+; phase_shift3                         ; 0 ps                   ; String                                       ;
+; duty_cycle3                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency4              ; 0 MHz                  ; String                                       ;
+; phase_shift4                         ; 0 ps                   ; String                                       ;
+; duty_cycle4                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency5              ; 0 MHz                  ; String                                       ;
+; phase_shift5                         ; 0 ps                   ; String                                       ;
+; duty_cycle5                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency6              ; 0 MHz                  ; String                                       ;
+; phase_shift6                         ; 0 ps                   ; String                                       ;
+; duty_cycle6                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency7              ; 0 MHz                  ; String                                       ;
+; phase_shift7                         ; 0 ps                   ; String                                       ;
+; duty_cycle7                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency8              ; 0 MHz                  ; String                                       ;
+; phase_shift8                         ; 0 ps                   ; String                                       ;
+; duty_cycle8                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency9              ; 0 MHz                  ; String                                       ;
+; phase_shift9                         ; 0 ps                   ; String                                       ;
+; duty_cycle9                          ; 50                     ; Signed Integer                               ;
+; output_clock_frequency10             ; 0 MHz                  ; String                                       ;
+; phase_shift10                        ; 0 ps                   ; String                                       ;
+; duty_cycle10                         ; 50                     ; Signed Integer                               ;
+; output_clock_frequency11             ; 0 MHz                  ; String                                       ;
+; phase_shift11                        ; 0 ps                   ; String                                       ;
+; duty_cycle11                         ; 50                     ; Signed Integer                               ;
+; output_clock_frequency12             ; 0 MHz                  ; String                                       ;
+; phase_shift12                        ; 0 ps                   ; String                                       ;
+; duty_cycle12                         ; 50                     ; Signed Integer                               ;
+; output_clock_frequency13             ; 0 MHz                  ; String                                       ;
+; phase_shift13                        ; 0 ps                   ; String                                       ;
+; duty_cycle13                         ; 50                     ; Signed Integer                               ;
+; output_clock_frequency14             ; 0 MHz                  ; String                                       ;
+; phase_shift14                        ; 0 ps                   ; String                                       ;
+; duty_cycle14                         ; 50                     ; Signed Integer                               ;
+; output_clock_frequency15             ; 0 MHz                  ; String                                       ;
+; phase_shift15                        ; 0 ps                   ; String                                       ;
+; duty_cycle15                         ; 50                     ; Signed Integer                               ;
+; output_clock_frequency16             ; 0 MHz                  ; String                                       ;
+; phase_shift16                        ; 0 ps                   ; String                                       ;
+; duty_cycle16                         ; 50                     ; Signed Integer                               ;
+; output_clock_frequency17             ; 0 MHz                  ; String                                       ;
+; phase_shift17                        ; 0 ps                   ; String                                       ;
+; duty_cycle17                         ; 50                     ; Signed Integer                               ;
+; clock_name_0                         ;                        ; String                                       ;
+; clock_name_1                         ;                        ; String                                       ;
+; clock_name_2                         ;                        ; String                                       ;
+; clock_name_3                         ;                        ; String                                       ;
+; clock_name_4                         ;                        ; String                                       ;
+; clock_name_5                         ;                        ; String                                       ;
+; clock_name_6                         ;                        ; String                                       ;
+; clock_name_7                         ;                        ; String                                       ;
+; clock_name_8                         ;                        ; String                                       ;
+; clock_name_global_0                  ; false                  ; String                                       ;
+; clock_name_global_1                  ; false                  ; String                                       ;
+; clock_name_global_2                  ; false                  ; String                                       ;
+; clock_name_global_3                  ; false                  ; String                                       ;
+; clock_name_global_4                  ; false                  ; String                                       ;
+; clock_name_global_5                  ; false                  ; String                                       ;
+; clock_name_global_6                  ; false                  ; String                                       ;
+; clock_name_global_7                  ; false                  ; String                                       ;
+; clock_name_global_8                  ; false                  ; String                                       ;
+; m_cnt_hi_div                         ; 1                      ; Signed Integer                               ;
+; m_cnt_lo_div                         ; 1                      ; Signed Integer                               ;
+; m_cnt_bypass_en                      ; false                  ; String                                       ;
+; m_cnt_odd_div_duty_en                ; false                  ; String                                       ;
+; n_cnt_hi_div                         ; 1                      ; Signed Integer                               ;
+; n_cnt_lo_div                         ; 1                      ; Signed Integer                               ;
+; n_cnt_bypass_en                      ; false                  ; String                                       ;
+; n_cnt_odd_div_duty_en                ; false                  ; String                                       ;
+; c_cnt_hi_div0                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div0                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en0                     ; false                  ; String                                       ;
+; c_cnt_in_src0                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en0               ; false                  ; String                                       ;
+; c_cnt_prst0                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst0                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div1                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div1                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en1                     ; false                  ; String                                       ;
+; c_cnt_in_src1                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en1               ; false                  ; String                                       ;
+; c_cnt_prst1                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst1                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div2                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div2                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en2                     ; false                  ; String                                       ;
+; c_cnt_in_src2                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en2               ; false                  ; String                                       ;
+; c_cnt_prst2                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst2                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div3                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div3                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en3                     ; false                  ; String                                       ;
+; c_cnt_in_src3                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en3               ; false                  ; String                                       ;
+; c_cnt_prst3                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst3                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div4                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div4                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en4                     ; false                  ; String                                       ;
+; c_cnt_in_src4                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en4               ; false                  ; String                                       ;
+; c_cnt_prst4                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst4                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div5                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div5                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en5                     ; false                  ; String                                       ;
+; c_cnt_in_src5                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en5               ; false                  ; String                                       ;
+; c_cnt_prst5                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst5                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div6                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div6                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en6                     ; false                  ; String                                       ;
+; c_cnt_in_src6                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en6               ; false                  ; String                                       ;
+; c_cnt_prst6                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst6                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div7                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div7                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en7                     ; false                  ; String                                       ;
+; c_cnt_in_src7                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en7               ; false                  ; String                                       ;
+; c_cnt_prst7                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst7                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div8                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div8                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en8                     ; false                  ; String                                       ;
+; c_cnt_in_src8                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en8               ; false                  ; String                                       ;
+; c_cnt_prst8                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst8                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div9                        ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div9                        ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en9                     ; false                  ; String                                       ;
+; c_cnt_in_src9                        ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en9               ; false                  ; String                                       ;
+; c_cnt_prst9                          ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst9                   ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div10                       ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div10                       ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en10                    ; false                  ; String                                       ;
+; c_cnt_in_src10                       ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en10              ; false                  ; String                                       ;
+; c_cnt_prst10                         ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst10                  ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div11                       ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div11                       ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en11                    ; false                  ; String                                       ;
+; c_cnt_in_src11                       ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en11              ; false                  ; String                                       ;
+; c_cnt_prst11                         ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst11                  ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div12                       ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div12                       ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en12                    ; false                  ; String                                       ;
+; c_cnt_in_src12                       ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en12              ; false                  ; String                                       ;
+; c_cnt_prst12                         ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst12                  ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div13                       ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div13                       ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en13                    ; false                  ; String                                       ;
+; c_cnt_in_src13                       ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en13              ; false                  ; String                                       ;
+; c_cnt_prst13                         ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst13                  ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div14                       ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div14                       ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en14                    ; false                  ; String                                       ;
+; c_cnt_in_src14                       ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en14              ; false                  ; String                                       ;
+; c_cnt_prst14                         ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst14                  ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div15                       ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div15                       ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en15                    ; false                  ; String                                       ;
+; c_cnt_in_src15                       ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en15              ; false                  ; String                                       ;
+; c_cnt_prst15                         ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst15                  ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div16                       ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div16                       ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en16                    ; false                  ; String                                       ;
+; c_cnt_in_src16                       ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en16              ; false                  ; String                                       ;
+; c_cnt_prst16                         ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst16                  ; 0                      ; Signed Integer                               ;
+; c_cnt_hi_div17                       ; 1                      ; Signed Integer                               ;
+; c_cnt_lo_div17                       ; 1                      ; Signed Integer                               ;
+; c_cnt_bypass_en17                    ; false                  ; String                                       ;
+; c_cnt_in_src17                       ; ph_mux_clk             ; String                                       ;
+; c_cnt_odd_div_duty_en17              ; false                  ; String                                       ;
+; c_cnt_prst17                         ; 1                      ; Signed Integer                               ;
+; c_cnt_ph_mux_prst17                  ; 0                      ; Signed Integer                               ;
+; pll_vco_div                          ; 1                      ; Signed Integer                               ;
+; pll_slf_rst                          ; false                  ; String                                       ;
+; pll_bw_sel                           ; low                    ; String                                       ;
+; pll_output_clk_frequency             ; 0 MHz                  ; String                                       ;
+; pll_cp_current                       ; 0                      ; Signed Integer                               ;
+; pll_bwctrl                           ; 0                      ; Signed Integer                               ;
+; pll_fractional_division              ; 1                      ; Signed Integer                               ;
+; pll_fractional_cout                  ; 24                     ; Signed Integer                               ;
+; pll_dsm_out_sel                      ; 1st_order              ; String                                       ;
+; mimic_fbclk_type                     ; gclk                   ; String                                       ;
+; pll_fbclk_mux_1                      ; glb                    ; String                                       ;
+; pll_fbclk_mux_2                      ; fb_1                   ; String                                       ;
+; pll_m_cnt_in_src                     ; ph_mux_clk             ; String                                       ;
+; pll_vcoph_div                        ; 1                      ; Signed Integer                               ;
+; refclk1_frequency                    ; 0 MHz                  ; String                                       ;
+; pll_clkin_0_src                      ; clk_0                  ; String                                       ;
+; pll_clkin_1_src                      ; clk_0                  ; String                                       ;
+; pll_clk_loss_sw_en                   ; false                  ; String                                       ;
+; pll_auto_clk_sw_en                   ; false                  ; String                                       ;
+; pll_manu_clk_sw_en                   ; false                  ; String                                       ;
+; pll_clk_sw_dly                       ; 0                      ; Signed Integer                               ;
+; pll_extclk_0_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                       ;
+; pll_extclk_1_cnt_src                 ; pll_extclk_cnt_src_vss ; String                                       ;
++--------------------------------------+------------------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM32K:ROM|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------+
+; Parameter Name                     ; Value                ; Type                        ;
++------------------------------------+----------------------+-----------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                     ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                  ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE              ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                     ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                     ;
+; WIDTH_A                            ; 18                   ; Signed Integer              ;
+; WIDTHAD_A                          ; 15                   ; Signed Integer              ;
+; NUMWORDS_A                         ; 16385                ; Signed Integer              ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                     ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                     ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                     ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                     ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                     ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                     ;
+; WIDTH_B                            ; 1                    ; Signed Integer              ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer              ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer              ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                     ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                     ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                     ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                     ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                     ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                     ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                     ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                     ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                     ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                     ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                     ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                     ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer              ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer              ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                     ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                     ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
+; INIT_FILE                          ; tmpROM.mif           ; Untyped                     ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                     ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer              ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                     ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                     ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                     ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                     ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                     ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                     ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                     ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer              ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                     ;
+; CBXI_PARAMETER                     ; altsyncram_3i34      ; Untyped                     ;
++------------------------------------+----------------------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                       ;
++-------------------------------------------+--------------------------------------------+
+; Name                                      ; Value                                      ;
++-------------------------------------------+--------------------------------------------+
+; Number of entity instances                ; 1                                          ;
+; Entity Instance                           ; ROM32K:ROM|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                        ;
+;     -- WIDTH_A                            ; 18                                         ;
+;     -- NUMWORDS_A                         ; 16385                                      ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                     ;
+;     -- WIDTH_B                            ; 1                                          ;
+;     -- NUMWORDS_B                         ; 0                                          ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                     ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                               ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                       ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                  ;
++-------------------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MemoryIO:MEMORY_MAPED"                                                                ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; lcd_on ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|PC:PCc|Register16:Reg" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; load ; Input ; Info     ; Stuck at VCC                         ;
++------+-------+----------+--------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|PC:PCc|Mux16:Mux3" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|PC:PCc|Inc16:Inc|Add16:u1" ;
++----------+-------+----------+--------------------------------------+
+; Port     ; Type  ; Severity ; Details                              ;
++----------+-------+----------+--------------------------------------+
+; b[15..1] ; Input ; Info     ; Stuck at GND                         ;
+; b[0]     ; Input ; Info     ; Stuck at VCC                         ;
++----------+-------+----------+--------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|PC:PCc"                                                                     ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; increment ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; output    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|ALU:ALUu|Add16:u5|FullAdder:ADD15"                                      ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; vaium ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|ALU:ALUu|Add16:u5|FullAdder:ADD0" ;
++------+-------+----------+-------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                         ;
++------+-------+----------+-------------------------------------------------+
+; c    ; Input ; Info     ; Stuck at GND                                    ;
++------+-------+----------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|ALU:ALUu"                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; sf   ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|Register16:registerA|Register8:bite1|BinaryDigit:u1|FlipFlopD:u2" ;
++--------+-------+----------+-------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                       ;
++--------+-------+----------+-------------------------------------------------------------------------------+
+; clear  ; Input ; Info     ; Stuck at GND                                                                  ;
+; preset ; Input ; Info     ; Stuck at GND                                                                  ;
++--------+-------+----------+-------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CPU:MAIN_CPU|ControlUnit:control"                                                        ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; muxalui_a ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; In-System Memory Content Editor Settings                                                                                              ;
++----------------+-------------+-------+-------+------------+---------------------------------------------------------------------------+
+; Instance Index ; Instance ID ; Width ; Depth ; Mode       ; Hierarchy Location                                                        ;
++----------------+-------------+-------+-------+------------+---------------------------------------------------------------------------+
+; 0              ; ROM         ; 18    ; 16385 ; Read/Write ; ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated ;
++----------------+-------------+-------+-------+------------+---------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 58                          ;
+;     CLR               ; 6                           ;
+;     CLR SLD           ; 1                           ;
+;     ENA               ; 27                          ;
+;     ENA CLR           ; 7                           ;
+;     ENA CLR SLD       ; 15                          ;
+;     plain             ; 2                           ;
+; arriav_io_obuf        ; 16                          ;
+; arriav_lcell_comb     ; 80                          ;
+;     arith             ; 15                          ;
+;         1 data inputs ; 15                          ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 63                          ;
+;         0 data inputs ; 2                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 14                          ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 29                          ;
+; boundary_port         ; 71                          ;
+; generic_pll           ; 1                           ;
+; stratixv_ram_block    ; 54                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.43                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Fri Apr 26 09:51:02 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
+Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file /home/borg/intelFPGA_lite/17.1/quartus/linux64/assignment_defaults.qdf
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (12019): Can't analyze file -- file ../tests/TesteDisplay.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL.vhd
+    Info (12022): Found design unit 1: PLL-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL.vhd Line: 21
+    Info (12023): Found entity 1: PLL File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL.vhd Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL/PLL_0002.v
+    Info (12023): Found entity 1: PLL_0002 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL/PLL_0002.v Line: 2
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/FIFO/FIFO16x4096.vhd
+    Info (12022): Found design unit 1: fifo16x4096-SYN File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/FIFO/FIFO16x4096.vhd Line: 58
+    Info (12023): Found entity 1: FIFO16x4096 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/FIFO/FIFO16x4096.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vhd
+    Info (12022): Found design unit 1: Screen-logic File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vhd Line: 31
+    Info (12023): Found entity 1: Screen File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/ILI9341.vhd
+    Info (12022): Found design unit 1: ILI9341-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/ILI9341.vhd Line: 57
+    Info (12023): Found entity 1: ILI9341 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/Screen/ILI9341.vhd Line: 29
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/ROM/ROM32K.vhd
+    Info (12022): Found design unit 1: rom32k-SYN File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/ROM/ROM32K.vhd Line: 52
+    Info (12023): Found entity 1: ROM32K File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/ROM/ROM32K.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vhd
+    Info (12022): Found design unit 1: ram16k-SYN File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vhd Line: 55
+    Info (12023): Found entity 1: RAM16K File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd
+    Info (12022): Found design unit 1: MemoryIO-logic File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 36
+    Info (12023): Found entity 1: MemoryIO File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd
+    Info (12022): Found design unit 1: CPU-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 22
+    Info (12023): Found entity 1: CPU File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/ControlUnit.vhd
+    Info (12022): Found design unit 1: ControlUnit-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/ControlUnit.vhd Line: 25
+    Info (12023): Found entity 1: ControlUnit File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/ControlUnit.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd
+    Info (12022): Found design unit 1: Computador-logic File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 42
+    Info (12023): Found entity 1: Computador File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
+    Info (12022): Found design unit 1: Register64-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd Line: 17
+    Info (12023): Found entity 1: Register64 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
+    Info (12022): Found design unit 1: Register32-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd Line: 17
+    Info (12023): Found entity 1: Register32 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
+    Info (12022): Found design unit 1: Register16-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd Line: 17
+    Info (12023): Found entity 1: Register16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
+    Info (12022): Found design unit 1: Register8-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd Line: 17
+    Info (12023): Found entity 1: Register8 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
+    Info (12022): Found design unit 1: Ram512-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd Line: 18
+    Info (12023): Found entity 1: Ram512 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
+    Info (12022): Found design unit 1: Ram64-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd Line: 18
+    Info (12023): Found entity 1: Ram64 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
+    Info (12022): Found design unit 1: ram8-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd Line: 18
+    Info (12023): Found entity 1: Ram8 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd
+    Info (12022): Found design unit 1: Ram4k-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd Line: 18
+    Info (12023): Found entity 1: Ram4K File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/PC.vhd
+    Info (12022): Found design unit 1: PC-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/PC.vhd Line: 27
+    Info (12023): Found entity 1: PC File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/PC.vhd Line: 16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd
+    Info (12022): Found design unit 1: FlipFlopD-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd Line: 18
+    Info (12023): Found entity 1: FlipFlopD File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd
+    Info (12022): Found design unit 1: BinaryDigit-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd Line: 17
+    Info (12023): Found entity 1: BinaryDigit File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+    Info (12022): Found design unit 1: zerador16-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd Line: 31
+    Info (12023): Found entity 1: zerador16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
+    Info (12022): Found design unit 1: inversor16-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd Line: 16
+    Info (12023): Found entity 1: inversor16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
+    Info (12022): Found design unit 1: Inc16-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd Line: 18
+    Info (12023): Found entity 1: Inc16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
+    Info (12022): Found design unit 1: HalfAdder-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd Line: 19
+    Info (12023): Found entity 1: HalfAdder File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
+    Info (12022): Found design unit 1: FullAdder-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd Line: 17
+    Info (12023): Found entity 1: FullAdder File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
+    Info (12022): Found design unit 1: comparador16-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd Line: 16
+    Info (12023): Found entity 1: comparador16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
+    Info (12022): Found design unit 1: alu-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 45
+    Info (12023): Found entity 1: ALU File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 29
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
+    Info (12022): Found design unit 1: Add16-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 19
+    Info (12023): Found entity 1: Add16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
+    Info (12022): Found design unit 1: Or16-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 11
+    Info (12023): Found entity 1: Or16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
+    Info (12022): Found design unit 1: Or8Way-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 17
+    Info (12023): Found entity 1: Or8Way File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
+    Info (12022): Found design unit 1: Not16-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 10
+    Info (12023): Found entity 1: Not16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
+    Info (12022): Found design unit 1: Nor8Way-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 17
+    Info (12023): Found entity 1: Nor8Way File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
+    Info (12022): Found design unit 1: nand_z01-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 12
+    Info (12023): Found entity 1: nand_z01 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
+    Info (12022): Found design unit 1: Mux16-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 12
+    Info (12023): Found entity 1: Mux16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
+    Info (12022): Found design unit 1: Mux8Way16-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 18
+    Info (12023): Found entity 1: Mux8Way16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
+    Info (12022): Found design unit 1: Mux8Way-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 18
+    Info (12023): Found entity 1: Mux8Way File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
+    Info (12022): Found design unit 1: Mux4Way16-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 14
+    Info (12023): Found entity 1: Mux4Way16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
+    Info (12022): Found design unit 1: Mux4Way-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 14
+    Info (12023): Found entity 1: Mux4Way File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
+    Info (12022): Found design unit 1: Mux2Way-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 12
+    Info (12023): Found entity 1: Mux2Way File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 4
+Warning (12019): Can't analyze file -- file ../../C-LogicaCombinacional/src/rtl/DMux8Way16.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
+    Info (12022): Found design unit 1: DMux8Way-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 18
+    Info (12023): Found entity 1: DMux8Way File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
+    Info (12022): Found design unit 1: DMux4Way-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 14
+    Info (12023): Found entity 1: DMux4Way File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
+    Info (12022): Found design unit 1: DMux2Way-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 12
+    Info (12023): Found entity 1: DMux2Way File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd
+    Info (12022): Found design unit 1: BarrelShifter16-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd Line: 12
+    Info (12023): Found entity 1: BarrelShifter16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd Line: 4
+Warning (12019): Can't analyze file -- file ../../C-LogicaCombinacional/src/rtl/BarrelShifter8.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
+    Info (12022): Found design unit 1: And16-arch File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 11
+    Info (12023): Found entity 1: And16 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd Line: 4
+Info (12127): Elaborating entity "Computador" for the top level hierarchy
+Info (12128): Elaborating entity "PLL" for hierarchy "PLL:\PLL_RTL:PLL_inst" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 125
+Info (12128): Elaborating entity "PLL_0002" for hierarchy "PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL.vhd Line: 34
+Info (12128): Elaborating entity "altera_pll" for hierarchy "PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst|altera_pll:altera_pll_i" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL/PLL_0002.v Line: 88
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info (12130): Elaborated megafunction instantiation "PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst|altera_pll:altera_pll_i" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL/PLL_0002.v Line: 88
+Info (12133): Instantiated megafunction "PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst|altera_pll:altera_pll_i" with the following parameter: File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/PLL/PLL/PLL_0002.v Line: 88
+    Info (12134): Parameter "fractional_vco_multiplier" = "false"
+    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
+    Info (12134): Parameter "operation_mode" = "direct"
+    Info (12134): Parameter "number_of_clocks" = "2"
+    Info (12134): Parameter "output_clock_frequency0" = "100.000000 MHz"
+    Info (12134): Parameter "phase_shift0" = "0 ps"
+    Info (12134): Parameter "duty_cycle0" = "50"
+    Info (12134): Parameter "output_clock_frequency1" = "1.000000 MHz"
+    Info (12134): Parameter "phase_shift1" = "0 ps"
+    Info (12134): Parameter "duty_cycle1" = "50"
+    Info (12134): Parameter "output_clock_frequency2" = "0 MHz"
+    Info (12134): Parameter "phase_shift2" = "0 ps"
+    Info (12134): Parameter "duty_cycle2" = "50"
+    Info (12134): Parameter "output_clock_frequency3" = "0 MHz"
+    Info (12134): Parameter "phase_shift3" = "0 ps"
+    Info (12134): Parameter "duty_cycle3" = "50"
+    Info (12134): Parameter "output_clock_frequency4" = "0 MHz"
+    Info (12134): Parameter "phase_shift4" = "0 ps"
+    Info (12134): Parameter "duty_cycle4" = "50"
+    Info (12134): Parameter "output_clock_frequency5" = "0 MHz"
+    Info (12134): Parameter "phase_shift5" = "0 ps"
+    Info (12134): Parameter "duty_cycle5" = "50"
+    Info (12134): Parameter "output_clock_frequency6" = "0 MHz"
+    Info (12134): Parameter "phase_shift6" = "0 ps"
+    Info (12134): Parameter "duty_cycle6" = "50"
+    Info (12134): Parameter "output_clock_frequency7" = "0 MHz"
+    Info (12134): Parameter "phase_shift7" = "0 ps"
+    Info (12134): Parameter "duty_cycle7" = "50"
+    Info (12134): Parameter "output_clock_frequency8" = "0 MHz"
+    Info (12134): Parameter "phase_shift8" = "0 ps"
+    Info (12134): Parameter "duty_cycle8" = "50"
+    Info (12134): Parameter "output_clock_frequency9" = "0 MHz"
+    Info (12134): Parameter "phase_shift9" = "0 ps"
+    Info (12134): Parameter "duty_cycle9" = "50"
+    Info (12134): Parameter "output_clock_frequency10" = "0 MHz"
+    Info (12134): Parameter "phase_shift10" = "0 ps"
+    Info (12134): Parameter "duty_cycle10" = "50"
+    Info (12134): Parameter "output_clock_frequency11" = "0 MHz"
+    Info (12134): Parameter "phase_shift11" = "0 ps"
+    Info (12134): Parameter "duty_cycle11" = "50"
+    Info (12134): Parameter "output_clock_frequency12" = "0 MHz"
+    Info (12134): Parameter "phase_shift12" = "0 ps"
+    Info (12134): Parameter "duty_cycle12" = "50"
+    Info (12134): Parameter "output_clock_frequency13" = "0 MHz"
+    Info (12134): Parameter "phase_shift13" = "0 ps"
+    Info (12134): Parameter "duty_cycle13" = "50"
+    Info (12134): Parameter "output_clock_frequency14" = "0 MHz"
+    Info (12134): Parameter "phase_shift14" = "0 ps"
+    Info (12134): Parameter "duty_cycle14" = "50"
+    Info (12134): Parameter "output_clock_frequency15" = "0 MHz"
+    Info (12134): Parameter "phase_shift15" = "0 ps"
+    Info (12134): Parameter "duty_cycle15" = "50"
+    Info (12134): Parameter "output_clock_frequency16" = "0 MHz"
+    Info (12134): Parameter "phase_shift16" = "0 ps"
+    Info (12134): Parameter "duty_cycle16" = "50"
+    Info (12134): Parameter "output_clock_frequency17" = "0 MHz"
+    Info (12134): Parameter "phase_shift17" = "0 ps"
+    Info (12134): Parameter "duty_cycle17" = "50"
+    Info (12134): Parameter "pll_type" = "General"
+    Info (12134): Parameter "pll_subtype" = "General"
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:MAIN_CPU" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 140
+Warning (10541): VHDL Signal Declaration warning at CPU.vhd(18): used implicit default value for signal "pcout" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 18
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(81): object "c_muxALUI_A" assigned a value but never read File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 81
+Warning (10036): Verilog HDL or VHDL warning at CPU.vhd(108): object "s_pcout" assigned a value but never read File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 108
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "CPU:MAIN_CPU|ControlUnit:control" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 112
+Info (12128): Elaborating entity "Mux16" for hierarchy "CPU:MAIN_CPU|Mux16:muxALU_I" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 116
+Info (12128): Elaborating entity "Register16" for hierarchy "CPU:MAIN_CPU|Register16:registerA" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 118
+Info (12128): Elaborating entity "Register8" for hierarchy "CPU:MAIN_CPU|Register16:registerA|Register8:bite1" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd Line: 33
+Info (12128): Elaborating entity "BinaryDigit" for hierarchy "CPU:MAIN_CPU|Register16:registerA|Register8:bite1|BinaryDigit:u1" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd Line: 31
+Info (12128): Elaborating entity "Mux2Way" for hierarchy "CPU:MAIN_CPU|Register16:registerA|Register8:bite1|BinaryDigit:u1|Mux2Way:u1" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd Line: 41
+Info (10041): Inferred latch for "q" at Mux2Way.vhd(14) File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd Line: 14
+Info (12128): Elaborating entity "FlipFlopD" for hierarchy "CPU:MAIN_CPU|Register16:registerA|Register8:bite1|BinaryDigit:u1|FlipFlopD:u2" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd Line: 42
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:MAIN_CPU|ALU:ALUu" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 158
+Info (12128): Elaborating entity "zerador16" for hierarchy "CPU:MAIN_CPU|ALU:ALUu|zerador16:u1" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 110
+Info (12128): Elaborating entity "inversor16" for hierarchy "CPU:MAIN_CPU|ALU:ALUu|inversor16:u2" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 111
+Info (12128): Elaborating entity "Add16" for hierarchy "CPU:MAIN_CPU|ALU:ALUu|Add16:u5" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 114
+Info (12128): Elaborating entity "FullAdder" for hierarchy "CPU:MAIN_CPU|ALU:ALUu|Add16:u5|FullAdder:ADD0" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd Line: 34
+Info (12128): Elaborating entity "And16" for hierarchy "CPU:MAIN_CPU|ALU:ALUu|And16:u6" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 115
+Info (12128): Elaborating entity "comparador16" for hierarchy "CPU:MAIN_CPU|ALU:ALUu|comparador16:u9" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd Line: 124
+Info (12128): Elaborating entity "PC" for hierarchy "CPU:MAIN_CPU|PC:PCc" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/CPU.vhd Line: 171
+Info (12128): Elaborating entity "Inc16" for hierarchy "CPU:MAIN_CPU|PC:PCc|Inc16:Inc" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/E-LogicaSequencial/src/rtl/PC.vhd Line: 60
+Info (12128): Elaborating entity "ROM32K" for hierarchy "ROM32K:ROM" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 151
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/ROM/ROM32K.vhd Line: 59
+Info (12130): Elaborated megafunction instantiation "ROM32K:ROM|altsyncram:altsyncram_component" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/ROM/ROM32K.vhd Line: 59
+Info (12133): Instantiated megafunction "ROM32K:ROM|altsyncram:altsyncram_component" with the following parameter: File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Dispositivos/ROM/ROM32K.vhd Line: 59
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "tmpROM.mif"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "16385"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "18"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "15"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=ROM"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3i34.tdf
+    Info (12023): Found entity 1: altsyncram_3i34 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3i34.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_3i34" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated" File: /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3943.tdf
+    Info (12023): Found entity 1: altsyncram_3943 File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3943.tdf Line: 33
+Info (12128): Elaborating entity "altsyncram_3943" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3i34.tdf Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_7la.tdf
+    Info (12023): Found entity 1: decode_7la File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/decode_7la.tdf Line: 22
+Info (12128): Elaborating entity "decode_7la" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1|decode_7la:decode4" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3943.tdf Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_01a.tdf
+    Info (12023): Found entity 1: decode_01a File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/decode_01a.tdf Line: 22
+Info (12128): Elaborating entity "decode_01a" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1|decode_01a:rden_decode_a" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3943.tdf Line: 50
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_8hb.tdf
+    Info (12023): Found entity 1: mux_8hb File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/mux_8hb.tdf Line: 22
+Info (12128): Elaborating entity "mux_8hb" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|altsyncram_3943:altsyncram1|mux_8hb:mux6" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3943.tdf Line: 52
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3i34.tdf Line: 35
+Info (12130): Elaborated megafunction instantiation "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3i34.tdf Line: 35
+Info (12133): Instantiated megafunction "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/altsyncram_3i34.tdf Line: 35
+    Info (12134): Parameter "CVALUE" = "000000000000000000"
+    Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
+    Info (12134): Parameter "IS_READABLE" = "1"
+    Info (12134): Parameter "NODE_NAME" = "1380928768"
+    Info (12134): Parameter "NUMWORDS" = "16385"
+    Info (12134): Parameter "SHIFT_COUNT_BITS" = "5"
+    Info (12134): Parameter "WIDTH_WORD" = "18"
+    Info (12134): Parameter "WIDTHAD" = "15"
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "ROM32K:ROM|altsyncram:altsyncram_component|altsyncram_3i34:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
+Info (12128): Elaborating entity "MemoryIO" for hierarchy "MemoryIO:MEMORY_MAPED" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 157
+Warning (10541): VHDL Signal Declaration warning at MemoryIO.vhd(16): used implicit default value for signal "OUTPUT" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 16
+Warning (10541): VHDL Signal Declaration warning at MemoryIO.vhd(19): used implicit default value for signal "LCD_CS_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 19
+Warning (10541): VHDL Signal Declaration warning at MemoryIO.vhd(21): used implicit default value for signal "LCD_RD_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 21
+Warning (10541): VHDL Signal Declaration warning at MemoryIO.vhd(22): used implicit default value for signal "LCD_RESET_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 22
+Warning (10541): VHDL Signal Declaration warning at MemoryIO.vhd(23): used implicit default value for signal "LCD_RS" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 23
+Warning (10541): VHDL Signal Declaration warning at MemoryIO.vhd(24): used implicit default value for signal "LCD_WR_N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 24
+Warning (10540): VHDL Signal Declaration warning at MemoryIO.vhd(25): used explicit default value for signal "LCD_ON" because signal was never assigned a value File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 25
+Warning (10541): VHDL Signal Declaration warning at MemoryIO.vhd(26): used implicit default value for signal "LCD_INIT_OK" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 26
+Warning (10541): VHDL Signal Declaration warning at MemoryIO.vhd(30): used implicit default value for signal "LED" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/MemoryIO.vhd Line: 30
+Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
+Info (11172): 2019.04.26.09:51:15 Progress: Loading sld81ef7864/alt_sld_fab_wrapper_hw.tcl
+Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
+Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
+Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
+Info (11172): Presplit: "alt_sld_fab" instantiated altera_super_splitter "presplit"
+Info (11172): Splitter: "alt_sld_fab" instantiated altera_sld_splitter "splitter"
+Info (11172): Sldfabric: "alt_sld_fab" instantiated altera_sld_jtag_hub "sldfabric"
+Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification_hub "ident"
+Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
+Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld81ef7864/alt_sld_fab.v
+    Info (12023): Found entity 1: alt_sld_fab File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/alt_sld_fab.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab.v
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_ident.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/Quartus/db/ip/sld81ef7864/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following PLL node(s):
+        Warning (14320): Synthesized away node "PLL:\PLL_RTL:PLL_inst|PLL_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[1]" File: /home/borg/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (17026): Resynthesizing 0 WYSIWYG logic cells and I/Os using "speed" technology mapper which leaves 0 WYSIWYG logic cells and I/Os untouched
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "LCD_D[0]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[1]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[2]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[3]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[4]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[5]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[6]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[7]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[8]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[9]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[10]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[11]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[12]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[13]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[14]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+    Warning (13040): bidirectional pin "LCD_D[15]" has no driver File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 30
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 25
+    Warning (13410): Pin "LCD_CS_N" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 29
+    Warning (13410): Pin "LCD_RD_N" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 31
+    Warning (13410): Pin "LCD_RESET_N" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 32
+    Warning (13410): Pin "LCD_RS" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 33
+    Warning (13410): Pin "LCD_WR_N" is stuck at GND File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 34
+    Warning (13410): Pin "LCD_ON" is stuck at VCC File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 35
+Info (286031): Timing-Driven Synthesis is running on partition "Top"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 14 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/borg/Desktop/Insper/Z01.1-Hardware/Projetos/G-Computador/src/rtl/Computador.vhd Line: 26
+Info (21057): Implemented 318 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 17 output pins
+    Info (21060): Implemented 16 bidirectional pins
+    Info (21061): Implemented 214 logic cells
+    Info (21064): Implemented 54 RAM segments
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 1115 megabytes
+    Info: Processing ended: Fri Apr 26 09:51:23 2019
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:48
+
+
