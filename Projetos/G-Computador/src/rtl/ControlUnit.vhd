@@ -46,9 +46,10 @@ f <= instruction(17) and instruction(8);
 no <= instruction(17) and instruction(7);
 
 muxALUI_A <= not instruction(17);
-muxAM <= instruction(17) and instruction(14);
-muxSD_ALU <= instruction(17) and instruction(13);
-muxAMD_ALU <= instruction(17) and instruction(15);
+muxAM <= instruction(14);
+muxSD_ALU <= not instruction(13);
+muxAMD_ALU <= not instruction(15);
+-- instruction(17) and((not instruction(15) and not instruction(13)) or (not instruction(15) and instruction(14)));
 
 
 end architecture;
