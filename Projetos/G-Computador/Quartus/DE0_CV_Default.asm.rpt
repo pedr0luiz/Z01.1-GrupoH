@@ -1,5 +1,5 @@
 Assembler report for DE0_CV_Default
-Fri Apr 26 09:51:57 2019
+Thu May  2 18:26:10 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Apr 26 09:51:57 2019 ;
+; Assembler Status      ; Successful - Thu May  2 18:26:10 2019 ;
 ; Revision Name         ; DE0_CV_Default                        ;
 ; Top-level Entity Name ; Computador                            ;
 ; Family                ; Cyclone V                             ;
@@ -79,8 +79,8 @@ refer to the applicable agreement for further details.
 +----------------+-----------------------------+
 ; Option         ; Setting                     ;
 +----------------+-----------------------------+
-; JTAG usercode  ; 0x010EAB71                  ;
-; Checksum       ; 0x010EAB71                  ;
+; JTAG usercode  ; 0x020FB351                  ;
+; Checksum       ; 0x020FB351                  ;
 +----------------+-----------------------------+
 
 
@@ -90,7 +90,7 @@ refer to the applicable agreement for further details.
 ; Option             ; Setting                 ;
 +--------------------+-------------------------+
 ; JTAG usercode      ; 0x00000000              ;
-; Checksum           ; 0x7462B81D              ;
+; Checksum           ; 0x734BDB84              ;
 ; Compression Ratio  ; 2                       ;
 +--------------------+-------------------------+
 
@@ -101,15 +101,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Apr 26 09:51:52 2019
+    Info: Processing started: Thu May  2 18:26:03 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
-Info (125069): Default assignment values were changed in the current version of the Quartus Prime software -- changes to default assignments values are contained in file /home/borg/intelFPGA_lite/17.1/quartus/linux64/assignment_defaults.qdf
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 955 megabytes
-    Info: Processing ended: Fri Apr 26 09:51:57 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 969 megabytes
+    Info: Processing ended: Thu May  2 18:26:10 2019
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 
