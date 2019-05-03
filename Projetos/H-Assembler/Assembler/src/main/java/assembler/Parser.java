@@ -48,8 +48,14 @@ public class Parser {
      * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
      */
     public Boolean advance() {
-        // usar o fileReader.readLine();
-    	return null;
+        try{
+            fileReader.readLine();
+            this.lineNumber ++;
+            return true;
+        }
+        catch (java.io.IOException e){
+            return false;
+        }
     }
 
     /**
