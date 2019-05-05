@@ -40,24 +40,22 @@ public class Code {
     public static String jump(String[] mnemnonic) {
         switch(mnemnonic[0]){
             case "jg":
-                return 001;
+                return "001";
             case "je":
-                return 010;
+                return "010";
             case "jge":
-                return 011;
+                return "011";
             case "jl":
-                return 100;
+                return "100";
             case "jne":
-                return 101;
+                return "101";
             case "jle":
-                return 110;
+                return "110";
             case "jmp":
-                return 111;
+                return "111";
             default:
-                return 000;
+                return "000";
         }
-
-        return "";
     }
 
     /**
