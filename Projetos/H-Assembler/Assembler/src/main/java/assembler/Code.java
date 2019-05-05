@@ -18,7 +18,7 @@ public class Code {
     public static String dest(String[] mnemnonic) {
 
 
-    	return "";
+        return "";
     }
 
     /**
@@ -29,7 +29,7 @@ public class Code {
     public static String comp(String[] mnemnonic) {
 
 
-    	return "";
+        return "";
     }
 
     /**
@@ -38,7 +38,24 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String jump(String[] mnemnonic) {
-
+        switch(mnemnonic[0]){
+            case "jg":
+                return 001;
+            case "je":
+                return 010;
+            case "jge":
+                return 011;
+            case "jl":
+                return 100;
+            case "jne":
+                return 101;
+            case "jle":
+                return 110;
+            case "jmp":
+                return 111;
+            default:
+                return 000;
+        }
 
         return "";
     }
