@@ -131,6 +131,18 @@ public class Code {
                         break;
                 }
                 return registers + "000010";
+            // Inc
+            case "incw":
+                switch (mnemnonic[1]){
+                    case "(%A)":
+                        return "010110111";
+                    case "%A":
+                        return "000110111";
+                    case "%D":
+                        return "000011111";
+                    case "%S":
+                        return "001011111";
+                }
 
 
         }
