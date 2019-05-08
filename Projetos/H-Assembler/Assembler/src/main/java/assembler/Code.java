@@ -23,7 +23,7 @@ public class Code {
 
         int idx_start;
 
-        switch (mnemnonic[0]){
+        switch (mnemnonic[0]) {
             case "incw":
             case "decw":
             case "notw":
@@ -41,9 +41,9 @@ public class Code {
         for (int idx = idx_start; idx < mnemnonic.length; idx++) {
             String temp = mnemnonic[idx];
             String s = "";
-            for (int t_idx = 0; t_idx < temp.length(); t_idx++){
+            for (int t_idx = 0; t_idx < temp.length(); t_idx++) {
                 char t_char = temp.charAt(t_idx);
-                if (t_char!='%'){
+                if (t_char!='%') {
                     s += t_char;
                 }
             }
@@ -67,8 +67,8 @@ public class Code {
         return new StringBuilder().append(d3).append(d2).append(d1).append(d0).toString();
     }
 
-    public static String register(String s){
-        switch (s){
+    public static String register(String s) {
+        switch (s) {
         case "(%A)":
             return "010110000";
         case "%A":
@@ -87,27 +87,11 @@ public class Code {
      */
     public static String comp(String[] mnemnonic) {
 
-        switch (mnemnonic[0]){
-            // Jumps
-            case "jg":
-            case "je":
-            case "jge":
-            case "jl":
-            case "jne":
-            case "jle":
-            case "jmp":
-                if (mnemnonic.length == 1){
-                    return "000110000";
-                }
-                return register(mnemnonic[1]);
-            // Mov
-            case "movw":
-                return register(mnemnonic[1]);
-
+        switch (mnemnonic[0]) {
             // Add
             case "addw":
                 String registers;
-                switch (mnemnonic[1]+mnemnonic[2]){
+                switch (mnemnonic[1]+mnemnonic[2]) {
                     case "%D%A":
                     case "%A%D":
                         registers = "000";
@@ -131,19 +115,97 @@ public class Code {
                         break;
                 }
                 return registers + "000010";
-            // Inc
+
+            // Sub e rsub
+            case "subw":
+            case "rsubw":
+                String joined;
+                if (mnemnonic[0] == "rsubw") {
+                    joined = mnemnonic[2] + mnemnonic[1];
+                } else {
+                    joined = mnemnonic[1] + mnemnonic[2];
+                }
+                switch (joined) {
+                    case "%D%A":
+                        return "000010011";
+                    case "%S%A":
+                        return "001010011";
+                    case "%D(%A)":
+                        return "010010011";
+                    case "%S(%A)":
+                        return "011010011";
+                    case "%S%D":
+                        return "101010011";
+
+                    case "%A%D":
+                        return "000000111";
+                    case "%A%S":
+                        return "001000111";
+                    case "(%A)%D":
+                        return "010000111";
+                    case "(%A)%S":
+                        return "011000111";
+                    case "%D%S":
+                        return "101000111";
+                }
+                break;
+
+            // Inc, dec, not, neg, mov, jmp
+            case "jg":
+            case "je":
+            case "jge":
+            case "jl":
+            case "jne":
+            case "jle":
+            case "jmp":
             case "incw":
-                switch (mnemnonic[1]){
-                    case "(%A)":
-                        return "010110111";
-                    case "%A":
-                        return "000110111";
-                    case "%D":
-                        return "000011111";
-                    case "%S":
-                        return "001011111";
+            case "decw":
+            case "notw":
+            case "negw":
+            case "movw":
+                if (mnemnonic.length == 1) {
+                    return "000110000";
                 }
 
+                String top;
+                String bottom;
+
+                switch (mnemnonic[0]) {
+                    case "incw":
+                        top = "011111";
+                        bottom = "110111";
+                        break;
+                    case "decw":
+                        top = "001110";
+                        bottom = "110010";
+                        break;
+                    case "notw":
+                        top = "001101";
+                        bottom = "110001";
+                        break;
+                    case "negw":
+                        top = "001111";
+                        bottom = "110011";
+                        break;
+
+                    default:
+                        top = "001100";
+                        bottom = "110000";
+                        break;
+                }
+
+                String register;
+                switch (mnemnonic[1]) {
+                    case "(%A)":
+                        return "010" + bottom;
+                    case "%A":
+                        return "000" + bottom;
+                    case "%D":
+                        return "000" + top;
+                    default:
+                        // case "%S":
+                        return "001" + top;
+                }
 
         }
 
@@ -156,7 +218,7 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String jump(String[] mnemnonic) {
-        switch(mnemnonic[0]){
+        switch(mnemnonic[0]) {
             case "jg":
                 return "001";
             case "je":
