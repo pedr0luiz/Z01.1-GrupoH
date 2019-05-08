@@ -67,15 +67,75 @@ public class Code {
         return new StringBuilder().append(d3).append(d2).append(d1).append(d0).toString();
     }
 
+    public static String register(String s){
+        switch (s){
+        case "(%A)":
+            return "010110000";
+        case "%A":
+            return "000110000";
+        case "%D":
+            return "000001100";
+        case "%S":
+            return "001001100";
+        }
+        return "000000000";
+    }
     /**
      * Retorna o código binário do mnemônico para realizar uma operação de cálculo.
      * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
-     * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
+     * @return Opcode (String de 9 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
 
+        switch (mnemnonic[0]){
+            // Jumps
+            case "jg":
+            case "je":
+            case "jge":
+            case "jl":
+            case "jne":
+            case "jle":
+            case "jmp":
+                if (mnemnonic.length == 1){
+                    return "000110000";
+                }
+                return register(mnemnonic[1]);
+            // Mov
+            case "movw":
+                return register(mnemnonic[1]);
 
-        return dest(mnemnonic) + jump(mnemnonic);
+            // Add
+            case "addw":
+                String registers;
+                switch (mnemnonic[1]+mnemnonic[2]){
+                    case "%D%A":
+                    case "%A%D":
+                        registers = "000";
+                        break;
+                    case "%S%A":
+                    case "%A%S":
+                        registers = "001";
+                        break;
+                    case "%D(%A)":
+                    case "(%A)%D":
+                        registers = "010";
+                        break;
+                    case "%S(%A)":
+                    case "(%A)%S":
+                        registers = "011";
+                        break;
+                    default:
+                        // S+D
+                        // D+S
+                        registers = "101";
+                        break;
+                }
+                return registers + "000010";
+
+
+        }
+
+        return "000000000";
     }
 
     /**
