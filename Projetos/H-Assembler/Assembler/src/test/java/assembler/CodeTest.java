@@ -122,14 +122,6 @@ public class CodeTest  {
     @Test
     public void testCode_Computation() {
 		try {
-            assertTrue("jmp %D",Code.comp(new String[] {"jmp", "%D"}).equals("000001100"));
-            assertTrue("je %D",Code.comp(new String[] {"je", "%D"}).equals("000001100"));
-            assertTrue("jne %D",Code.comp(new String[] {"jne", "%D"}).equals("000001100"));
-            assertTrue("jg %D",Code.comp(new String[] {"jg", "%D"}).equals("000001100"));
-            assertTrue("jge %D",Code.comp(new String[] {"jge", "%D"}).equals("000001100"));
-            assertTrue("jl %S",Code.comp(new String[] {"jl", "%S"}).equals("001001100"));
-            assertTrue("jle %S",Code.comp(new String[] {"jle", "%S"}).equals("001001100"));
-
 		
             assertTrue("movw %A %D",Code.comp(new String[] {"movw","%A","%D"}).equals("000110000"));
             assertTrue("movw %S %D",Code.comp(new String[] {"movw","%S","%A"}).equals("001001100"));
@@ -169,6 +161,13 @@ public class CodeTest  {
             assertTrue("orw %D %A %A",Code.comp(new String[] {"orw","%D","%A","%A"}).equals("000010101"));
             assertTrue("subw (%A), $1, %A",Code.comp(new String[] {"subw","(%A)", "$1", "%A"}).equals("010110010"));
 
+            assertTrue("jmp %D",Code.comp(new String[] {"jmp", "%D"}).equals("000001100"));
+            assertTrue("je %D",Code.comp(new String[] {"je", "%D"}).equals("000001100"));
+            assertTrue("jne %D",Code.comp(new String[] {"jne", "%D"}).equals("000001100"));
+            assertTrue("jg %D",Code.comp(new String[] {"jg", "%D"}).equals("000001100"));
+            assertTrue("jge %D",Code.comp(new String[] {"jge", "%D"}).equals("000001100"));
+            assertTrue("jl %S",Code.comp(new String[] {"jl", "%S"}).equals("001001100"));
+            assertTrue("jle %S",Code.comp(new String[] {"jle", "%S"}).equals("001001100"));
 		} catch(Exception e) {
 		  	e.printStackTrace();
 		}
