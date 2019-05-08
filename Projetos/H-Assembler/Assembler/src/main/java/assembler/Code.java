@@ -16,54 +16,55 @@ public class Code {
      * @return Opcode (String de 4 bits) com código em linguagem de máquina para a instrução.
      */
     public static String dest(String[] mnemnonic) {
-        String joined = "";
+        char d3, d2, d1, d0;
+        d3 = '0'; d2 = '0'; d1 = '0'; d0 = '0';
+        if (mnemnonic.length < 2)
+            return "0000";
 
-        for (int idx = 2; idx < mnemnonic.length; idx++){
-            String str = mnemnonic[idx];
-            int str_len = str.length();
-            for (int char_idx = 0; char_idx < str_len ; char_idx++){
-                char temp_char = str.charAt(idx);
-                if (temp_char != '%'){
-                    joined += temp_char;
+        int idx_start;
+
+        switch (mnemnonic[0]){
+            case "incw":
+            case "decw":
+            case "notw":
+            case "negw":
+                idx_start = 1;
+                break;
+            case "movw":
+                idx_start = 2;
+                break;
+            default:
+                idx_start = 3;
+                break;
+        }
+
+        for (int idx = idx_start; idx < mnemnonic.length; idx++) {
+            String temp = mnemnonic[idx];
+            String s = "";
+            for (int t_idx = 0; t_idx < temp.length(); t_idx++){
+                char t_char = temp.charAt(t_idx);
+                if (t_char!='%'){
+                    s += t_char;
                 }
+            }
+
+            switch (s) {
+                case "A":
+                    d3 = '1';
+                    break;
+                case "S":
+                    d2 = '1';
+                    break;
+                case "D":
+                    d1 = '1';
+                    break;
+                case "(A)":
+                    d0 = '1';
+                    break;
             }
         }
 
-        switch (joined) {
-            case "A":
-                return "1000";
-            case "D":
-                return "0010";
-            case "S":
-                return "0100";
-            case "(A)":
-                return "0001";
-            case "D(A)":
-                return "0011";
-            case "S(A)":
-                return "0101";
-            case "SD":
-                return "0110";
-            case "SD(A)":
-                return "0111";
-            case "A(A)":
-                return "1001";
-            case "AD":
-                return "1010";
-            case "AD(A)":
-                return "1011";
-            case "AS":
-                return "1100";
-            case "AS(A)":
-                return "1101";
-            case "ASD":
-                return "1110";
-            case "ASD(A)":
-                return "1111";
-            default:
-                return "0000";
-
-        }
+        return new StringBuilder().append(d3).append(d2).append(d1).append(d0).toString();
     }
 
     /**
@@ -74,7 +75,7 @@ public class Code {
     public static String comp(String[] mnemnonic) {
 
 
-        return "";
+        return dest(mnemnonic) + jump(mnemnonic);
     }
 
     /**
