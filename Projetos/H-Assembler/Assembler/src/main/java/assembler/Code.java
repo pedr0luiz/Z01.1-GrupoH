@@ -88,10 +88,12 @@ public class Code {
     public static String comp(String[] mnemnonic) {
 
         switch (mnemnonic[0]) {
-            // Add
+            // Add, and, or
             case "addw":
+            case "andw":
+            case "orw":
                 String registers;
-                switch (mnemnonic[1]+mnemnonic[2]) {
+                switch (mnemnonic[1] + mnemnonic[2]) {
                     case "%D%A":
                     case "%A%D":
                         registers = "000";
@@ -108,14 +110,34 @@ public class Code {
                     case "(%A)%S":
                         registers = "011";
                         break;
+                    // Suporte para $1
+                    case "(%A)$1":
+                    case "$1(%A)":
+                        return "010110111";
+                    case "%A$1":
+                    case "$1%A":
+                        return "000110111";
+                    case "$1%D":
+                    case "%D$1":
+                        return "000011111";
+                    case "%S$1":
+                    case "$1%S":
+                        return "001011111";
+
                     default:
-                        // S+D
-                        // D+S
+                        // SD
+                        // DS
                         registers = "101";
                         break;
                 }
-                return registers + "000010";
-
+                switch (mnemnonic[0]) {
+                    case "addw":
+                        return registers + "000010";
+                    case "andw":
+                        return registers + "000000";
+                    case "orw":
+                        return registers + "010101";
+                }
             // Sub e rsub
             case "subw":
             case "rsubw":
@@ -147,8 +169,18 @@ public class Code {
                         return "011000111";
                     case "%D%S":
                         return "101000111";
+
+                    case "(%A)$1":
+                        return "010110010";
+                    case "%A$1":
+                        return "000110010";
+                    case "%D$1":
+                        return "000001110";
+                    case "%S$1":
+                        return "001011111";
                 }
                 break;
+
 
             // Inc, dec, not, neg, mov, jmp
             case "jg":
@@ -194,7 +226,6 @@ public class Code {
                         break;
                 }
 
-                String register;
                 switch (mnemnonic[1]) {
                     case "(%A)":
                         return "010" + bottom;
