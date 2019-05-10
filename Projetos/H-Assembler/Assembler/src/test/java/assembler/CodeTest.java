@@ -123,7 +123,6 @@ public class CodeTest  {
     public void testCode_Computation() {
 		try {
 		
-		
             assertTrue("movw %A %D",Code.comp(new String[] {"movw","%A","%D"}).equals("000110000"));
             assertTrue("movw %S %D",Code.comp(new String[] {"movw","%S","%A"}).equals("001001100"));
             assertTrue("movw %S %A",Code.comp(new String[] {"movw","%S","%A"}).equals("001001100"));
