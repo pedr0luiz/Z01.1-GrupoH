@@ -5,6 +5,8 @@
 
 package assembler;
 
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -47,15 +49,29 @@ public class Parser {
      * entrada o método retorna "Falso", senão retorna "Verdadeiro".
      * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
      */
-    public Boolean advance() {
-        try{
-            fileReader.readLine();
-            this.lineNumber ++;
-            return true;
+    public Boolean advance() throws IOException {
+        this.currentCommand = "";
+        boolean passa = true;
+        while(passa) {
+            String line = fileReader.readLine();
+            if(line == null){
+                passa = false;
+                return false;
+            }
+            else if(!line.split(" ")[0].equals(";") && !line.equals("")){
+                if(line.split(" ").length >= 2) {
+                    String commandLine = line.split(" ")[0]+" "+line.split(" ")[1];
+                    this.currentCommand = commandLine;
+                    passa = false;
+                }
+                else{
+                    this.currentCommand = line;
+                    passa = false;
+                }
+
+            }
         }
-        catch (java.io.IOException e){
-            return false;
-        }
+        return true;
     }
 
     /**
@@ -63,7 +79,8 @@ public class Parser {
      * @return a instrução atual para ser analilisada
      */
     public String command() {
-    	return null;
+        return currentCommand;
+
     }
 
     /**
@@ -75,7 +92,49 @@ public class Parser {
      * @return o tipo da instrução.
      */
     public CommandType commandType(String command) {
-    	return null;
+    	switch (command.split(" ")[0]){
+            case "leaw":
+                return CommandType.A_COMMAND;
+            case "movw":
+                return CommandType.C_COMMAND;
+            case "addw":
+                return CommandType.C_COMMAND;
+            case "subw":
+                return CommandType.C_COMMAND;
+            case "rsubw":
+                return CommandType.C_COMMAND;
+            case "incw":
+                return CommandType.C_COMMAND;
+            case "decw":
+                return CommandType.C_COMMAND;
+            case "notw":
+                return CommandType.C_COMMAND;
+            case "negw":
+                return CommandType.C_COMMAND;
+            case "andw":
+                return CommandType.C_COMMAND;
+            case "orw":
+                return CommandType.C_COMMAND;
+            case "jmp":
+                return CommandType.C_COMMAND;
+            case "je":
+                return CommandType.C_COMMAND;
+            case "jne":
+                return CommandType.C_COMMAND;
+            case "jg":
+                return CommandType.C_COMMAND;
+            case "jge":
+                return CommandType.C_COMMAND;
+            case "jl":
+                return CommandType.C_COMMAND;
+            case "jle":
+                return CommandType.C_COMMAND;
+            case "nop":
+                return CommandType.C_COMMAND;
+            default:
+                return CommandType.L_COMMAND;
+
+        }
     }
 
     /**
@@ -85,7 +144,12 @@ public class Parser {
      * @return somente o símbolo ou o valor número da instrução.
      */
     public String symbol(String command) {
-    	return null;
+    	if(commandType(command) == CommandType.A_COMMAND){
+    	    return command.split(" ")[1].split(",")[0].replace("$","");
+        }
+    	else{
+    	    return null;
+        }
     }
 
     /**
@@ -95,7 +159,12 @@ public class Parser {
      * @return o símbolo da instrução (sem os dois pontos).
      */
     public String label(String command) {
-    	return null;
+    	if(commandType(command) == CommandType.L_COMMAND){
+    	    return command.replace(":","");
+        }
+    	else{
+    	    return null;
+        }
     }
 
     /**
@@ -105,7 +174,26 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-    	return null;
+        if (commandType(command) == CommandType.C_COMMAND) {
+            if(command.split(" ").length > 1){
+                String[] mnemonico = new String[command.split(" ")[1].split(",").length + 1];
+                String firstElement = command.split(" ")[0];
+                mnemonico[0] = firstElement;
+                for(int i=1;i<mnemonico.length;i++){
+                    mnemonico[i] = command.split(" ")[1].split(",")[i-1];
+                }
+                return mnemonico;
+            }
+            else{
+                String[] mnemonico = new String[1];
+                mnemonico[0] = command;
+                return mnemonico;
+            }
+
+        } else {
+            return null;
+
+        }
     }
 
     // fecha o arquivo de leitura
