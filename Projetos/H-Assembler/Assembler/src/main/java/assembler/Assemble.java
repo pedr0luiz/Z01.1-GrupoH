@@ -47,6 +47,12 @@ public class Assemble {
     public SymbolTable fillSymbolTable() throws FileNotFoundException, IOException {
         Parser parser = new Parser(inputFile);
         while (parser.advance()){
+            if(parser.commandType(parser.currentCommand) == Parser.CommandType.L_COMMAND){
+                String label = parser.label(parser.currentCommand);
+                if(!table.contains(label)){
+                    table.addEntry(label,parser.lineNumber);
+                }
+            }
 
         }
 
@@ -70,10 +76,19 @@ public class Assemble {
          * de instrução válida do nasm
          */
         while (parser.advance()){
+            System.out.println(parser.command());
             switch (parser.commandType(parser.command())){
                 case C_COMMAND:
+                    String[] mnemonico = parser.instruction(parser.command());
+                    String comp = Code.comp(mnemonico);
+                    String dest = Code.dest(mnemonico);
+                    String jump = Code.jump(mnemonico);
+                    instruction = "10"+comp+dest+jump;
                     break;
                 case A_COMMAND:
+                    String symbol = parser.symbol(parser.command());
+                    String binaryValue = Code.toBinary(symbol);
+                    instruction = "00"+binaryValue;
                     break;
                 default:
                     continue;

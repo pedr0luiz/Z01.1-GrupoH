@@ -38,7 +38,8 @@ public class Parser {
      * @param file arquivo NASM que será feito o parser.
      */
     public Parser(String file) throws FileNotFoundException {
-        this.lineNumber = 0;
+        this.lineNumber = 0
+        ;
         this.inputFile = file;
         this.fileReader = new BufferedReader(new FileReader(file));
     }
@@ -59,16 +60,26 @@ public class Parser {
                 return false;
             }
             else if(!line.split(" ")[0].equals(";") && !line.equals("")){
-                if(line.split(" ").length >= 2) {
+                line = line.trim();
+                if(line.split(" ").length == 2) {
                     String commandLine = line.split(" ")[0]+" "+line.split(" ")[1];
                     this.currentCommand = commandLine;
+                    lineNumber++;
+                    passa = false;
+                }
+                else if(line.split(" ").length > 2){
+                    String commandLine = line.split(" ")[0]+" "+line.split(" ")[1]+line.split(" ")[2];
+                    this.currentCommand = commandLine;
+                    lineNumber++;
                     passa = false;
                 }
                 else{
+                    if (!line.equals("nop")){
+                        lineNumber ++;
+                    }
                     this.currentCommand = line;
                     passa = false;
                 }
-
             }
         }
         return true;
