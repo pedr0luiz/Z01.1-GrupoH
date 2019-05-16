@@ -45,17 +45,36 @@ public class Assemble {
      * Dependencia : Parser, SymbolTable
      */
     public SymbolTable fillSymbolTable() throws FileNotFoundException, IOException {
+        int line = 0;
+        int ram = 16;
         Parser parser = new Parser(inputFile);
-        while (parser.advance()){
-            if(parser.commandType(parser.currentCommand) == Parser.CommandType.L_COMMAND){
-                String label = parser.label(parser.currentCommand);
-                if(!table.contains(label)){
-                    table.addEntry(label,parser.lineNumber);
-                }
-            }
+        Parser.CommandType LC = Parser.CommandType.L_COMMAND;
+        Parser.CommandType AC = Parser.CommandType.A_COMMAND;
 
+        while (parser.advance()) {
+            String command = parser.command();
+            Parser.CommandType commandType = parser.commandType(command);
+            if (commandType == LC) {
+                String label = parser.label(command);
+                if (!table.contains(label)) table.addEntry(label, line);
+            }
+            else {
+                line++;
+            }
         }
 
+        parser = new Parser(inputFile); // Reset do parser
+        while (parser.advance()) {
+            String command = parser.command();
+            Parser.CommandType commandType = parser.commandType(command);
+            if (commandType == AC) {
+                String symbol = parser.symbol(command);
+                if (!symbol.matches("[0-9]+") && !table.contains(symbol)) {
+                    table.addEntry(symbol, ram);
+                    ram++;
+                }
+            }
+        }
         return table;
     }
 
@@ -67,6 +86,7 @@ public class Assemble {
      * Dependencias : Parser, Code
      */
     public void generateMachineCode() throws FileNotFoundException, IOException{
+
         Parser parser = new Parser(inputFile);  // abre o arquivo e aponta para o começo
         String instruction  = null;
 
@@ -76,7 +96,7 @@ public class Assemble {
          * de instrução válida do nasm
          */
         while (parser.advance()){
-            System.out.println(parser.command());
+
             switch (parser.commandType(parser.command())){
                 case C_COMMAND:
                     String[] mnemonico = parser.instruction(parser.command());
@@ -86,8 +106,17 @@ public class Assemble {
                     instruction = "10"+comp+dest+jump;
                     break;
                 case A_COMMAND:
-                    String symbol = parser.symbol(parser.command());
-                    String binaryValue = Code.toBinary(symbol);
+                    String binaryValue;
+                    if (parser.symbol(parser.command()).matches("[0-9]+")) {
+                        String symbol = parser.symbol(parser.command());
+                        binaryValue = Code.toBinary(symbol);
+                    } else{
+                        System.out.println(parser.symbol(parser.command()));
+                        System.out.println(table.contains(parser.symbol(parser.command())));
+                        Integer symbol = table.getAddress(parser.symbol(parser.command()));
+                        binaryValue = Code.toBinary(symbol.toString());
+                    }
+
                     instruction = "00"+binaryValue;
                     break;
                 default:

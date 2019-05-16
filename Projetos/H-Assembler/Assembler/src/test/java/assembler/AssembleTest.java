@@ -35,7 +35,7 @@ public class AssembleTest {
         assertTrue("$verdade",table.contains("verdade")==true);
         assertTrue("$verdade",table.getAddress("verdade")==7);
         assertTrue("$end",table.contains("end")==true);
-        assertTrue("$end",table.getAddress("end")==17);
+        assertTrue("$end",table.getAddress("end")==16);
         assertTrue("nao",table.contains("nao")==false);
     }
 
