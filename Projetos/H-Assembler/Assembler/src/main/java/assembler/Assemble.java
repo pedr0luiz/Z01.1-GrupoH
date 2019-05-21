@@ -93,20 +93,12 @@ public class Assemble {
             switch (parser.commandType(parser.command())){
                 case C_COMMAND:
                     String[] mnemonico = parser.instruction(parser.command());
-                    System.out.println(parser.command());
-                    for (String i:mnemonico){
-                        System.out.print(i);
-                    }
-                    System.out.println("  ");
-                    System.out.println("----------------------------------------------------------------");
                     String comp = Code.comp(mnemonico);
                     String dest = Code.dest(mnemonico);
                     String jump = Code.jump(mnemonico);
                     instruction = "10"+comp+dest+jump;
                     break;
                 case A_COMMAND:
-                    System.out.println(parser.command());
-                    System.out.println("----------------------------------------------------------------");
                     String symbol = parser.symbol(parser.command());
                     if (symbol.matches("[0-9]+")) {
                         instruction = "00"+Code.toBinary(symbol);

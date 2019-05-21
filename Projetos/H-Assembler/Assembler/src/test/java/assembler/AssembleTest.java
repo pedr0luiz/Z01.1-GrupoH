@@ -58,7 +58,7 @@ public class AssembleTest {
         assertEquals(fileReader.readLine(),"000000000000010000"); // leaw $RESULTADO, %A
         assertEquals(fileReader.readLine(),"100010011000001000"); // movw %S, (%A)
         assertEquals(fileReader.readLine(),"000000000000010001"); // leaw $end, %A
-//        assertEquals(fileReader.readLine(),"100000011000000111"); // jmp
+        assertEquals(fileReader.readLine(),"100001100000000111"); // jmp
         fileReader.readLine();                                          // nop
         assertEquals(fileReader.readLine(),"100001010100100000"); // movw $0, %S
         assertEquals(fileReader.readLine(),"000000000000010000"); // leaw $RESULTADO, %A
