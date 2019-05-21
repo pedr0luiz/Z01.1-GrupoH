@@ -22,7 +22,6 @@ public class Code {
             return "0000";
 
         int idx_start;
-
         switch (mnemnonic[0]) {
             case "incw":
             case "decw":
@@ -63,7 +62,6 @@ public class Code {
                     break;
             }
         }
-
         return new StringBuilder().append(d3).append(d2).append(d1).append(d0).toString();
     }
 
@@ -142,7 +140,7 @@ public class Code {
             case "subw":
             case "rsubw":
                 String joined;
-                if (mnemnonic[0] == "rsubw") {
+                if (mnemnonic[0].equals("rsubw")) {
                     joined = mnemnonic[2] + mnemnonic[1];
                 } else {
                     joined = mnemnonic[1] + mnemnonic[2];
@@ -233,9 +231,15 @@ public class Code {
                         return "000" + bottom;
                     case "%D":
                         return "000" + top;
-                    default:
-                        // case "%S":
+                    case "%S":
                         return "001" + top;
+                    case "$0":
+                        return "000101010";
+                    case "$1":
+                        return "000111111";
+                    case "$-1":
+                        return "001111010";
+
                 }
 
         }

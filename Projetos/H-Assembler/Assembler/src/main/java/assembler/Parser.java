@@ -5,8 +5,6 @@
 
 package assembler;
 
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
