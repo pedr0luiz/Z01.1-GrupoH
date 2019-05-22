@@ -10,7 +10,7 @@
 leaw $5, %A
 movw (%A), %D
 leaw $1, %A
-andw %A, %D, %S
+andw %A, %D,%S
 leaw $falso, %A
 jg %S
 nop

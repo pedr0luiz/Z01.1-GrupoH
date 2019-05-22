@@ -53,7 +53,21 @@ public class Assemble {
                     table.addEntry(label,parser.lineNumber);
                 }
             }
-
+        }
+        int addressA = 16;
+        Parser parserA = new Parser(inputFile);
+        while (parserA.advance()) {
+            if (parserA.commandType(parserA.command()) == Parser.CommandType.A_COMMAND) {
+                String symbol = parserA.symbol(parserA.command());
+                if (!symbol.matches("[0-9]+")) { //Checks it is not number
+                    if (!table.contains(symbol)) {
+                        if (!symbol.contains("par")) {
+                            table.addEntry(symbol, addressA);
+                            addressA += 1;
+                        }
+                    }
+                }
+            }
         }
 
         return table;
@@ -76,7 +90,6 @@ public class Assemble {
          * de instrução válida do nasm
          */
         while (parser.advance()){
-            System.out.println(parser.command());
             switch (parser.commandType(parser.command())){
                 case C_COMMAND:
                     String[] mnemonico = parser.instruction(parser.command());
@@ -87,8 +100,14 @@ public class Assemble {
                     break;
                 case A_COMMAND:
                     String symbol = parser.symbol(parser.command());
-                    String binaryValue = Code.toBinary(symbol);
-                    instruction = "00"+binaryValue;
+                    if (symbol.matches("[0-9]+")) {
+                        instruction = "00"+Code.toBinary(symbol);
+                    }
+                    else {
+                        Integer symbolInt = table.getAddress(symbol);
+                        instruction = "00"+Code.toBinary(symbolInt.toString());
+
+                    }
                     break;
                 default:
                     continue;
