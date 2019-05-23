@@ -53,6 +53,7 @@ public class Assemble {
                     table.addEntry(label,parser.lineNumber);
                 }
             }
+
         }
         int addressA = 16;
         Parser parserA = new Parser(inputFile);
@@ -61,10 +62,9 @@ public class Assemble {
                 String symbol = parserA.symbol(parserA.command());
                 if (!symbol.matches("[0-9]+")) { //Checks it is not number
                     if (!table.contains(symbol)) {
-                        if (!symbol.contains("par")) {
-                            table.addEntry(symbol, addressA);
-                            addressA += 1;
-                        }
+                        table.addEntry(symbol, addressA);
+                        addressA += 1;
+
                     }
                 }
             }

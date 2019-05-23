@@ -4,9 +4,9 @@ leaw $0, %A
 movw %A, %S
 LOOP:
 incw %D
-movw %D %A
-movw (%A) %S
-leaw %LOOP, %A
+movw %D, %A
+movw (%A), %S
+leaw $LOOP, %A
 jne %S
 nop
 leaw $8, %A

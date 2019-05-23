@@ -55,29 +55,18 @@ public class Parser {
             String line = fileReader.readLine();
             if(line == null){
                 passa = false;
+                fileReader.close();
                 return false;
             }
-            else if(!line.split(" ")[0].equals(";") && !line.equals("")){
-                line = line.trim();
-                if(line.split(" ").length == 2) {
-                    String commandLine = line.split(" ")[0]+" "+line.split(" ")[1];
-                    this.currentCommand = commandLine;
+            if(line.length() > 0 && line.charAt(0) != ';'){
+                String[] lineSplit = line.split(";");
+                if(commandType(lineSplit[0].trim().split(" ")[0]) != CommandType.L_COMMAND){
                     lineNumber++;
-                    passa = false;
                 }
-                else if(line.split(" ").length > 2){
-                    String commandLine = line.split(" ")[0]+" "+line.split(" ")[1]+line.split(" ")[2];
-                    this.currentCommand = commandLine;
-                    lineNumber++;
-                    passa = false;
-                }
-                else{
-                    if (!line.equals("nop")){
-                        lineNumber ++;
-                    }
-                    this.currentCommand = line;
-                    passa = false;
-                }
+
+                currentLine = lineSplit[0].trim();
+                currentCommand = currentLine;
+                return true;
             }
         }
         return true;
@@ -184,18 +173,21 @@ public class Parser {
      */
     public String[] instruction(String command) {
         if (commandType(command) == CommandType.C_COMMAND) {
-            if(command.split(" ").length > 1){
-                String[] mnemonico = new String[command.split(" ")[1].split(",").length + 1];
-                String firstElement = command.split(" ")[0];
-                mnemonico[0] = firstElement;
-                for(int i=1;i<mnemonico.length;i++){
-                    mnemonico[i] = command.split(" ")[1].split(",")[i-1];
+            String[] comandos = command.split(",");
+            String[] comando1 = comandos[0].split(" ");
+
+            if(comando1.length > 1){
+                String[] mnemonico = new String[comandos.length +1];
+                mnemonico[0] = comando1[0];
+                mnemonico[1] = comando1[1];
+                for(int i=2;i<mnemonico.length;i++){
+                    mnemonico[i] = comandos[i-1].trim();
                 }
                 return mnemonico;
             }
             else{
                 String[] mnemonico = new String[1];
-                mnemonico[0] = command;
+                mnemonico[0] = comando1[0];
                 return mnemonico;
             }
 

@@ -8,86 +8,86 @@
 ;  - Bata uma foto!
 
 
-leaw $65535, %A
-movw %A, %D
+leaw $65535,%A
+movw %A,%D
 
-leaw $17300, %A
-movw %D, (%A)
+leaw $17300,%A
+movw %D,(%A)
 
-leaw $17320, %A
-movw %D, (%A)
+leaw $17320,%A
+movw %D,(%A)
 
-leaw $17340, %A
-movw %D, (%A)
+leaw $17340,%A
+movw %D,(%A)
 
-leaw $17360, %A
-movw %D, (%A)
+leaw $17360,%A
+movw %D,(%A)
 
-leaw $17380, %A
-movw %D, (%A)
+leaw $17380,%A
+movw %D,(%A)
 
-leaw $17400, %A
-movw %D, (%A)
+leaw $17400,%A
+movw %D,(%A)
 
 leaw $17420, %A
-movw %D, (%A)
+movw %D,(%A)
 
-leaw $17440, %A
-movw %D, (%A)
+leaw $17440,%A
+movw %D,(%A)
 
-leaw $17460, %A
-movw %D, (%A)
+leaw $17460,%A
+movw %D,(%A)
 
-leaw $17480, %A
-movw %D, (%A)
+leaw $17480,%A
+movw %D,(%A)
 
-leaw $17500, %A
-movw %D, (%A)
+leaw $17500,%A
+movw %D,(%A)
 
-leaw $17520, %A
-movw %D, (%A)
+leaw $17520,%A
+movw %D,(%A)
 
-leaw $17540, %A
-movw %D, (%A)
+leaw $17540,%A
+movw %D,(%A)
 
-leaw $17560, %A
-movw %D, (%A)
+leaw $17560,%A
+movw %D,(%A)
 
-leaw $17580, %A
-movw %D, (%A)
+leaw $17580,%A
+movw %D,(%A)
 
-leaw $17600, %A
-movw %D, (%A)
+leaw $17600,%A
+movw %D,(%A)
 
-leaw $17620, %A
-movw %D, (%A)
+leaw $17620,%A
+movw %D,(%A)
 
-leaw $17640, %A
-movw %D, (%A)
+leaw $17640,%A
+movw %D,(%A)
 
-leaw $17660, %A
-movw %D, (%A)
+leaw $17660,%A
+movw %D,(%A)
 
-leaw $17680, %A
-movw %D, (%A)
+leaw $17680,%A
+movw %D,(%A)
 
-leaw $17700, %A
-movw %D, (%A)
+leaw $17700,%A
+movw %D,(%A)
 
-leaw $17720, %A
-movw %D, (%A)
+leaw $17720,%A
+movw %D,(%A)
 
-leaw $17740, %A
-movw %D, (%A)
+leaw $17740,%A
+movw %D,(%A)
 
-leaw $17760, %A
-movw %D, (%A)
+leaw $17760,%A
+movw %D,(%A)
 
-leaw $17780, %A
-movw %D, (%A)
+leaw $17780,%A
+movw %D,(%A)
 
-leaw $17800, %A
-movw %D, (%A)
+leaw $17800,%A
+movw %D,(%A)
 
 leaw $17820, %A
 movw %D, (%A)

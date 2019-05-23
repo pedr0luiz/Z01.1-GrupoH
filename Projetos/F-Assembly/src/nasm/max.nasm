@@ -9,24 +9,24 @@
 ; ou seja, o maior valor que estiver, ou em R0 ou R1 sera copiado para R2
 ; Estamos considerando número inteiros
 
-leaw $0, %A
-movw (%A), %D
-leaw $1, %A
+leaw $0,%A
+movw (%A),%D
+leaw $1,%A
 ; R0 - R1
-subw %D, (%A), %D
+subw %D,(%A),%D
 
-leaw %0, %A
-movw (%A), %S
+leaw $0,%A
+movw (%A),%S
 
-leaw %FINAL, %A
+leaw $FINAL,%A
 jg %D
 nop
 
-leaw %1, %A
-movw (%A), %S
+leaw $1,%A
+movw (%A),%S
 
 
 FINAL:
-	leaw %2, %A
-	movw %S, (%A)
+	leaw $2,%A
+	movw %S,(%A)
 

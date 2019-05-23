@@ -35,7 +35,7 @@ public class AssembleTest {
         assertTrue("$verdade",table.contains("verdade")==true);
         assertTrue("$verdade",table.getAddress("verdade")==7);
         assertTrue("$end",table.contains("end")==true);
-        assertTrue("$end",table.getAddress("end")==17);
+        assertTrue("$end",table.getAddress("end")==16);
         assertTrue("nao",table.contains("nao")==false);
     }
 
@@ -49,7 +49,7 @@ public class AssembleTest {
         BufferedReader fileReader = new BufferedReader(new FileReader(outFile));
         assertEquals(fileReader.readLine(),"000000000000000101"); // leaw $5, %A
         assertEquals(fileReader.readLine(),"100101100000010000"); // movw (%A), %D
-        assertEquals(fileReader.readLine(),"000000000000000001"); // leaw $1, %A
+        assertEquals(fileReader.readLine(),"000000000000000001"); // leaw $1,%A
         assertEquals(fileReader.readLine(),"100000000000100000"); // andw %A, %D, %S
         assertEquals(fileReader.readLine(),"000000000000001101"); // leaw $falso, %A
         assertEquals(fileReader.readLine(),"100010011000000001"); // jg %S
@@ -57,7 +57,7 @@ public class AssembleTest {
         assertEquals(fileReader.readLine(),"100001111110100000"); // movw $1, %S
         assertEquals(fileReader.readLine(),"000000000000010000"); // leaw $RESULTADO, %A
         assertEquals(fileReader.readLine(),"100010011000001000"); // movw %S, (%A)
-        assertEquals(fileReader.readLine(),"000000000000010001"); // leaw $end, %A
+        assertEquals(fileReader.readLine(),"000000000000010000"); // leaw $end, %A
         assertEquals(fileReader.readLine(),"100001100000000111"); // jmp
         fileReader.readLine();                                          // nop
         assertEquals(fileReader.readLine(),"100001010100100000"); // movw $0, %S
